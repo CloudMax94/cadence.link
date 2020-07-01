@@ -1,0 +1,52 @@
+<label for="menu-toggle" class="textbox hamburger" tabindex="0">
+  <div></div>
+  <div></div>
+  <div></div>
+</label>
+<input type="checkbox" id="menu-toggle" checked>
+<div class="menu">
+  <div class="menu-top global-box">
+    <div class="menu-container">
+      <div class="logo"><img src="/img/logo.png" /></div>
+      <div class="menu-title">Content</div>
+      {{ if .Site.Menus.main }}
+        {{ $currentPage := . }}
+        {{ range sort .Site.Menus.main }}
+          {{ if .HasChildren }}
+            <div class="dropdown-wrap">
+              <div class="textbox miscellaneous centered dropdown" tabindex="0">
+                <span class="{{ if $currentPage.HasMenuCurrent "main" . }}selected{{ end }}">{{ .Name }}</span>
+                <div class="dropdown-content"><div class="dropdown-scroll">
+                  {{ range .Children }}
+                    <a href="{{ .URL }}" class="textbox-child{{ if $currentPage.IsMenuCurrent "main" . }} selected{{ end }}">
+                      {{ .Name }}
+                    </a>
+                  {{ end }}
+                </div></div>
+              </div>
+              <div class="dropdown-closer"></div>
+            </div>
+          {{ else }}
+            <a href="{{ .URL }}" class="textbox centered{{ if $currentPage.IsMenuCurrent "main" . }} selected{{ end }}">{{ .Name }}</a>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ if .Site.Menus.other }}
+        <div class="menu-footer">
+          <div class="menu-title">Other</div>
+          {{ range sort .Site.Menus.other }}
+            <a href="{{ .URL }}" class="textbox centered" target="_blank">{{ .Name }}</a>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+  {{ if .Site.Params.Github }}
+  <div class="menu-bottom global-box">
+    <a href="{{ .Site.Params.Github }}" class="textbox centered" target="_blank">Contribute on GitHub</a>
+  </div>
+  {{ end }}
+  <div class="menu-bottom description-box">
+    Website by <a href="{{ .Site.Params.Authorlink }}" class="selector" target="_blank">{{ .Site.Params.Author }}</a>
+  </div>
+</div>

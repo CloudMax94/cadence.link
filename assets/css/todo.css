@@ -1,0 +1,659 @@
+/*****************************************************************
+* This stylesheet is based on another website I made:            *
+* https://coh-boards.deku.link/                                  *
+*                                                                *
+* Need to clean up unused CSS, rename classes to make sense, and *
+* abstract things into their own files.                          *
+*****************************************************************/
+
+* {
+  box-sizing: border-box;
+  image-rendering: pixelated;
+  font-smooth: never;
+
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+a {
+  color: #50b0ff;
+  text-decoration: none;
+  &:hover,
+  &:active,
+  &:focus {
+    color: #4090E0;
+  }
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0 0 0.5em;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 1.5em 0 0.5em;
+}
+
+h3 {
+  font-size: 15px;
+  margin: 1.5em 0 0.75em;
+}
+
+img {
+  max-width: 100%;
+}
+
+body, input, textarea, select {
+  font-family: 'Love Bug';
+  font-weight: 400;
+  color: #5d5d5d;
+  font-size: 14px;
+  line-height: 1.75em;
+  text-shadow: 1px 1px 0 #000,
+               2px 2px 0 #000;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  color: #fff;
+}
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+.svg-collection {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+.screen-reader {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.selector {
+  position: relative;
+  outline: none;
+}
+
+.selector:before,
+.textbox:before,
+.dropdown:before,
+.textbox-child:before,
+.settings-choices label:before {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  border: 8px solid transparent;
+  border-image: url('/img/layout/selector.png') 8 / 8px;
+
+  pointer-events: none;
+}
+
+.selector:before,
+.settings-choices label:before,
+.leaderboard-title-part .dropdown:before {
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+}
+
+.textbox:before,
+.dropdown:before {
+  top: -8px;
+  left: -8px;
+  bottom: -8px;
+  right: -8px;
+}
+
+.rules:before {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.selector:focus:before,
+.textbox:focus:before,
+.dropdown:focus:before,
+.textbox-child:focus:before,
+.settings-choices label:focus:before {
+  content: '';
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+
+  flex: 0 0 310px; /* 276 + (16 + 1) * 2 */
+
+  background: #505050;
+  height: 100%;
+
+  overflow: hidden;
+
+  * {
+    user-select: none;
+  }
+}
+
+.menu-top {
+  flex: 1 1 0;
+  height: 0;
+  min-height: 0;
+}
+
+.menu-bottom {
+  flex: 0 0 auto;
+  text-align: center;
+  padding: 8px;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.menu-container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  padding: 16px;
+  text-align: center;
+}
+
+.menu-title {
+  position: relative;
+  margin-bottom: 8px;
+  font-size: 16px;
+
+  &:before,
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    margin-top: -3px;
+    vertical-align: middle;
+  }
+  &:before {
+    background: url('/img/layout/titleleft.png') center no-repeat;
+    margin-right: 8px;
+  }
+  &:after {
+    background: url('/img/layout/titleright.png') center no-repeat;
+    margin-left: 8px;
+  }
+}
+
+.logo {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.menu-footer {
+  margin-top: auto;
+}
+
+.textbox {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 auto;
+
+  padding: 0 8px;
+  margin-bottom: 8px;
+
+  outline: none;
+  border: 8px solid transparent;
+  border-image: url('/img/layout/textbox.png') 8 / 8px;
+  background: #3b3b3b;
+
+  color: inherit !important;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.textbox-child {
+  position: relative;
+
+  display: block;
+
+  margin: 0 -14px;
+  padding: 4px 12px;
+
+  color: inherit !important;
+  text-decoration: none;
+  outline: none;
+}
+
+.centered {
+  justify-content: center;
+}
+
+.selected {
+  color: yellow !important;
+}
+
+.disabled {
+  color: #a0a0a0 !important;
+  cursor: default;
+}
+
+.hamburger {
+  display: none;
+
+  position: fixed;
+  z-index: 3;
+  top: 16px;
+  left: 16px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  justify-content: center;
+
+  div {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -8px;
+    width: 16px;
+    height: 2px;
+    background: currentColor;
+    box-shadow: 2px 2px 0 0 #000;
+
+    &:nth-child(2) {
+      margin-top: -6px;
+    }
+
+    &:nth-child(3) {
+      margin-top: 4px;
+    }
+  }
+}
+
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .hamburger {
+    display: block;
+  }
+
+  #menu-toggle:checked + .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 632px) { /* 310px + 2px + 320px */
+  .menu {
+    flex: 0 0 100%;
+  }
+  #menu-toggle:not(:checked) ~ .leaderboard {
+    display: none;
+  }
+}
+
+.leaderboard {
+  flex: 1 1 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.leaderboard-top {
+  flex: 1 1 0;
+  height: 0;
+  min-height: 0;
+
+  background: #888 center / cover;
+}
+
+.leaderboard-bottom {
+  flex: 0 0 auto;
+  text-align: center;
+  padding: 8px;
+
+  background: #505050;
+}
+
+.leaderboard-container {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+
+  overflow: auto;
+
+  font-size: 13px;
+  line-height: 1.2;
+
+  background: rgba(79, 79, 79, .98); // Instead of #505050 to allow a background image
+}
+
+.leaderboard-title {
+  /*
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 60px;
+
+  background: #505050;
+  line-height: 1;
+  */
+  padding-right: 48px;
+}
+@media (max-width: 960px) {
+  .leaderboard-title {
+    padding-left: 48px;
+  }
+}
+
+.leaderboard-title-part {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+
+  &:before {
+    content: '/';
+  }
+
+  &:first-child:before {
+    display: none;
+  }
+
+  h1 {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+  }
+
+  .dropdown-wrap,
+  .dropdown {
+    display: inline;
+  }
+
+  .dropdown-content {
+    position: fixed;
+    // top: 50px;
+    // margin-top: 0;
+    // left: 50vw;
+    // margin-left: -150px;
+    width: 300px;
+    max-height: calc(100vh - 60px - 44px - 4px);
+    font-size: 14px;
+    line-height: 1.5em;
+
+    top: initial;
+    left: 0;
+    margin-top: 4px;
+    margin-left: 16px;
+  }
+}
+
+#menu-toggle ~ .leaderboard .leaderboard-title-part .dropdown-content {
+  // left: calc(50vw + 310px / 2);
+  left: 310px;
+}
+
+@media (max-width: 960px) {
+  #menu-toggle:checked ~ .leaderboard .leaderboard-title-part .dropdown-content {
+    // left: 50vw;
+    left: 0;
+  }
+
+  #menu-toggle:not(:checked) ~ .leaderboard .leaderboard-title-part .dropdown-content {
+    // left: calc(50vw + 310px / 2);
+    left: 310px;
+  }
+}
+
+.dropdown-wrap {
+  position: relative;
+}
+
+.dropdown {
+  position: relative;
+  outline: none;
+
+  &:focus > .dropdown-content {
+    display: flex;
+  }
+  // Separated selector for stupid browsers without :focus-within suport
+  &:focus-within > .dropdown-content {
+    display: flex;
+  }
+  &:focus + .dropdown-closer {
+    display: block;
+  }
+  // Separated selector for stupid browsers without :focus-within suport
+  &:focus-within + .dropdown-closer {
+    display: block;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 30;
+  top: 100%;
+  left: -8px;
+  right: -8px;
+  margin-top: 8px;
+  padding: 0;
+
+  cursor: default;
+
+  &:before {
+    content: '';
+
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    border: 8px solid transparent;
+    border-image: url('/img/layout/textbox.png') 8 / 8px;
+    padding: 4px 8px;
+    background: #3b3b3b;
+  }
+}
+
+.dropdown-fixed,
+.dropdown-scroll {
+  width: 100%;
+  margin: 2px;
+  padding: 10px 14px;
+}
+.dropdown-fixed {
+  width: max-content;
+}
+
+.dropdown-scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.dropdown-closer {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.settings-wrap {
+  position: fixed;
+  z-index: 20;
+  top: 16px;
+  right: 16px;
+}
+
+.settings {
+  width: 32px;
+  height: 32px;
+
+  border: 8px solid transparent;
+  border-image: url('/img/layout/textbox.png') 8 / 8px;
+  background: #3b3b3b;
+
+  cursor: pointer;
+
+  &:after {
+    content: '';
+
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+
+    background: url('/img/layout/options.png') center no-repeat;
+  }
+
+  & > .dropdown-content {
+    left: auto;
+    max-width: calc(100vw - 32px);
+  }
+
+  label {
+    position: relative;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.settings-choices {
+  margin: -4px;
+  width: max-content;
+  max-width: calc(100% + 8px);
+
+  label {
+    margin: 4px;
+  }
+}
+
+.rules {
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+
+  margin: -8px;
+  padding: 8px;
+
+  strong {
+    position: relative;
+    font-weight: inherit;
+
+    &:before,
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 16px;
+      vertical-align: middle;
+    }
+
+    &:before {
+      background: url('/img/layout/titleleft.png') center no-repeat;
+      margin-right: 8px;
+    }
+
+    &:after {
+      background: url('/img/layout/titleright.png') center no-repeat;
+      margin-left: 8px;
+    }
+  }
+
+  .dropdown-content {
+    width: 100%;
+    max-height: calc(100vh - 60px - 44px);
+
+    left: 0;
+    right: 0;
+    top: initial;
+    bottom: 100%;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+.global-box,
+.description-box {
+  position: relative;
+  &:before,
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border: 8px solid transparent;
+  }
+}
+.global-box:before {
+  border-image: url('/img/layout/globalbox.png') 8 / 8px;
+}
+.description-box:before {
+  border-image: url('/img/layout/descriptionbox.png') 8 / 8px;
+}
+
+.toc-3 {
+  padding-left: 28px;
+}
+.toc-4 {
+  padding-left: 44px;
+}

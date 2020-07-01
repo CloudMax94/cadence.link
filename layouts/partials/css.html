@@ -1,0 +1,7 @@
+<style>
+  :root {
+    /* variables we'll want to pass on to the css eventually, if any */
+  }
+</style>
+{{ $style := resources.Get "/css/style.css" | resources.PostCSS }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">

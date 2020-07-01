@@ -1,0 +1,26 @@
+<!-- ignore empty links with + -->
+{{ $headers := findRE "<h[1-6].*?>(.|\n])+?</h[1-6]>" .Content }}
+<!-- at least one header to link to -->
+{{ $has_headers := ge (len $headers) 1 }}
+<!-- a post can explicitly disable Table of Contents with toc: false -->
+{{ $show_toc := true }} <!-- (eq $.Params.toc true) -->
+{{ if and $has_headers $show_toc }}
+<div class="settings-wrap">
+  <div class="settings dropdown" tabindex="0"><div class="dropdown-content"><div class="dropdown-fixed">
+  {{ range $headers }}
+    {{ $header := . }}
+    {{ range first 1 (findRE "<h[1-6]" $header 1) }}
+      {{ range findRE "[1-6]" . 1 }}
+        {{ $base := ($.Page.File.LogicalName) }}
+        {{ $anchorId := ($header | plainify | htmlUnescape | anchorize) }}
+        {{ $href := delimit (slice $base $anchorId) "#" | string }}
+        <a href="{{ relref $.Page $href }}" class="textbox-child toc-item toc-{{ . }}">
+          {{ $header | plainify | htmlUnescape }}
+        </a>
+      {{end}}
+    {{end}}
+  {{ end }}
+  </div></div></div>
+  <div class="dropdown-closer"></div>
+</div>
+{{ end }}

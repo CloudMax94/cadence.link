@@ -1,0 +1,9 @@
+<div class="item">
+  {{ $.Scratch.Set "link" .RelPermalink }}
+  {{ with .Params.link }} {{ $.Scratch.Set "link" . }} {{ end }}
+
+  {{ with .Description }} {{ $.Scratch.Set "subheader" . }} {{ end }}
+
+  <h4><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a></h4>
+  <h5>{{ $.Scratch.Get "subheader" }}</h5>
+</div>

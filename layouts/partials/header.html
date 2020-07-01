@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }}</title>
+    {{ if .Description }}
+      <meta name="description" content="{{ .Description }}">
+    {{ else if .IsPage }}
+      <meta name="description" content="{{ .Summary | plainify }}">
+    {{ end }}
+    {{ if .Site.Params.favicon }}
+      <link rel="icon" href="{{ .Site.Params.favicon | absURL }}">
+    {{ end }}
+    {{ partial "css" . }} {{ partial "js" . }}
+    {{ with .OutputFormats.Get "RSS" }}
+      <link href="{{ .RelPermalink }}" rel="alternate" type="{{ .MediaType.Type }}" title="{{ $.Site.Title }}" />
+      <link href="{{ .RelPermalink }}" rel="feed" type="{{ .MediaType.Type }}" title="{{ $.Site.Title }}" />
+    {{ end }}
+  </head>
+  <body>
+    {{ partial "sidebar" . }}
+    <div class="leaderboard">
+      <div class="leaderboard-top global-box" style="{{ if isset .Params "background" }}background-image: url({{ .Params.background }}){{ end }}">
+        <div class="leaderboard-container">

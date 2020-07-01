@@ -1,0 +1,37 @@
+@media print {
+  .menu,
+  .hamburger,
+  .leaderboard-bottom,
+  .settings-wrap {
+    display: none;
+  }
+  * {
+    color: #000;
+  }
+  h1, h2, h3, h4, h5, h6,
+  .leaderboard-title-part,
+  .leaderboard-title-part label {
+    text-shadow: none !important;
+  }
+  body {
+    display: block;
+  }
+  body,
+  html {
+    height: auto;
+    overflow: auto;
+  }
+  .leaderboard-title {
+    padding: 0 !important;
+  }
+  .leaderboard {
+    display: block;
+    background: transparent;
+  }
+  .leaderboard-top {
+    height: auto;
+  }
+  .twitter-tweet-rendered {
+    display: none !important;
+  }
+}

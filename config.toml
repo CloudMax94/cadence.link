@@ -1,0 +1,33 @@
+baseURL = "https://cadence.link/"
+languageCode = "en-us"
+title = "cadence.link"
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+  author = "CloudMax"
+  authorlink = "https://twitter.com/CloudMax94/"
+  github = "https://github.com/CloudMax94/cadence.link"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true
+      unsafe = true
+
+[menu]
+  [[menu.other]]
+    name = "Discord"
+    url = "https://discord.gg/VtdN3PZ"
+    weight = 1
+  [[menu.other]]
+    name = "CoNDOR"
+    url = "https://condor.live/"
+    weight = 2
+  [[menu.other]]
+    name = "SRC Leaderboards"
+    url = "https://coh-boards.deku.link/"
+    weight = 3
+  [[menu.other]]
+    name = "Skips and Strats Sheet"
+    url = "https://deku.link/cohstrats"
+    weight = 4

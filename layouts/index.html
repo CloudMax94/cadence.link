@@ -1,0 +1,11 @@
+{{ partial "header" . }}
+
+<header>
+  <h1>{{ .Site.Title }}</h1>
+</header>
+
+<main>
+  {{ with .Content }} {{ . }} {{ end }}
+</main>
+
+{{ partial "footer" . }}

@@ -1,0 +1,33 @@
+{{ partial "header" . }}
+
+<header class="leaderboard-title">
+  {{ if .Parent }}
+  <div class="leaderboard-title-part">
+    {{ .Parent.Title }}
+  </div>
+  {{ end }}
+  <div class="leaderboard-title-part">
+    <div class="dropdown-wrap"><div class="dropdown" tabindex="0"><h1>{{ .Title }}</h1><div class="dropdown-content"><div class="dropdown-scroll">
+      {{ if .Site.Menus.main }}
+        {{ $currentPage := . }}
+        {{ range sort .Site.Menus.main }}
+          {{ if (and (.HasChildren) ($currentPage.HasMenuCurrent "main" .)) }}
+            {{ range .Children }}
+              <a href="{{ .URL }}" class="textbox-child{{ if $currentPage.IsMenuCurrent "main" . }} selected{{ end }}">
+                {{ .Name }}
+              </a>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div></div></div><div class="dropdown-closer"></div></div>
+  </div>
+</header>
+
+{{ partial "toc" . }}
+
+<main>
+  {{ .Content }}
+</main>
+
+{{ partial "footer" . }}
