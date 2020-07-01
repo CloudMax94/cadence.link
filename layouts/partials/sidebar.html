@@ -13,19 +13,11 @@
         {{ $currentPage := . }}
         {{ range sort .Site.Menus.main }}
           {{ if .HasChildren }}
-            <div class="dropdown-wrap">
-              <div class="textbox miscellaneous centered dropdown" tabindex="0">
-                <span class="{{ if $currentPage.HasMenuCurrent "main" . }}selected{{ end }}">{{ .Name }}</span>
-                <div class="dropdown-content"><div class="dropdown-scroll">
-                  {{ range .Children }}
-                    <a href="{{ .URL }}" class="textbox-child{{ if $currentPage.IsMenuCurrent "main" . }} selected{{ end }}">
-                      {{ .Name }}
-                    </a>
-                  {{ end }}
-                </div></div>
-              </div>
-              <div class="dropdown-closer"></div>
-            </div>
+            {{ partial "dropdown/open" (dict "label" .Name "selected" ($currentPage.HasMenuCurrent "main" .) "button" true) }}
+              {{ range .Children }}
+                {{ partial "dropdown/item" (dict "url" .URL "label" .Name "selected" ($currentPage.IsMenuCurrent "main" .)) }}
+              {{ end }}
+            {{ partial "dropdown/close" }}
           {{ else }}
             <a href="{{ .URL }}" class="textbox centered{{ if $currentPage.IsMenuCurrent "main" . }} selected{{ end }}">{{ .Name }}</a>
           {{ end }}

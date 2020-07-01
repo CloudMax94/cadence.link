@@ -7,20 +7,18 @@
   </div>
   {{ end }}
   <div class="leaderboard-title-part">
-    <div class="dropdown-wrap"><div class="dropdown" tabindex="0"><h1>{{ .Title }}</h1><div class="dropdown-content"><div class="dropdown-scroll">
-      {{ if .Site.Menus.main }}
-        {{ $currentPage := . }}
-        {{ range sort .Site.Menus.main }}
-          {{ if (and (.HasChildren) ($currentPage.HasMenuCurrent "main" .)) }}
+    {{ if .Site.Menus.main }}
+      {{ $currentPage := . }}
+      {{ range sort .Site.Menus.main }}
+        {{ if $currentPage.HasMenuCurrent "main" . }}
+          {{ partial "dropdown/open" (dict "label" (print "<h1>" $currentPage.Title "</h1>")) }}
             {{ range .Children }}
-              <a href="{{ .URL }}" class="textbox-child{{ if $currentPage.IsMenuCurrent "main" . }} selected{{ end }}">
-                {{ .Name }}
-              </a>
+              {{ partial "dropdown/item" (dict "url" .URL "label" .Name "selected" ($currentPage.IsMenuCurrent "main" .)) }}
             {{ end }}
-          {{ end }}
+          {{ partial "dropdown/close" }}
         {{ end }}
       {{ end }}
-    </div></div></div><div class="dropdown-closer"></div></div>
+    {{ end }}
   </div>
 </header>
 

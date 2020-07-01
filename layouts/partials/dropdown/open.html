@@ -1,0 +1,9 @@
+<div class="dropdown-wrap{{ if .class }} {{ .class }}{{ end }}">
+  <div class="dropdown{{ if .button }} textbox centered{{ end }}" tabindex="0">
+    {{ if .label }}
+      {{ if .selected }}<span class="selected">{{ end }}
+      {{ .label | safeHTML }}
+      {{ if .selected }}</span>{{ end }}
+    {{ end }}
+    <div class="dropdown-content">
+      <div class="dropdown-scroll">
