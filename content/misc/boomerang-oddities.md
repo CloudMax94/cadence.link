@@ -1,4 +1,3 @@
-
 ---
 title: "Boomerang Oddities"
 menu:

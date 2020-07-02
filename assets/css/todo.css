@@ -590,6 +590,8 @@ body {
   margin: -8px;
   padding: 8px;
 
+  font-size: 12px;
+
   strong {
     position: relative;
     font-weight: inherit;
@@ -626,8 +628,12 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
 
-    font-size: 14px;
     line-height: 1.5;
+    white-space: auto;
+  }
+
+  .commit-hash {
+    word-wrap: break-word;
   }
 }
 

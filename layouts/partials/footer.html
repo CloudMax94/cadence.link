@@ -1,14 +1,21 @@
         </div>
       </div>
-      {{/*
+      {{ if .GitInfo }}
       <div class="leaderboard-bottom description-box">
         <div class="rules dropdown" tabindex="0">
-          Something something
-          <div class="dropdown-content"><div class="dropdown-scroll">Hi there.</div></div>
+          {{ $giturl := .Site.Params.Github }}
+          {{ with .GitInfo }}
+            Page was last updated: {{ .AuthorDate.Format "January 2, 2006" }}
+            <div class="dropdown-content"><div class="dropdown-scroll">
+              <div>Commit: <a class="commit-hash" href="{{ $giturl }}/commit/{{ .Hash }}" target="_blank">{{ .Hash }}</a></div>
+              <div>Timestamp: {{ .AuthorDate.UTC.Format "2006-01-02 15:04:05" }} UTC</div>
+              <div>Subject: {{ .Subject }}</div>
+            </div></div>
+          {{ end }}
         </div>
         <div class="dropdown-closer"></div>
       </div>
-      */}}
+      {{ end }}
     </div>
   </body>
 </html>
