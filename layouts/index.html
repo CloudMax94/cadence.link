@@ -9,7 +9,7 @@
 
   <h2>Recent Edits</h2>
   {{ $byLastMod :=  .Site.RegularPages.ByLastmod  }}
-  {{ $recent := ($byLastMod | last 10) }}
+  {{ $recent := ($byLastMod | last 10).Reverse }}
   <div class="table-box">
     <table>
       <thead>
