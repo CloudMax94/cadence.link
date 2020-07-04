@@ -6,6 +6,34 @@
 
 <main>
   {{ with .Content }} {{ . }} {{ end }}
+
+  <h2>Recent Edits</h2>
+  {{ $byLastMod :=  .Site.RegularPages.ByLastmod  }}
+  {{ $recent := ($byLastMod | last 10) }}
+  <div class="table-box">
+    <table>
+      <thead>
+        <tr>
+          <th align="left">Page</th>
+          <th align="left">Category</th>
+          <th align="left">Updated</th>
+        </tr>
+      </thead>
+      <tbody>
+      {{ range $recent }}
+        <tr>
+          <td><a href="{{ .Permalink }}">{{ .Title  }}</a></td>
+          <td>
+          {{ if .Parent }}
+            {{ .Parent.Title }}
+          {{ end }}
+          </td>
+          <td>{{ .Lastmod.UTC.Format "2006-01-02 15:04" }}</td>
+        </tr>
+      {{ end }}
+      </tbody>
+    </table>
+  </div>
 </main>
 
 {{ partial "footer" . }}
