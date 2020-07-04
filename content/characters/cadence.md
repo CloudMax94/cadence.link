@@ -32,10 +32,10 @@ Cadence receives an upgradable shield instead of an {{< igt "[i:button_r]" >}} a
 {{< item shield_small >}}
 
 **Location: 2nd Cadence Cave**
-{{< item shovel_strike >}}
+{{< item ability_shovel_strike >}}
 
 **Location: 3rd Cadence Cave**
-{{< item shield_tech >}}
+{{< item ability_shield_tech >}}
 
 ## Items
 
@@ -44,4 +44,4 @@ The Telescope can be found in a red chest behind some dirt in Links house.
 
 The shield can be upgraded twice. The upgrades can be found inside of purple chests.
 {{< item shield_large >}}
-{{< item mirror_shield >}}
+{{< item shield_mirror >}}

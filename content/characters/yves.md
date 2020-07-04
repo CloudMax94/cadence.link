@@ -27,10 +27,10 @@ Yves cannot use any weapons and instead bonk enemies, dealing 1 damage.
 ## Abilities
 
 **Location: Starting area**
-{{< item burrow >}}
+{{< item ability_burrow >}}
 
 **Location: 2nd Cadence Cave**
-{{< item deku_spit >}}
+{{< item ability_deku_spit >}}
 
 ## Items
 

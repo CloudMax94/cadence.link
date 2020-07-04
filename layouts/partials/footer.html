@@ -9,7 +9,6 @@
             <div class="dropdown-content"><div class="dropdown-scroll">
               <div>Commit: <a class="commit-hash" href="{{ $giturl }}/commit/{{ .Hash }}" target="_blank">{{ .Hash }}</a></div>
               <div>Timestamp: {{ .AuthorDate.UTC.Format "2006-01-02 15:04:05" }} UTC</div>
-              <div>Subject: {{ .Subject }}</div>
             </div></div>
           {{ end }}
         </div>

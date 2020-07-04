@@ -32,10 +32,10 @@ Octavo starts with Golden Lute and cannot use any other weapons.
 ## Abilities
 
 **Location: 1st Cadence Cave**
-{{< item haste >}}
+{{< item ability_haste >}}
 
 **Location: 2nd Cadence Cave**
-{{< item fireball >}}
+{{< item ability_fireball >}}
 
 **Location: 4th Cadence Cave**
 {{< item octavos_charm >}}
@@ -43,4 +43,3 @@ Octavo starts with Golden Lute and cannot use any other weapons.
 ## Items
 
 The Golden Lute is also an inventory item, replacing the regular Lute.
-{{< item lute_golden >}}

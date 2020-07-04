@@ -21,13 +21,13 @@ Zeldas unique weapon type is **rapier**.
 ## Abilities
 
 **Location: Starting area**
-{{< item nayrus_love >}}
+{{< item ability_nayrus_love >}}
 
 **Location: 2nd Cadence Cave**
-{{< item dins_fire >}}
+{{< item ability_dins_fire >}}
 
 **Location: 3rd Cadence Cave**
-{{< item shield_tech >}}
+{{< item ability_shield_tech >}}
 
 ## Items
 
