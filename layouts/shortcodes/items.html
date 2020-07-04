@@ -1,0 +1,13 @@
+<table class="item-table">
+{{ range $id, $item := .Site.Data.items }}
+  {{ if eq $id "_" }}
+    {{/* We skip the _ comment key at the start of the data file. */}}
+  {{ else if $item.ability }}
+    {{/* We skip abilities. */}}
+  {{ else }}
+    <tr>
+      <td>{{ partial "ingame-text.html" $item.inventory | safeHTML }}</td>
+    </tr>
+  {{ end }}
+{{ end }}
+</table>

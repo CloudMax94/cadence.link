@@ -1,0 +1,12 @@
+.item-table {
+  width: 100%;
+  max-width: 550px;
+
+  &, tr, td {
+    border: 1px solid #fff;
+  }
+  td {
+    padding: 8px;
+    background: rgba(0,0,0,0.25);
+  }
+}

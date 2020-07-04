@@ -1,0 +1,20 @@
+{{/* Convert input text (context) into HTML and return it */}}
+
+{{ $txt := . }}
+
+{{/* Replace newline tag */}}
+{{ $txt := replace $txt "[n]" "<br>"}}
+
+{{/* Wrap the entire text inside a color tag */}}
+{{ $txt := print "<span class='ingame-text-color-n'>" $txt "</span>" }}
+{{/* Close the previous color tag and open a new one */}}
+{{ $txt := replaceRE "\\[c\\:([^\\]])\\]" "</span><span class='ingame-text-color-$1'>" $txt}}
+{{/* [/c] is the same as [c:n] */}}
+{{ $txt := replace $txt "[/c]" "</span><span class='ingame-text-color-n'>"}}
+{{/* Strip empty color tags */}}
+{{ $txt := replaceRE "<span class='ingame-text-color-.'></span>" "" $txt }}
+
+{{/* Replace image tags */}}
+{{ $txt := replaceRE "\\[i\\:([^\\]]+)\\]" "<span class='ingame-text-image ingame-text-image-$1'>$1</span> " $txt}}
+
+{{ return $txt }}

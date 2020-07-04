@@ -1,0 +1,135 @@
+// We've not looked up the exact colors used ingame, this is just a rough estimate.
+.ingame-text-color-n { // Normal
+  color: #ffffff;
+}
+.ingame-text-color-s { // Selected
+  color: #ffff00;
+}
+.ingame-text-color-r { // Red
+  color: #ff0000;
+}
+.ingame-text-color-b { // Blue
+  color: #00b0ff;
+}
+.ingame-text-color-g { // Green
+  color: #00ff00;
+}
+
+.ingame-text-image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  background-position: 0px 0px;
+  font-size: 0px;
+  color: transparent;
+}
+
+// Information below was obtained from the games text_images.xml file.
+// We do not currently support subimages or item names.
+
+.ingame-text-image-link {
+  background: url(/img/text/face_link.png);
+  width: 14px; height: 13px;
+}
+
+.ingame-text-image-zelda {
+  background: url(/img/text/face_zelda.png);
+  width: 14px; height: 14px;
+}
+
+.ingame-text-image-cadence {
+  background: url(/img/text/face_cadence.png);
+  width: 16px; height: 15px;
+}
+
+.ingame-text-image-yves {
+  background: url(/img/text/UI_TextHead_Scrub.png);
+  width: 16px; height: 16px;
+}
+
+.ingame-text-image-octavo {
+  background: url(/img/text/UI_TextHead_Octavo.png);
+  width: 14px; height: 14px;
+}
+
+.ingame-text-image-aria {
+  background: url(/img/text/UI_TextHead_Aria.png);
+  width: 14px; height: 14px;
+}
+
+.ingame-text-image-frederick {
+  background: url(/img/text/UI_TextHead_Frederick.png);
+  width: 14px; height: 14px;
+}
+
+.ingame-text-image-impa {
+  background: url(/img/text/UI_TextHead_Impa.png);
+  width: 17px; height: 14px;
+}
+
+.ingame-text-image-shadowlink {
+  background: url(/img/text/face_link_227.png);
+  width: 14px; height: 13px;
+}
+
+.ingame-text-image-shadowzelda {
+  background: url(/img/text/face_zelda_229.png);
+  width: 14px; height: 14px;
+}
+
+$button_list: (
+  button_a,
+  button_b,
+  button_x,
+  button_y,
+  button_right,
+  button_down,
+  button_left,
+  button_up,
+  button_face_right,
+  button_face_down,
+  button_face_left,
+  button_face_up,
+  button_left_stick,
+  button_left_stick_press,
+  button_right_stick,
+  button_right_stick_press,
+  button_plus,
+  button_minus,
+  button_l,
+  button_zl,
+  button_sl,
+  button_r,
+  button_zr,
+  button_sr,
+  button_stick_right,
+  button_stick_down,
+  button_stick_left,
+  button_stick_up,
+  button_stick
+);
+@each $btn $i in $button_list {
+  .ingame-text-image-real_$btn,
+  .ingame-text-image-$btn {
+    background: url(/img/text/UI_Text_Buttons.png);
+    background-position: calc(-12px * $i) 0px;
+    width: 12px; height: 12px;
+  }
+}
+
+.ingame-text-image-button_l3,
+.ingame-text-image-gear {
+  width: 20px; height: 21px;
+  background: url(/img/text/item_gear.png);
+}
+
+.ingame-text-image-deku_seed {
+  background: url(/img/text/item_dekunut.png);
+  width: 17px; height: 17px;
+}
+
+.ingame-text-image-rupee {
+  background: url(/img/text/UI_Text_Rupee.png);
+  width: 12px; height: 12px;
+}

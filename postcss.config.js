@@ -4,7 +4,7 @@ module.exports = {
     require('postcss-import')({
       path: __dirname + '/assets/css',
      }),
-    require('postcss-nested'),
+    require('precss')(),
     require('autoprefixer'),
     require('cssnano')({ reduceIdents: false })
   ]

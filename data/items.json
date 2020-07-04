@@ -1,0 +1,587 @@
+{
+  "_": "This file was generated from the games localization.xml file and should usually not be edited manually.",
+  "spin_attack": {
+    "inventory": "[c:s]Spin Attack[/c] [i:link][n]Hold [i:button_l] and then release to deal damage to enemies adjacent to [c:b]Link[/c], at the cost of stamina."
+  },
+  "downstab": {
+    "inventory": "[c:s]Down Thrust[/c][n]Allows you to drop on enemies from ledges and jump to adjacent spaces."
+  },
+  "dins_fire": {
+    "inventory": "[c:s]Din's Fire[/c] [i:zelda][n]Press [i:button_l] to create a fireball. Use it again to detonate the fireball, dealing damage to adjacent squares, at the cost of stamina."
+  },
+  "nayrus_love": {
+    "inventory": "[c:s]Nayru's Love[/c] [i:zelda][n]Use with [i:button_r] to reflect or block projectiles and damage depending on your timing, at the cost of stamina."
+  },
+  "sheild_tech": {
+    "inventory": "[c:s]Shield Technique[/c][n]Allows [c:b]Link[/c] to attack enemies while using [i:button_r] to hold up his shield, at the cost of stamina."
+  },
+  "bomb": {
+    "inventory": "[c:s]Bomb[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Place a bomb in front of you. Deals damage to adjacent spaces. Can be kicked or thrown."
+  },
+  "bombchu": {
+    "inventory": "[c:s]Bombchu[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]It moves in a straight line and explodes after seven beats or if it makes contact with something."
+  },
+  "boomerang": {
+    "inventory": "[c:s]Boomerang[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Throw this at enemies to stun them. It always finds its way back to you."
+  },
+  "bow": {
+    "inventory": "[c:s]Bow[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Hold the button down and release on the following beat to fire an arrow that can hit enemies from a distance."
+  },
+  "glockenspiel": {
+    "inventory": "[c:b]Glockenspiel[/c] [n]You got this after defeating the Gleeokenspiel, within the Temple of Storms. It resonates with power..."
+  },
+  "bass_guitar": {
+    "inventory": "[c:b]Bass Guitar[/c] [n]You got this after defeating the Guitarmos Knights, deep in the Gerudo Ruins. It resonates with power..."
+  },
+  "maracas": {
+    "inventory": "[c:b]Maracas[/c] [n]You got these after defeating the Gohmaracas, deep in the [c:b]Lost Swamp[/c]. They resonate with power..."
+  },
+  "oboe": {
+    "inventory": "[c:b]Oboe[/c] [n]You got this after defeating the Wizzroboe, under [c:b]Lake Hylia[/c] in the Frozen Grotto. It resonates with power..."
+  },
+  "charm_chest": {
+    "inventory": "[c:s]Treasure Charm[/c] [n]Reveals which areas in the world contain chests and Pieces of Heart you haven't found yet."
+  },
+  "charm_boss": {
+    "inventory": "[c:s]Skull Charm[/c] [n]Reveals which areas in the world contain minibosses you have yet to defeat."
+  },
+  "charm_stairs": {
+    "inventory": "[c:s]Cave Charm[/c] [n]Reveals which areas in the world contain caves you have yet to explore."
+  },
+  "charm_warp": {
+    "inventory": "[c:s]Warp Charm[/c] [n]Reveals which areas in the world contain Sheikah Stones you haven't activated."
+  },
+  "telescope": {
+    "inventory": "[c:s]Telescope[/c] [n]This increases the exploration range in your overworld map, revealing more adjacent screens for you to see."
+  },
+  "gear": {
+    "inventory": "[c:s]Gear[/c] [n]If you give 3 of these to the Gerudo in the Gerudo Ruins, she'll be able to fix the bridge."
+  },
+  "pegasus_boots": {
+    "inventory": "[c:s]Pegasus Anklet[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Hold then release the assigned button after one or two beats to leap forward, at the cost of stamina."
+  },
+  "leaping_boots": {
+    "inventory": "[c:s]Boots of Leaping[/c] [n]These boots let you jump 2 full spaces with every move. Press [i:button_left_stick_press] to toggle them on and off."
+  },
+  "speed_boots": {
+    "inventory": "[c:s]Boots of Speed[/c] [n]These boots let you move faster than the beat!"
+  },
+  "iron_boots": {
+    "inventory": "[c:s]Iron Boots[/c] [n]Move easily through shallow water and prevent knockback, wind effects, and slipping on ice."
+  },
+  "glass_slippers": {
+    "inventory": "[c:s]Glass Slippers[/c] [n]These are very fragile but let you avoid damage or penalties from hazardous floor tiles. They also give +1 damage."
+  },
+  "flippers": {
+    "inventory": "[c:s]Zora's Flippers[/c] [n]These allow you to move through deeper water, so that you can explore [c:b]Lake Hylia[/c]."
+  },
+  "greaves": {
+    "inventory": "[c:s]Greaves[/c] [n]These boots increase your defense, reducing the damage you take on every hit by 0.5."
+  },
+  "scuba_mask": {
+    "inventory": "[c:s]Snorkel[/c] [n]This lets you dive with the flippers, using [i:button_a], [i:button_b], [i:button_x], or [i:button_y], or move through a single deep-water tile without them."
+  },
+  "deku_seed": {
+    "inventory": "[c:s]Deku Seed[/c] [n]Collect as many of these as you can. Someone might be interested in them!"
+  },
+  "hookshot": {
+    "inventory": "[c:s]Hookshot[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Use it to pull yourself to certain objects or stun and knock back enemies."
+  },
+  "fire_rod": {
+    "inventory": "[c:s]Fire Rod[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]This will launch a ball of fire dealing [c:r]1 damage[/c] in the direction you're facing, at the cost of stamina."
+  },
+  "ice_rod": {
+    "inventory": "[c:s]Ice Rod[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]This will launch a ball of ice dealing [c:r]1 damage[/c] in the direction you're facing, at the cost of stamina."
+  },
+  "fishing_rod": {
+    "inventory": "[c:s]Fishing Rod[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Use this to find fish you can keep in [c:s]empty bottles[/c]."
+  },
+  "rito_feather": {
+    "inventory": "[c:s]Rito Feather[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Use this to jump into the air and avoid enemy attacks, at the cost of stamina."
+  },
+  "deku_leaf": {
+    "inventory": "[c:s]Deku Leaf[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Use this to launch a gust of wind ahead of you that knocks back enemies and objects, at the cost of stamina."
+  },
+  "cane": {
+    "inventory": "[c:s]Cane of Somaria[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Use this to magically create a block in front of you, at the cost of stamina."
+  },
+  "bottle": {
+    "inventory": "[c:s]Bottle[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Store things in this for later use."
+  },
+  "potion_health": {
+    "inventory": "[c:s]Health Potion[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]This will [c:g]completely heal you[/c] if you use it or run out of hearts."
+  },
+  "potion_stamina": {
+    "inventory": "[c:s]Stamina Potion[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]This will [c:g]refill your stamina meter[/c] if you use it or run out."
+  },
+  "fairy": {
+    "inventory": "[c:s]Fairy[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]This will heal [c:g]8 hearts[/c] if you use it or run out of hearts."
+  },
+  "bee": {
+    "inventory": "[c:s]Bee[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Use this to release a bee to attack your enemies!"
+  },
+  "fish_golden": {
+    "inventory": "[c:s]Golden Fish[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Use this to [c:g]completely heal you[/c] and refill your stamina."
+  },
+  "fish_big": {
+    "inventory": "[c:s]Big Fish[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Use this to [c:g]heal 5 hearts[/c] and some stamina."
+  },
+  "fish": {
+    "inventory": "[c:s]Fish[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Use this to [c:g]heal 1 heart[/c]."
+  },
+  "tingle_rod": {
+    "inventory": "[c:s]Tingle's Dowser[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Helps you through the [c:b]Lost Woods[/c] or to find treasures."
+  },
+  "lute": {
+    "inventory": "[c:s]Lute[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Use to immediately travel to activated Sheikah Stones around Hyrule."
+  },
+  "power_glove": {
+    "inventory": "[c:s]Power Glove[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Use this to pick up rocks and crates, and then use it again to throw them 3 spaces away."
+  },
+  "ring_courage": {
+    "inventory": "[c:s]Ring of Courage[/c] [n]Dash into an enemy's space when you defeat them, preventing damage to yourself."
+  },
+  "ring_charisma": {
+    "inventory": "[c:s]Ring of Charisma[/c] [n]Reduces the cost of items for sale in shops around Hyrule."
+  },
+  "ring_regeneration": {
+    "inventory": "[c:s]Ring of Health[/c] [n]Heals [c:g]half a heart[/c] after you've defeated 5 enemies."
+  },
+  "ring_piercing": {
+    "inventory": "[c:s]Ring of Piercing[/c] [n]Weapons can pierce through shields."
+  },
+  "ring_protection": {
+    "inventory": "[c:s]Ring of Protection[/c] [n]Reduces all damage done to you by half a heart."
+  },
+  "ring_shielding": {
+    "inventory": "[c:s]Nayru's Ring[/c] [n]Reflects damage done to you from any enemy. One use only."
+  },
+  "scroll_confuse": {
+    "inventory": "[c:s]Scroll of Confusion[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Confuses nearby enemies when it's used. One use only."
+  },
+  "scroll_freeze_enemies": {
+    "inventory": "[c:s]Scroll of Freezing[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Freezes nearby enemies when it's used. One use only."
+  },
+  "scroll_need": {
+    "inventory": "[c:s]Scroll of Need[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Gives you what you need most. One use only."
+  },
+  "scroll_pause": {
+    "inventory": "[c:s]Scroll of Haste[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Briefly unlocks your movements from the beat. One use only."
+  },
+  "scroll_electricity": {
+    "inventory": "[c:s]Scroll of Electricity[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Temporarily gives your attacks an electric effect. One use only."
+  },
+  "scroll_rage": {
+    "inventory": "[c:s]Scroll of Enchant Weapon[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Temporarily increases your damage dealt by 1. One use only."
+  },
+  "shield_small": {
+    "inventory": "[c:s]Small Shield[/c] [i:link][i:cadence][n]Blocks damage when you hold it up, at the cost of stamina."
+  },
+  "shield_large": {
+    "inventory": "[c:s]Tower Shield[/c] [i:link][i:cadence][n]Blocks damage when you hold it up, at the cost of stamina. Lets you move through gusts of wind."
+  },
+  "shovel_basic": {
+    "inventory": "[c:s]Shovel[/c] [n]Allows you to dig through walls. It's fragile and not that special."
+  },
+  "shovel_battle": {
+    "inventory": "[c:s]Battle Shovel[/c] [n]Allows you to dig through walls, giving +2 damage on your next move."
+  },
+  "shovel_courage": {
+    "inventory": "[c:s]Shovel of Courage[/c] [n]Allows you to dig through walls. You dash forward into the space you just dug."
+  },
+  "shovel_glass": {
+    "inventory": "[c:s]Glass Shovel[/c] [n]Very fragile, you lose it when you take damage. Digs through surprisingly tough walls."
+  },
+  "torch": {
+    "inventory": "[c:s]Torch[/c] [n]Increases visibility in dark areas. Can burn stumps and light up braziers."
+  },
+  "torch_obsidian": {
+    "inventory": "[c:s]Obsidian Torch[/c] [n]Provides more visibility depending on your beat combo. Can burn stumps and light up braziers."
+  },
+  "torch_battle": {
+    "inventory": "[c:s]Battle Torch[/c] [n]Returns [c:r]1 damage[/c] to enemies that hit you. Can burn stumps and light up braziers."
+  },
+  "torch_glass": {
+    "inventory": "[c:s]Glass Torch[/c] [n]Provides amazing light and reveals the location of enemies and NPCs. Destroyed when you take damage. Can burn stumps and light up braziers."
+  },
+  "weapon_dagger": {
+    "inventory": "[c:s]Dagger[/c] [i:zelda][i:cadence][n]Deals [c:r]1 damage[/c] to a single enemy in front of you.",
+    "type": "weapon"
+  },
+  "weapon_dagger_titanium": {
+    "inventory": "[c:s]Titanium Dagger[/c] [i:zelda][i:cadence][n]Deals [c:r]2 damage[/c] to a single enemy in front of you.",
+    "type": "weapon"
+  },
+  "weapon_dagger_obsidian": {
+    "inventory": "[c:s]Obsidian Dagger[/c] [i:zelda][i:cadence][n]Deals up to [c:r]3 damage[/c] depending on your beat combo to a single enemy in front of you.",
+    "type": "weapon"
+  },
+  "weapon_dagger_emerald": {
+    "inventory": "[c:s]Emerald Dagger[/c] [i:zelda][i:cadence][n]Deals [c:r]1 damage[/c] and [c:g]poisons[/c] a single enemy in front of you.",
+    "type": "weapon"
+  },
+  "weapon_dagger_unique": {
+    "inventory": "[c:s]Jeweled Dagger[/c] [i:zelda][i:cadence][n]Deals [c:r]4 damage[/c] to a single enemy in front of you.",
+    "type": "weapon"
+  },
+  "weapon_shortsword": {
+    "inventory": "[c:s]Short Sword[/c] [i:link][n]Deals [c:r]1 damage[/c] to a single enemy in front of you.",
+    "type": "weapon"
+  },
+  "weapon_shortsword_titanium": {
+    "inventory": "[c:s]Titanium Short Sword[/c] [i:link][n]Deals [c:r]2 damage[/c] to a single enemy in front of you.",
+    "type": "weapon"
+  },
+  "weapon_shortsword_obsidian": {
+    "inventory": "[c:s]Obsidian Short Sword[/c] [i:link][n]Deals up to [c:r]3 damage[/c] depending on your beat combo to a single enemy in front of you.",
+    "type": "weapon"
+  },
+  "weapon_shortsword_emerald": {
+    "inventory": "[c:s]Emerald Short Sword[/c] [i:link][n]Deals [c:r]1 damage[/c] and [c:g]poisons[/c] a single enemy in front of you.",
+    "type": "weapon"
+  },
+  "weapon_shortsword_unique": {
+    "inventory": "[c:s]Kokiri Sword[/c] [i:link][n]A legendary weapon. Deals [c:r]4 damage[/c] to a single enemy in front of you.",
+    "type": "weapon"
+  },
+  "weapon_broadsword": {
+    "inventory": "[c:s]Broadsword[/c] [n]Deals [c:r]1 damage[/c] to 3 adjacent enemies ahead of you.",
+    "type": "weapon"
+  },
+  "weapon_broadsword_titanium": {
+    "inventory": "[c:s]Titanium Broadsword[/c] [n]Deals [c:r]2 damage[/c] to 3 adjacent enemies ahead of you.",
+    "type": "weapon"
+  },
+  "weapon_broadsword_obsidian": {
+    "inventory": "[c:s]Obsidian Broadsword[/c] [n]Deals up to [c:r]3 damage[/c] depending on your beat combo to three adjacent enemies ahead of you.",
+    "type": "weapon"
+  },
+  "weapon_broadsword_emerald": {
+    "inventory": "[c:s]Emerald Broadsword[/c] [n]Deals [c:r]1 damage[/c] and [c:g]poisons[/c] 3 adjacent enemies ahead of you.",
+    "type": "weapon"
+  },
+  "weapon_broadsword_unique": {
+    "inventory": "[c:s]Fragarach[/c][n]A legendary weapon. Deals [c:r]2 damage[/c] to 3 adjacent enemies ahead of you and pierces shields.",
+    "type": "weapon"
+  },
+  "weapon_spear": {
+    "inventory": "[c:s]Spear[/c] [n]Has 2 range and deals [c:r]1 damage[/c].",
+    "type": "weapon"
+  },
+  "weapon_spear_titanium": {
+    "inventory": "[c:s]Titanium Spear[/c] [n]Has 2 range and deals [c:r]2 damage[/c].",
+    "type": "weapon"
+  },
+  "weapon_spear_obsidian": {
+    "inventory": "[c:s]Obsidian Spear[/c] [n]Has 2 range and deals up to [c:r]3 damage[/c] based on your beat combo.",
+    "type": "weapon"
+  },
+  "weapon_spear_emerald": {
+    "inventory": "[c:s]Emerald Spear[/c] [n]Has 2 range and deals [c:r]1 damage[/c]. Also [c:g]poisons[/c] the target.",
+    "type": "weapon"
+  },
+  "weapon_spear_unique": {
+    "inventory": "[c:s]Impa's Naginata[/c] [n]Has 2 range and deals [c:r]1 damage[/c]. Also [c:g]poisons[/c] the target. [c:g]Heals half a heart[/c] after you defeat 5 enemies.",
+    "type": "weapon"
+  },
+  "weapon_flail": {
+    "inventory": "[c:s]Flail[/c] [n]Deals [c:r]1 damage[/c] to a single enemy in a wide range, moving you forward.",
+    "type": "weapon"
+  },
+  "weapon_flail_titanium": {
+    "inventory": "[c:s]Titanium Flail[/c] [n]Deals [c:r]2 damage[/c] to a single enemy in a wide range, moving you forward.",
+    "type": "weapon"
+  },
+  "weapon_flail_obsidian": {
+    "inventory": "[c:s]Obsidian Flail[/c] [n]Deals up to [c:r]3 damage[/c] based on your beat combo to a single enemy in a wide range, moving you forward.",
+    "type": "weapon"
+  },
+  "weapon_flail_emerald": {
+    "inventory": "[c:s]Emerald Flail[/c] [n]Deals [c:r]1 damage[/c] and [c:g]poisons[/c] a single enemy in a wide range, moving you forward.",
+    "type": "weapon"
+  },
+  "weapon_flail_unique": {
+    "inventory": "[c:s]Hylian Flail[/c] [n]Deals [c:r]2 damage[/c], with extra knockback, to a single enemy in a wide range, moving you forward.",
+    "type": "weapon"
+  },
+  "weapon_rapier": {
+    "inventory": "[c:s]Rapier[/c] [i:zelda][n]Deals [c:r]2 damage[/c] ([c:r]1[/c] if adjacent to an enemy) and lunges you forward 1.",
+    "type": "weapon"
+  },
+  "weapon_rapier_titanium": {
+    "inventory": "[c:s]Titanium Rapier[/c] [i:zelda][n]Deals [c:r]3 damage[/c] ([c:r]2[/c] if adjacent to an enemy) and lunges you forward 1.",
+    "type": "weapon"
+  },
+  "weapon_rapier_obsidian": {
+    "inventory": "[c:s]Obsidian Rapier[/c] [i:zelda][n]Deals up to [c:r]4 damage[/c] depending on your beat combo (up to [c:r]3[/c] if adjacent to an enemy) and lunges you forward 1.",
+    "type": "weapon"
+  },
+  "weapon_rapier_emerald": {
+    "inventory": "[c:s]Emerald Rapier[/c] [i:zelda][n]Deals [c:r]2 damage[/c] ([c:r]1[/c] if adjacent to an enemy), [c:g]poisons[/c], and lunges you forward 1.",
+    "type": "weapon"
+  },
+  "weapon_rapier_unique": {
+    "inventory": "[c:s]Royal Rapier[/c] [i:zelda][n]Legendary weapon. Deals [c:r]3 damage[/c] ([c:r]2[/c] if adjacent to an enemy) and lunges you forward 1, knocking back foes at the cost of stamina.",
+    "type": "weapon"
+  },
+  "weapon_longsword": {
+    "inventory": "[c:s]Long Sword[/c] [i:link][n]Deals [c:r]1 damage[/c] with 2 range, but prevents shield use. Hold out with [i:button_r] and swing with [i:button_left_stick].",
+    "type": "weapon"
+  },
+  "weapon_longsword_titanium": {
+    "inventory": "[c:s]Titanium Long Sword[/c] [i:link][n]Deals [c:r]2 damage[/c] with 2 range, but prevents shield use. Hold out with [i:button_r] and swing with [i:button_left_stick].",
+    "type": "weapon"
+  },
+  "weapon_longsword_obsidian": {
+    "inventory": "[c:s]Obsidian Long Sword[/c] [i:link][n]Deals up to [c:r]3 damage[/c] based on beat combo with 2 range, but prevents shield use. Hold out with [i:button_r] and swing with [i:button_left_stick].",
+    "type": "weapon"
+  },
+  "weapon_longsword_emerald": {
+    "inventory": "[c:s]Emerald Long Sword[/c] [i:link][n]Deals [c:r]1 damage[/c] and [c:g]poisons[/c] with 2 range, but prevents shield use. Hold out with [i:button_r] and swing with [i:button_left_stick].",
+    "type": "weapon"
+  },
+  "weapon_longsword_unique": {
+    "inventory": "[c:s]Caladbolg[/c] [i:link][n]Deals [c:r]3 damage[/c] with 2 range, but prevents shield use. Hold out with [i:button_r] and swing with [i:button_left_stick].",
+    "type": "weapon"
+  },
+  "weapon_greatshovel": {
+    "inventory": "[c:s]Greatshovel[/c] [i:cadence][n]Deals [c:r]1 damage[/c] to three adjacent enemies ahead of you and digs.",
+    "type": "weapon"
+  },
+  "weapon_greatshovel_titanium": {
+    "inventory": "[c:s]Titanium Greatshovel[/c] [i:cadence][n]Deals [c:r]2 damage[/c] to 3 adjacent enemies ahead of you and digs.",
+    "type": "weapon"
+  },
+  "weapon_greatshovel_obsidian": {
+    "inventory": "[c:s]Obsidian Greatshovel[/c] [i:cadence][n]Deals up to [c:r]3 damage[/c] (depending on your beat combo) to 3 adjacent enemies ahead of you and digs.",
+    "type": "weapon"
+  },
+  "weapon_greatshovel_emerald": {
+    "inventory": "[c:s]Emerald Greatshovel[/c] [i:cadence][n]Deals [c:r]1 damage[/c] and [c:g]poisons[/c] 3 adjacent enemies ahead of you and digs.",
+    "type": "weapon"
+  },
+  "weapon_greatshovel_unique": {
+    "inventory": "[c:s]Eli's Greatshovel[/c] [i:cadence][n]Deals [c:r]2 damage[/c] to 3 adjacent enemies ahead of you, plus 1 damage for each dig.",
+    "type": "weapon"
+  },
+  "weapon_golden_lute": {
+    "inventory": "[c:s]Golden Lute[/c] [n]The legendary Golden Lute can damage enemies adjacent to you while you move. Deals more damage to beings of pure evil.",
+    "type": "weapon"
+  },
+  "misc_heart_piece": {
+    "inventory": "[c:r]Pieces of Heart[/c] [n]Collect four Pieces of Heart to gain a new Heart Container, increasing your maximum health!"
+  },
+  "weapon_dagger_blood": {
+    "inventory": "[c:s]Ruby Dagger[/c] [i:zelda][i:cadence][n]Deals [c:r]1 damage[/c] to a single enemy in front of you, and [c:g]heals half a heart[/c] after defeating 5 enemies.",
+    "type": "weapon"
+  },
+  "weapon_shortsword_blood": {
+    "inventory": "[c:s]Ruby Short Sword[/c] [i:link][n]Deals [c:r]1 damage[/c] to a single enemy in front of you, and [c:g]heals half a heart[/c] after defeating 5 enemies.",
+    "type": "weapon"
+  },
+  "weapon_broadsword_blood": {
+    "inventory": "[c:s]Ruby Broadsword[/c] [n]Deals [c:r]1 damage[/c] to three adjacent enemies ahead of you, and [c:g]heals half a heart[/c] after defeating 5 enemies.",
+    "type": "weapon"
+  },
+  "weapon_spear_blood": {
+    "inventory": "[c:s]Ruby Spear[/c] [n]Has 2 range and deals [c:r]1 damage[/c], and [c:g]heals half a heart[/c] after defeating 5 enemies.",
+    "type": "weapon"
+  },
+  "weapon_flail_blood": {
+    "inventory": "[c:s]Ruby Flail[/c] [n]Deals [c:r]1 damage[/c] to a single enemy in a wide range ahead of you, moving you forward, and [c:g]heals half a heart[/c] after defeating 5 enemies.",
+    "type": "weapon"
+  },
+  "weapon_rapier_blood": {
+    "inventory": "[c:s]Ruby Rapier[/c] [i:zelda][n]Deals [c:r]2 damage[/c] and lunges you forward 1 or [c:r]1 damage[/c] if adjacent, and [c:g]heals half a heart[/c] after defeating 5 enemies.",
+    "type": "weapon"
+  },
+  "weapon_longsword_blood": {
+    "inventory": "[c:s]Ruby Long Sword[/c] [i:link][n]Deals [c:r]1 damage[/c] with 2 range, but prevents shield use. Hold out with [i:button_r] and swing with [i:button_left_stick]. [c:g]Heals half a heart[/c] after defeating 5 enemies.",
+    "type": "weapon"
+  },
+  "weapon_greatshovel_blood": {
+    "inventory": "[c:s]Ruby Greatshovel[/c] [i:cadence][n]Deals [c:r]1 damage[/c] to three adjacent enemies ahead of you and digs. [c:g]Heals half a heart[/c] after defeating 5 enemies.",
+    "type": "weapon"
+  },
+  "antifairy": {
+    "inventory": "[c:s]Bomb Fairy[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]It will travel in a straight line when released and explode on contact!"
+  },
+  "kakariko_potion": {
+    "inventory": "[c:s]Hibiscus Potion[/c][n]This can be used to awaken a certain sleeping person..."
+  },
+  "strength_boots": {
+    "inventory": "[c:s]Boots of Power[/c] [n]Increases damage dealt by 1."
+  },
+  "ring_blasting": {
+    "inventory": "[c:s]Ring of Blasting[/c] [n]Makes you immune to all explosive damage, and makes your bombs explode immediately."
+  },
+  "ring_risk": {
+    "inventory": "[c:s]Ring of Risk[/c] [n]Doubles damage dealt when at 1 or fewer hearts remaining."
+  },
+  "ring_glass": {
+    "inventory": "[c:s]Glass Ring of Preservation[/c] [n]Very fragile but prevents all other equipment from losing durability while equipped."
+  },
+  "torch_reflection": {
+    "inventory": "[c:s]Torch of Reflection[/c] [n]Reflects all projectiles, at the cost of some durability. Can burn stumps and light up braziers."
+  },
+  "torch_truesight": {
+    "inventory": "[c:s]Torch of Wisdom[/c] [n]Reveals all items, even ones inside chests and other objects. Can burn stumps and light up braziers."
+  },
+  "shovel_stamina": {
+    "inventory": "[c:s]Shovel of Stamina[/c] [n]Allows you to dig through walls, regaining stamina as you dig."
+  },
+  "shovel_auto": {
+    "inventory": "[c:s]Auto-shovel[/c] [n]Allows you to dig through walls by moving adjacent to them."
+  },
+  "shield_tech": {
+    "inventory": "[c:s]Shield Technique[/c][n]Allows [c:b]Link[/c] or [c:b]Cadence[/c] to attack while holding shield. Allows [c:b]Zelda[/c] to hold [c:s]Nayru's Love[/c] over multiple beats."
+  },
+  "goron_locket": {
+    "inventory": "[c:s]Goron Locket[/c][n]Makes the wearer immune to damage from lava and hot coals."
+  },
+  "mirror_shield": {
+    "inventory": "[c:s]Mirror Shield[/c] [i:link][i:cadence][n]Blocks damage when you hold it up, at the cost of stamina. Can reflect most projectiles."
+  },
+  "wooden_shield": {
+    "inventory": "[c:s]Wooden Shield[/c] [i:link][i:cadence][n]Blocks damage when you hold it up, at the cost of stamina. Has limited durability."
+  },
+  "magic_boomerang": {
+    "inventory": "[c:s]Magic Boomerang[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Throw this at enemies to stun or damage them. It always finds its way back to you."
+  },
+  "titans_mitt": {
+    "inventory": "[c:s]Titan's Mitt[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Use this to pick up objects or enemies. Use again to throw them 3 spaces away."
+  },
+  "great_bow": {
+    "inventory": "[c:s]Great Bow[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Hold the button down and release on the following beat to fire an arrow that can hit and pierce enemies from a distance."
+  },
+  "longshot": {
+    "inventory": "[c:s]Longshot[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Use it to pull yourself to certain objects or stun and knock back enemies."
+  },
+  "weapon_dagger_wood": {
+    "inventory": "[c:s]Wooden Dagger[/c] [i:zelda][i:cadence][n]Deals [c:r]1 damage[/c] to a single enemy in front of you. Has limited durability.",
+    "type": "weapon"
+  },
+  "weapon_shortsword_wood": {
+    "inventory": "[c:s]Wooden Short Sword[/c] [i:link][n]Deals [c:r]1 damage[/c] to a single enemy in front of you. Has limited durability.",
+    "type": "weapon"
+  },
+  "weapon_broadsword_wood": {
+    "inventory": "[c:s]Wooden Broadsword[/c] [n]Deals [c:r]1 damage[/c] to 3 adjacent enemies ahead of you. Has limited durability.",
+    "type": "weapon"
+  },
+  "weapon_spear_wood": {
+    "inventory": "[c:s]Wooden Spear[/c] [n]Has 2 range and deals [c:r]1 damage[/c]. Has limited durability.",
+    "type": "weapon"
+  },
+  "weapon_flail_wood": {
+    "inventory": "[c:s]Wooden Flail[/c] [n]Deals [c:r]1 damage[/c] to a single enemy in a wide range ahead of you, moving you forward. Has limited durability.",
+    "type": "weapon"
+  },
+  "weapon_rapier_wood": {
+    "inventory": "[c:s]Wooden Rapier[/c] [i:zelda][n]Deals [c:r]2 damage[/c] and lunges you forward 1 or [c:r]1 damage[/c] if adjacent. Has limited durability.",
+    "type": "weapon"
+  },
+  "weapon_longsword_wood": {
+    "inventory": "[c:s]Wooden Long Sword[/c] [i:link][n]Deals [c:r]1 damage[/c] with 2 range, but prevents shield use. Hold out with [i:button_r] and swing with [i:button_left_stick]. Has limited durability.",
+    "type": "weapon"
+  },
+  "weapon_greatshovel_wood": {
+    "inventory": "[c:s]Wooden Greatshovel[/c] [i:cadence][n]Deals [c:r]1 damage[/c] to 3 adjacent enemies ahead of you and digs. Has limited durability.",
+    "type": "weapon"
+  },
+  "weapon_dagger_glass": {
+    "inventory": "[c:s]Glass Dagger[/c] [i:zelda][i:cadence][n]Deals [c:r]3 damage[/c] to a single enemy in front of you. Breaks if you get hit.",
+    "type": "weapon"
+  },
+  "weapon_shortsword_glass": {
+    "inventory": "[c:s]Glass Short Sword[/c] [i:link][n]Deals [c:r]3 damage[/c] to a single enemy in front of you. Breaks if you get hit.",
+    "type": "weapon"
+  },
+  "weapon_broadsword_glass": {
+    "inventory": "[c:s]Glass Broadsword[/c] [n]Deals [c:r]3 damage[/c] to three adjacent enemies ahead of you. Breaks if you get hit.",
+    "type": "weapon"
+  },
+  "weapon_spear_glass": {
+    "inventory": "[c:s]Glass Spear[/c] [n]Has 2 range and deals [c:r]3 damage[/c]. Breaks if you get hit.",
+    "type": "weapon"
+  },
+  "weapon_flail_glass": {
+    "inventory": "[c:s]Glass Flail[/c] [n]Deals [c:r]3 damage[/c] to a single enemy in a wide range ahead of you, moving you forward. Breaks if you get hit.",
+    "type": "weapon"
+  },
+  "weapon_rapier_glass": {
+    "inventory": "[c:s]Glass Rapier[/c] [i:zelda][n]Deals [c:r]4 damage[/c] and lunges you forward 1. [c:r]3 damage[/c] if adjacent. Breaks if you get hit.",
+    "type": "weapon"
+  },
+  "weapon_longsword_glass": {
+    "inventory": "[c:s]Glass Long Sword[/c] [i:link][n]Deals [c:r]3 damage[/c] with 2 range, but prevents shield use. Hold out with [i:button_r] and swing with [i:button_left_stick]. Breaks if you get hit.",
+    "type": "weapon"
+  },
+  "weapon_greatshovel_glass": {
+    "inventory": "[c:s]Glass Greatshovel[/c] [i:cadence][n]Deals [c:r]3 damage[/c] to three adjacent enemies ahead of you and digs. Breaks if you get hit.",
+    "type": "weapon"
+  },
+  "hover_boots": {
+    "inventory": "[c:s]Hover Boots[/c] [n]Allows you to float across gaps."
+  },
+  "shovel_strike": {
+    "inventory": "[c:s]Shovel Strike[/c] [i:cadence][n]Press [i:button_l] to unleash a shovel attack, stunning enemies for [c:r]1 damage[/c] and digging walls in a 3x2 area in front of you, at the cost of stamina."
+  },
+  "burrow": {
+    "inventory": "[c:s]Burrow[/c] [i:yves][n]Press [i:button_r] to burrow underground, becoming immune to all damage."
+  },
+  "deku_spit": {
+    "inventory": "[c:s]Deku Spit[/c] [i:yves][n]Press [i:button_l] to shoot a deku seed projectile straight ahead."
+  },
+  "war_drum": {
+    "inventory": "[c:s]War Drum[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Use this to skip a beat and power up your attacks on the following beat!"
+  },
+  "fire_arrows": {
+    "inventory": "[c:s]Fire Arrows[/c][n]Imbues your arrows with a fire effect, at the cost of stamina."
+  },
+  "ice_arrows": {
+    "inventory": "[c:s]Ice Arrows[/c][n]Imbues your arrows with an ice effect, at the cost of stamina."
+  },
+  "lightning_arrows": {
+    "inventory": "[c:s]Lightning Arrows[/c][n]Imbues your arrows with a lightning effect, at the cost of stamina."
+  },
+  "poison_arrows": {
+    "inventory": "[c:s]Poison Arrows[/c][n]Imbues your arrows with a poison effect, at the cost of stamina."
+  },
+  "scroll_enchant_armor": {
+    "inventory": "[c:s]Scroll of Enchant Armor[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Temporarily increases your armor rating by .5. One use only."
+  },
+  "monocle": {
+    "inventory": "[c:s]Monocle[/c] [n]Reveals all items, even ones inside chests and other objects. Also allows you to see invisible objects and enemies!"
+  },
+  "fireball": {
+    "inventory": "[c:s]Fireball[/c] [n]Launches three magic fireballs in the direction you are facing."
+  },
+  "haste": {
+    "inventory": "[c:s]Haste[/c] [n]Allows [c:b]Octavo[/c] to move without following the beat for a short time."
+  },
+  "octavos_charm": {
+    "inventory": "[c:s]Octavo's Locket[/c] [n]Gives immunity to wind and electrical damage. A prized heirloom, this locket was passed down through Octavo's family for generations."
+  },
+  "lute_golden": {
+    "inventory": "[c:s]Golden Lute[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Octavo's golden lute can also be used to travel immediately to activated Sheikah Stones around Hyrule."
+  },
+  "rupee": {
+    "inventory": "[c:s]Rupee Toss[/c] [n]Press [i:button_l] to toss a blue rupee in a straight line, dealing damage and piercing through enemies. Costs [c:s]5 rupees[/c] to use."
+  },
+  "vocal": {
+    "inventory": "[c:s]Vocal Blast[/c] [n]Press [i:button_r] to emit a burst of song, knocking back and confusing all adjacent enemies."
+  },
+  "naginata": {
+    "inventory": "[c:s]Naginata Charge[/c] [n]Press [i:button_l] to lunge forward one space, hitting enemies in a straight line up to 3 spaces ahead."
+  },
+  "shadow_dins_fire": {
+    "inventory": "[c:s]Shadow Din's Fire[/c] [n] [i:shadowzelda][n]Press [i:button_l] to create a fireball. Use it again to detonate the fireball, dealing damage to adjacent squares, at the cost of stamina."
+  },
+  "shadow_nayrus_love": {
+    "inventory": "[c:s]Shadow Nayru's Love[/c] [i:shadowzelda] [n]Use with [i:button_r] to reflect projectiles and damage depending on your timing, at the cost of stamina."
+  },
+  "shadow_spin_attack": {
+    "inventory": "[c:s]Shadow Spin Attack[/c] [i:shadowlink] [n] Hold [i:button_l] to draw enemies closer and then release to deal damage to enemies adjacent to [c:b]Shadow Link[/c], at the cost of stamina."
+  }
+}

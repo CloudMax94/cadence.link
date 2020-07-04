@@ -1,0 +1,2 @@
+{{ $text := (index .Params 0) }}
+{{ partial "ingame-text.html" $text | safeHTML }}
