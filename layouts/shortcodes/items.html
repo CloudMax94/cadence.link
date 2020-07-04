@@ -3,6 +3,8 @@
 {{ range $id, $item := .Site.Data.items }}
   {{ if eq $id "_" }}
     {{/* We skip the _ comment key at the start of the data file. */}}
+  {{ else if not $item.inventory }}
+    {{/* We skip items that don't have an inventory text. */}}
   {{ else if and ($slot) (ne $item.slot $slot) }}
     {{/* Slot parameter was specified and does not match item */}}
   {{ else }}
