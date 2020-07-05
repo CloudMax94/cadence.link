@@ -1,0 +1,16 @@
+{{ $align := false }}
+{{ if (eq .align "center") }}
+  {{ $align = "0 auto" }}
+{{ else if (eq .align "right") }}
+  {{ $align = "0 0 0 auto" }}
+{{ end }}
+{{ $media := resources.GetMatch .src }}
+{{ if $media }}
+<div class="media-wrap" style="max-width: {{ $media.Width }}px{{ if $align }}; margin: {{ $align }}{{ end }}">
+  <div class="media-sizer" style="padding-bottom: {{ div (div (mul $media.Height 10000) $media.Width) 100.0 }}%">
+    <img src="{{ $media.Permalink }}"{{ if .alt }} alt="{{ .alt }}"{{ end }}{{ if .title }} title="{{ .title }}"{{ end }}/>
+  </div>
+</div>
+{{ else }}
+  <div><strong>Missing asset: {{ .src }}</strong></div>
+{{ end }}

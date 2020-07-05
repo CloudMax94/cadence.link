@@ -1,0 +1,6 @@
+{{/* Shortcode wrapper for the img partial */}}
+{{- $src   := .Get "src"   | default (.Get 0) -}}
+{{- $alt   := .Get "alt"   | default (.Get 1) -}}
+{{- $align := .Get "align" | default "" -}}
+{{- $title := .Get "title" | default "" -}}
+{{ partial "img.html" (dict "src" $src "alt" $alt "align" $align "title" $title) }}

@@ -7,7 +7,9 @@
 <div class="menu">
   <div class="menu-top global-box">
     <div class="menu-container">
-      <div class="logo"><img src="/img/logo.png" /></div>
+      <div class="logo">
+        {{ partial "img" (dict "src" "/img/logo.png" "align" "center" "alt" "cadence.link logo") }}
+      </div>
       <div class="menu-title">Content</div>
       {{ if .Site.Menus.main }}
         {{ $currentPage := . }}

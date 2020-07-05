@@ -3,10 +3,10 @@
 @import "todo.css";
 
 @import "shortcodes/twitter.css";
-@import "shortcodes/yt.css";
 @import "shortcodes/item.css";
 @import "shortcodes/items.css";
 @import "shortcodes/poi.css";
+@import "media.css";
 @import "content.css";
 @import "ingame-text.css";
 @import "scrollbar.css";
