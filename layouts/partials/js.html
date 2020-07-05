@@ -1,2 +1,2 @@
-<!-- main -->
-<script src="{{ "/js/main.js" | absURL }}"></script>
+{{ $script := resources.Get "/js/script.js" | resources.Minify | fingerprint }}
+<script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
