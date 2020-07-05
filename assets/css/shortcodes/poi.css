@@ -7,9 +7,12 @@
 .poi-container {
   max-width: 100%;
   display: inline-block;
-  @extend .description-box;
-  padding: 3px 8px;
+  padding: 1px;
   background: #000;
+
+  border: 8px double #fff;
+  border-width: calc(3px - 1px) calc(8px - 1px); // Negate padding
+  border-image: url(/img/layout/descriptionbox.png) 8/8px;
 }
 .poi-scroll {
   overflow: auto;

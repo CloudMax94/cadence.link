@@ -24,6 +24,15 @@ main {
 .table-box table {
   @extend .description-box;
 
+  $vertical-padding: 6px; // Vertical padding within cells
+  $horizontal-padding: 8px; // Horizontal padding within cells
+
+  $vertical-graphic: 3px; // Vertical thickness of the box graphic
+  $horizontal-graphic: 8px; // Horizontal thickness of the box graphic
+
+  $table-border: 2px; // Border around the table
+  $cell-border: 1px; // Border width between cells
+
   th {
     font-family: 'Love Bug';
     font-weight: 400;
@@ -47,36 +56,42 @@ main {
   &, tr, td, th {
     border: 0;
   }
-  td {
-    border-top: 1px solid #fff;
+  tr {
+    border: 0 solid #fff;
+    border-width: $cell-border $table-border 0;
   }
   td + td,
   th + th {
-    border-left: 1px solid #fff;
+    border-left: $cell-border solid #fff;
   }
 
   // Paddings
 
   td, th {
-    padding: 6px 8px;
+    padding: $vertical-padding $horizontal-padding;
     // account for the box border
     &:first-child {
-      padding-left: 16px;
+      padding-left: calc($horizontal-padding + $horizontal-graphic - $table-border);
     }
     &:last-child {
-      padding-right: 16px;
+      padding-right: calc($horizontal-padding + $horizontal-graphic - $table-border);
     }
   }
   // account for the box border
-  th {
-    padding-top: 8px;
+  thead,
+  tbody:first-child {
+    tr:first-child {
+      border-top-width: $table-border;
+    }
   }
+  thead tr:first-child th,
   tbody:first-child tr:first-child td {
-    // If there is no thead, remove border from first row and account for the box border
-    border-top: 0;
-    padding-top: 8px;
+    padding-top: calc($vertical-padding + $vertical-graphic - $table-border);
   }
-  tbody tr:last-child td {
-    padding-bottom: 8px;
+  tbody tr:last-child {
+    border-bottom-width: $table-border;
+    td {
+      padding-bottom: calc($vertical-padding + $vertical-graphic - $table-border);
+    }
   }
 }
