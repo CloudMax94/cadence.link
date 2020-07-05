@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/cloudmax94/cadence.link/master/static/img/logo.png" alt="cadence.link" width="268">
+<img src="https://raw.githubusercontent.com/cloudmax94/cadence.link/master/assets/img/logo.png" alt="cadence.link" width="268">
 
 Documentation site for Cadence of Hyrule, with focus on going fast.
 
