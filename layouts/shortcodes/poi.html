@@ -1,0 +1,9 @@
+{{- $poi := .Get "poi" | default (.Get 0) -}}
+{{ $img := print "/img/pois/" $poi ".png" }}
+<div class="poi">
+  <div class="poi-container">
+    <div class="poi-scroll">
+      <img draggable="false" src="{{ $img }}" alt="Render of {{ $poi }}">
+    </div>
+  </div>
+</div>

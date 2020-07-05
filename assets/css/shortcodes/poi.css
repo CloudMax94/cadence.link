@@ -1,0 +1,18 @@
+.poi {
+  img {
+    display: block;
+    max-width: none;
+  }
+}
+.poi-container {
+  max-width: 100%;
+  display: inline-block;
+  @extend .description-box;
+  padding: 3px 8px;
+  background: #000;
+}
+.poi-scroll {
+  overflow: auto;
+  max-height: 80vh;
+  user-select: none;
+}

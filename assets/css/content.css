@@ -3,6 +3,9 @@ main {
   text-shadow: none;
   font-size: 15px;
 
+  position: relative;
+  z-index: 0;
+
   h1,
   h2,
   h3,
