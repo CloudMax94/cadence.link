@@ -18,7 +18,7 @@ The most common method of lighting the Brazier is to use an explosive.
 You can use glove to throw a bomb, or place a chu to have it blow up next to the brazier.
 
 You can also light the brazier with a torch, as long as you can reach it. (Hookshot, Cane, Hover Boots)
-It can also be lit using fire arrows or fire rod.
+It can also be lit using fire items/spells.
 
 ## Early Boss Key
 
