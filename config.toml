@@ -8,6 +8,7 @@ enableGitInfo = true
   author = "CloudMax"
   authorlink = "https://twitter.com/CloudMax94/"
   github = "https://github.com/CloudMax94/cadence.link"
+  favicon = "/favicon.ico"
 
 [frontmatter]
   lastmod = [":git"]
