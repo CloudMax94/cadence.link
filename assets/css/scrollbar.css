@@ -28,3 +28,8 @@
 ::-webkit-scrollbar-corner {
   background: var(--scroll-background);
 }
+
+// Firefox
+* {
+  scrollbar-color: var(--scroll-color) var(--scroll-background);
+}
