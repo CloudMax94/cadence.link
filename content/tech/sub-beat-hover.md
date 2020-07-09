@@ -14,7 +14,7 @@ When playing with beat you can run in the air for the duration of a single beat 
 
 {{< tweet 1207761777309544448 >}}
 
-In co-op (with beat) it’s possible to run in the air indefinitely with the use of Co-op Time Stop to prevent the game from ever progressing to the next beat.
+In co-op (with beat) it’s possible to run in the air indefinitely with the use of [Co-op Time Stop](/tech/co-op-time-stop/) to prevent the game from ever progressing to the next beat.
 As a result the fall logic never kicks in. Even without time stop you’re able to cross 1 tile gaps with two well timed inputs.
 
 {{< tweet 1208390289561284615 >}}
