@@ -46,4 +46,4 @@ Instead the entities are infinitely high, and projectiles (hookshot included) ar
 
 You can hookshot pivot by... **TODO: make a page/section for the 1.1 co-op pivot..**
 
-In version 1.0.0 and 1.0.1 you can use co-op pivot (**TODO: Make a co-op pivot page or section somewhere...?**) to easily pivot in any direction, even diagonals.
+In version 1.0.0 and 1.0.1 you can use [co-op pivot](/tech/co-op-pivot/) to easily pivot in any direction, even diagonals.
