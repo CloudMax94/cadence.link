@@ -20,7 +20,7 @@ You have to active [bounce cancel](/tech/bounce-cancel/) first.
 {{< yt wMe7FN-WZL8 >}} _See video description for detailed information._
 
 ### Wrong Warp (co-op)
-**Exclusive to version 1.1.0 and 1.1.1.**
+**Exclusive to version 1.1.**
 
 Requires that you have access to the Sheikah Stone on Zelda's Balcony.
 Not available in permadeath as it requires getting a game over.

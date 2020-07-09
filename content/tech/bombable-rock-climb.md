@@ -7,7 +7,7 @@ menu:
 ---
 
 After throwing a bombable rock you’re able to climb up on it as it is breaking.
-Because the fall logic no longer run constantly in version 1.1.0 and 1.1.1, that means that you won’t actually fall down once the rock destruction animation completes, staying in mid-air.
+Because the fall logic no longer run constantly in version 1.1, that means that you won’t actually fall down once the rock destruction animation completes, staying in mid-air.
 This allows you to pick up a bombable rock, throw it onto the tile in front of you, and use it as a stepping stone to climb up ledges.
 
 {{< tweet 1207713207013392385 >}}

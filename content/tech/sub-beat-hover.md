@@ -6,7 +6,7 @@ menu:
     weight: 100
 ---
 
-Thanks to the broken fall logic in version 1.1.0 and 1.1.1, we’re able to walk in the air through various means.
+Thanks to the broken fall logic in version 1.1, we’re able to walk in the air through various means.
 
 When playing with beat you can run in the air for the duration of a single beat by using Haste or Boots of Speed.
 
