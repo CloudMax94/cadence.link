@@ -17,7 +17,11 @@
           {{ if .HasChildren }}
             {{ partial "dropdown/open" (dict "label" .Name "selected" ($currentPage.HasMenuCurrent "main" .) "button" true) }}
               {{ range .Children }}
-                {{ partial "dropdown/item" (dict "url" .URL "label" .Name "selected" ($currentPage.IsMenuCurrent "main" .)) }}
+                {{ $section := true }}
+                {{ if .URL }}
+                  {{ $section = false }}
+                {{ end }}
+                {{ partial "dropdown/item" (dict "url" .URL "label" .Name "selected" ($currentPage.IsMenuCurrent "main" .) "section" true) }}
               {{ end }}
             {{ partial "dropdown/close" }}
           {{ else }}

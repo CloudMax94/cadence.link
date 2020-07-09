@@ -36,3 +36,15 @@ enableGitInfo = true
     name = "Skips and Strats Sheet"
     url = "https://deku.link/cohstrats"
     weight = 4
+  [[menu.main]]
+    parent = "tech"
+    name = "Version 1.1"
+    weight = 97000
+  [[menu.main]]
+    parent = "tech"
+    name = "Version 1.0"
+    weight = 98000
+  [[menu.main]]
+    parent = "tech"
+    name = "Version 1.0.0 & 1.0.1"
+    weight = 99000

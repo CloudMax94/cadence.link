@@ -1,3 +1,9 @@
+{{ if .url }}
 <a href="{{ .url }}" class="textbox-child{{ if .selected }} selected{{ end }}{{ if .class }} {{ .class }}{{ end }}">
   {{ .label }}
 </a>
+{{ else }}
+<div class="{{ if .section }}dropdown-section{{ else }}textbox-child{{ end }}{{ if .class }} {{ .class }}{{ end }}">
+  {{ .label }}
+</div>
+{{ end }}

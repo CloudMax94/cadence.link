@@ -3,7 +3,7 @@ title: "Wrong Warping"
 menu:
   main:
     parent: "tech"
-    weight: 100
+    weight: 97020
 ---
 
 **Exclusive to version 1.1.**

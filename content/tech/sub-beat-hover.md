@@ -3,8 +3,10 @@ title: "Sub-beat Hovering"
 menu:
   main:
     parent: "tech"
-    weight: 100
+    weight: 97010
 ---
+
+**Exclusive to version 1.1.**
 
 Thanks to the broken fall logic in version 1.1, we’re able to walk in the air through various means.
 

@@ -209,6 +209,28 @@ body {
   }
 }
 
+.dropdown-section {
+  margin: 16px -14px 0;
+
+  &:before,
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    margin-top: -3px;
+    vertical-align: middle;
+  }
+  &:before {
+    background: url('/img/layout/titleleft.png') center no-repeat;
+    margin-right: 8px;
+  }
+  &:after {
+    background: url('/img/layout/titleright.png') center no-repeat;
+    margin-left: 8px;
+  }
+}
+
 .logo {
   margin-bottom: 24px;
 }
