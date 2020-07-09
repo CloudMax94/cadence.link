@@ -34,9 +34,9 @@ The vast majority of seeds do _not_ place an enemy by the chest, making this ext
 
 ### Permadeath Feather
 
-**Exclusive to version 1.0.**
+**Exclusive to version 1.0.0 and 1.0.1.**
 
-The lobby did not have invisible fences around the walls in 1.0, making it possible to reach the boss key early.
+The lobby did not have invisible fences around the walls until 1.0.2, making it possible to reach the boss key early.
 
 **Cane of Somaria**
 {{< yt HqwgxLqo6F8 >}}
@@ -46,7 +46,7 @@ The lobby did not have invisible fences around the walls in 1.0, making it possi
 
 ### Co-op Zelda Switch & Cane
 
-**Exclusive to version 1.0.**
+**Exclusive to version 1.0.0 and 1.0.1.**
 
 Requires that you have 3 characters unlocked so that one player can swap away from Zelda to raise the trap wall.
 {{< yt aRaNbBwp-Sk >}}
@@ -55,7 +55,7 @@ Requires that you have 3 characters unlocked so that one player can swap away fr
 
 ### Co-op Hookshot Displacement
 
-**Exclusive to version 1.0.**
+**Exclusive to version 1.0.0 and 1.0.1.**
 
 Thanks to [hookshot pivoting](/tech/hookshot-displacement/#hookshot-pivoting) we're able to hookshot past the boss door.
 

@@ -8,7 +8,7 @@ menu:
 
 There are some very specific scenarios which allow you to move between the use & activation of your hookshot without cancelling it.
 This includes teleporting (through [Player 2 Warping](/tech/player-2-warp), teleport traps), deku leaf, yves unburrow, and being frozen and pushing the ice block.
-(See 1.0.0 - 1.0.2 down below for more info)
+(See 1.0 differences down below for more info)
 
 This allows you to alter your X,Y,Z coordinates before the hookshot starts pulling you in.
 The game adds up the X and Y delta of the player and destination (tile in front of target) coordinates to determine travel distance.
@@ -28,9 +28,9 @@ So if you’ve displaced your hookshot enough for the destination to go over/thr
 This can also be done on the overworld to clip through objects along the edge of the screen.
 In this situation it will always treat it as if there is an available tile behind the object, but since the hookshot can’t send you past the edge of the screen, it will just place you inside the object, which then allows you to transition by simply walking.
 
-## 1.0.0 - 1.0.2 differences
+## 1.0 differences
 
-In these versions the game does not cancel the hookshot when you take any kind of knockback while hookshotting.
+In 1.0 the game does not cancel the hookshot when you take any kind of knockback while hookshotting.
 It also does not get cancelled if an object you’re standing on is pushed.
 This means that you can offset your position be great amounts by standing on objects and chaining several different knockbacks onto them at once.
 
@@ -46,4 +46,4 @@ Instead the entities are infinitely high, and projectiles (hookshot included) ar
 
 You can hookshot pivot by... **TODO: make a page/section for the 1.1 co-op pivot..**
 
-In version 1.0 you can use co-op pivot (**TODO: Mage a co-op pivot page or section somewhere...?**) to easily pivot in any direction, even diagonals.
+In version 1.0.0 and 1.0.1 you can use co-op pivot (**TODO: Make a co-op pivot page or section somewhere...?**) to easily pivot in any direction, even diagonals.

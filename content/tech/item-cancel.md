@@ -19,9 +19,9 @@ This is primarily used to allow you to pivot in any direction in just one beat, 
 
 In co-op you're able to hit the other player with bow cancelling.
 
-### 1.0.0 - 1.0.2 differences
+### 1.0 differences
 
-An added side-effect of Bow Cancelling in 1.0.0 - 1.0.2 is that the arrow can hit targets of any height.
+An added side-effect of Bow Cancelling in 1.0 is that the arrow can hit targets of any height.
 It will look for a target at any height, starting at the top and working its way down.
 The first target that is found is hit, while all the others below are left untouched. This can be seen by stacking slabs, for example.
 It also allows you to hit leevers that are burrowed, zora that are submerged, and wizzrobes that are invisible. And probably more.
