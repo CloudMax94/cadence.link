@@ -51,12 +51,12 @@ x3 = 15%
 
 *Note: It's 5%/10%/15% of a single stamina bar. Adding a second bar does not increase the regen rate*
 
-### Loot
+### Improved Loot
 The coin multiplier improves loot drops. For example, with a x1 multiplier a mushboom might drop a single bomb. But at x3, that mushboom will drop a 3-bomb pack instead.
 
 This applies to the diamonds as well. With a x3 multiplier you'll get 2 diamonds for clearing a screen instead of 1.
 
-### Obsidian Infusions
+### Obsidian Damage
 Obsidian damage scales with the multiplier.
 
 ![](/img/mechanics/obsidian-x1.png) x1 = 1 damage
