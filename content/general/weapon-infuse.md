@@ -12,8 +12,7 @@ menu:
 Deals 1 extra damage.
 
 ![](/img/items/infusion-obsidian.png) **Obsidian**
-Deals up to 2 extra damage depending on your beat combo.
-**TODO: Specify 1dmg and 2dmg breakpoints**
+Deals up to 2 extra damage depending on your [beat combo](/general/coin-multiplier/). 
 
 ![](/img/items/infusion-ruby.png) **Ruby**
 Heals half a heart after defeating 5 enemies.
