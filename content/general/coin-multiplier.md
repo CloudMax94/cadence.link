@@ -23,7 +23,7 @@ The triforce peice under the beat bars displays the current multiplier level.
 ![](/img/mechanics/groove-chain-3.png)
 
 # Increasing the Multiplier
-Defeat enemies without dropping the beat will increase the multiplier.
+Defeating enemies without dropping the beat will increase the multiplier.
 
 * Defeat 1 enemy; then it increases from x1 to x2.
 * Defeat 4 more enemies (5 total); then it increases from x2 to the maximum of x3.
