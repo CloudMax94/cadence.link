@@ -6,7 +6,7 @@ menu:
     weight: 80
 ---
 
-# VIP POIs
+## VIP POIs
 Here's a couple very very useful POIs (points of interest) which you'll want to learn these ASAP for your story mode speedruns and races.
 
 

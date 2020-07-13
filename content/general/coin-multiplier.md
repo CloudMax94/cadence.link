@@ -10,7 +10,7 @@ The **Coin Multiplier** makes a return from the Crypt of the Necrodancer into Ca
 
 The Multiplier starts at x1 and goes up to x3. You can increase the multiplier by defeating enemies. You can lose it when you miss the beat or take damage (includes self damage like running into a cactus).
 
-# Multiplier Levels
+## Multiplier Levels
 The triforce peice under the beat bars displays the current multiplier level.
 
 **x1**
@@ -22,13 +22,13 @@ The triforce peice under the beat bars displays the current multiplier level.
 **x3**
 ![](/img/mechanics/groove-chain-3.png)
 
-# Increasing the Multiplier
+## Increasing the Multiplier
 Defeating enemies without dropping the beat will increase the multiplier.
 
 * Defeat 1 enemy; then it increases from x1 to x2.
 * Defeat 4 more enemies (5 total); then it increases from x2 to the maximum of x3.
 
-# Dropping the beat
+## Dropping the beat
 There's a handful of ways to drop the beat and reset your Coin Multiplier.
 
 * Take Damage
@@ -40,7 +40,7 @@ There's a handful of ways to drop the beat and reset your Coin Multiplier.
 
 It's unlikely, but sometimes you *want* to drop the beat. The fastest way tends to be pressing a direction twice in one beat.
 
-# Multiplier Effects
+## Multiplier Effects
 
 ### Increased Stamina Regeneration
 The multiplier increases the amount of stamina gained per kill. The formula is 5 * Coin Multiplier.
@@ -66,7 +66,7 @@ Obsidian damage scales with the multiplier.
 ### Flawless Boss Rewards
 Defeating a boss without breaking your multiplier will give you a flawless Boss Reward: a choice between a Blue Chest, a Red Chest, and 5 Diamonds.
 
-# Edge Cases
+## Edge Cases
 
 ### Power Glove
 The Power Glove has some special magic in them. Using the Glove will keep the beat, *even if you lift nothing at all*.
