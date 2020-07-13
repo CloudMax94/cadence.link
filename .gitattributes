@@ -1,0 +1,7 @@
+* text=auto eol=lf
+
+# Make sure that git doesn't change LF in our binary files...
+*.png binary
+*.jpg binary
+*.ico binary
+*.ttf binary
