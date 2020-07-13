@@ -38,7 +38,7 @@ There's a handful of ways to drop the beat and reset your Coin Multiplier.
 * Load the game
 * Activate the Shrine of Conga
 
-It's unlikely, but sometimes you *want* to drop the beat. The fastest way tends to be pressing a direction twice in one beat. 
+It's unlikely, but sometimes you *want* to drop the beat. The fastest way tends to be pressing a direction twice in one beat.
 
 # Multiplier Effects
 

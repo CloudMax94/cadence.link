@@ -121,7 +121,7 @@ In the grassland you'll find a hill with a locked red chest on top. It will alwa
 
 Hover Boots are used to for all sorts of skips and strats. The main one being a [Gear Skip](/dungeons/gerudo-ruins/#hover-boots-and-bomb).
 
-It's faster to find Hoverboots in a dungeon or from another red chest. It's worthwhile to know in case you can't find Hovers elsewhere and you can't find the Goron Shop. 
+It's faster to find Hoverboots in a dungeon or from another red chest. It's worthwhile to know in case you can't find Hovers elsewhere and you can't find the Goron Shop.
 
 ![](/img/mapping/grass_13.png)
 

@@ -6,7 +6,7 @@ menu:
     weight: 80
 ---
 
-# Dungeons
+## Dungeons
 [Rat](www.twitch.tv/RatRacing) here! Check out this video I made about mapping dungeons. It covers the basics of finding them, tricks to reading the edges, and map generation rules.
 
 {{< yt 3XfQoPngaq8 >}}
@@ -28,7 +28,7 @@ Look for a middle entrance with a dark spot in it. That dark spot is a wind turb
 ![](/img/mapping/tos-backside.PNG)
 
 ### Cliff Edge Comparison
-Procedurally generated cliff tiles have two possibilities for their top and bottom edges. 
+Procedurally generated cliff tiles have two possibilities for their top and bottom edges.
 1. Walls - solid gray line
 2. Gaps - a bunch of small gaps/walkways between cliffs
 
@@ -49,7 +49,7 @@ You'll want to learn the entrances/sides of the village. But the trick to findin
 ![](/img/mapping/kak-edges.PNG)
 
 ### Guantlet Bait
-You'll need to keep in mind the [Guantlets](/overworld/guantlets/). All of them have big trees in the corner. 
+You'll need to keep in mind the [Guantlets](/overworld/guantlets/). All of them have big trees in the corner.
 
 ![](/img/mapping/guantlet-bait.png)
 
@@ -90,7 +90,7 @@ This is because forest trees are lopsided. There's big trees on one side and sma
 Note: This method works best when Swamp is on the right side of the world. You'll find the small trees on the right edges of the map.
 
 ### Examples
-Here you can find Lost Swamp by looking for the small trees on the edges on the map. 
+Here you can find Lost Swamp by looking for the small trees on the edges on the map.
 
 ![](/img/mapping/ls-example.png)
 
