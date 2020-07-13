@@ -14,13 +14,13 @@ The Multiplier starts at x1 and goes up to x3. You can increase the multiplier b
 The triforce peice under the beat bars displays the current multiplier level.
 
 **x1**
-![](/img/mechanics/groove-chain-1.png)
+![](/img/mechanics/beat-combo-1.png)
 
 **x2**
-![](/img/mechanics/groove-chain-2.png)
+![](/img/mechanics/beat-combo-2.png)
 
 **x3**
-![](/img/mechanics/groove-chain-3.png)
+![](/img/mechanics/beat-combo-3.png)
 
 ## Increasing the Multiplier
 Defeating enemies without dropping the beat will increase the multiplier.
