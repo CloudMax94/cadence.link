@@ -6,7 +6,7 @@ menu:
     weight: 80
 ---
 
-[Rat](www.twitch.tv/RatRacing) here! Check out this video I made about mapping dungeons. It covers the basics of finding them, tricks to reading the edges, and map generation rules.
+[Rat](https://www.twitch.tv/RatRacing) here! Check out this video I made about mapping dungeons. It covers the basics of finding them, tricks to reading the edges, and map generation rules.
 
 {{< yt 3XfQoPngaq8 >}}
 
