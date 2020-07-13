@@ -47,17 +47,17 @@ You'll want to learn the entrances/sides of the village. But the trick to findin
 
 ![](/img/mapping/kak-edges.png)
 
-### Guantlet Bait
-You'll need to keep in mind the [Guantlets](/overworld/guantlets/). All of them have big trees in the corner.
+### Gauntlet Bait
+You'll need to keep in mind the [Gauntlets](/overworld/gauntlets/). All of them have big trees in the corner.
 
-![](/img/mapping/guantlet-bait.png)
+![](/img/mapping/gauntlet-bait.png)
 
-That means if you see a big tree in the corner, you'll need to double check it. If the Guantlet *could* fit there, you'll need to get closer. If not, it must be the Kakariko Village.
+That means if you see a big tree in the corner, you'll need to double check it. If the Gauntlet *could* fit there, you'll need to get closer. If not, it must be the Kakariko Village.
 
-Note: A Guantlet's left/right entrances cannot be blocked.  So, it cannot be next to the edge of the map.
+Note: A Gauntlet's left/right entrances cannot be blocked.  So, it cannot be next to the edge of the map.
 
 ### Example
-Here we can see a big tree in the corner of a tile. We know a Guantlet **cannot** be place there because one side would touching the edge of the map. That tile must be kakariko village.
+Here we can see a big tree in the corner of a tile. We know a Gauntlet **cannot** be place there because one side would touching the edge of the map. That tile must be kakariko village.
 
 ![](/img/mapping/kak-example-2.png)
 
