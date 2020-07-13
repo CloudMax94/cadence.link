@@ -25,19 +25,19 @@ Note: It *cannot* spawn in the desert or in the beach.
 
 ![](/img/mapping/bomb_shop_cliff_tile.png)
 
-#### Goron Shop Forest
+#### Goron Shop Swamp
 
-![](/img/mapping/bomb_shop_forest.png)
+![](/img/mapping/bomb_shop_swamp.png)
 
-![](/img/mapping/bomb_shop_forest_tile.png)
+![](/img/mapping/bomb_shop_swamp_tile.png)
 
 #### Goron Shop Grassland
 
 ![](/img/mapping/bomb_shop_grass.png)
 
-![](/img/mapping/bomb_shop_grass_tile.PNG)
+![](/img/mapping/bomb_shop_grass_tile.png)
 
-![](/img/mapping/bomb_shop_grass_example.PNG)
+![](/img/mapping/bomb_shop_grass_example.png)
 
 
 ### Wisdom Fountain
@@ -56,7 +56,7 @@ Note: The Wisdom Fountain can only spawn on the grassland.
 
 The bench! The greatest unsolved mystery in Cadence of Hyrule. It's mystified dataminers, hackers, and speedrunners.
 
-Does it unlock a hidden character? Is there some unknown power locked away beneath it?  Why is bench [](/img/mapping/Pogchamp.png)?
+Does it unlock a hidden character? Is there some unknown power locked away beneath it?  Why is bench ![](/img/mapping/pogchamp.png)?
 
 We haven't unlocked it's secrets and only time will tell if we ever will.
 
@@ -83,13 +83,13 @@ Note: They cannot show up in the desert or the beach.
 
 ![](/img/mapping/fairy_fountain_cliff_tile.png)
 
-#### GFF Forest
+#### GFF Swamp
 
-![](/img/mapping/fairy_fountain_forest_invert.png)
+![](/img/mapping/fairy_fountain_swamp_invert.png)
 
-![](/img/mapping/fairy_fountain_forest_invert_tile.png)
+![](/img/mapping/fairy_fountain_swamp_invert_tile.png)
 
-![](/img/mapping/fairy_fountain_forest_example.png)
+![](/img/mapping/fairy_fountain_swamp_example.png)
 
 #### GFF Grassland
 

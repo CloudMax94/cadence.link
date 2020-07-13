@@ -20,12 +20,12 @@ The front and back edges of ToS are super unique. Learn to recognize these and y
 ### Front Entrance
 There's a middle entrance with a river tile off to the side.
 
-![](/img/mapping/tos-front.PNG)
+![](/img/mapping/tos-front.png)
 
 ### Back Entrance
 Look for a middle entrance with a dark spot in it. That dark spot is a wind turbine
 
-![](/img/mapping/tos-backside.PNG)
+![](/img/mapping/tos-backside.png)
 
 ### Cliff Edge Comparison
 Procedurally generated cliff tiles have two possibilities for their top and bottom edges.
@@ -46,7 +46,7 @@ You'll want to learn the entrances/sides of the village. But the trick to findin
 
 ### Edges & Corners
 
-![](/img/mapping/kak-edges.PNG)
+![](/img/mapping/kak-edges.png)
 
 ### Guantlet Bait
 You'll need to keep in mind the [Guantlets](/overworld/guantlets/). All of them have big trees in the corner.
@@ -76,16 +76,16 @@ The Lost Swamp is usually on the 2nd or 9th row. Vary rarely it's on the 3rd/8th
 ### Lost Woods
 Recognizing the edges of Lost Woods is a good place to start.
 
-![](/img/mapping/lw-edges.PNG)
+![](/img/mapping/lw-edges.png)
 
 ### Lost Swamp Edges
 You can also learn to recognize the left and top edges of the Lost Swamp. But *NOT* the right edge.
 
 ![](/img/mapping/ls-edges.png)
 
-This is because forest trees are lopsided. There's big trees on one side and small trees on the other.
+This is because swamp trees are lopsided. There's big trees on one side and small trees on the other.
 
-![](/img/mapping/ls-trees.PNG)
+![](/img/mapping/ls-trees.png)
 
 Note: This method works best when Swamp is on the right side of the world. You'll find the small trees on the right edges of the map.
 
@@ -101,7 +101,7 @@ Here you can find Lost Swamp by noticing the Lost Woods edges.
 ## Gerudo Ruins
 EZPZ. Look for the desert. Go to the corner of the map!
 
-![](/img/mapping/gr-example.PNG)
+![](/img/mapping/gr-example.png)
 
 ## Frozen Grotto
 Go south!
