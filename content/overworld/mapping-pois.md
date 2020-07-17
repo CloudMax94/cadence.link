@@ -25,11 +25,11 @@ Note: It *cannot* spawn in the desert or in the beach.
 
 ![](/img/mapping/bomb_shop_cliff_tile.png)
 
-#### Goron Shop Swamp
+#### Goron Shop Forest
 
-![](/img/mapping/bomb_shop_swamp.png)
+![](/img/mapping/bomb_shop_forest.png)
 
-![](/img/mapping/bomb_shop_swamp_tile.png)
+![](/img/mapping/bomb_shop_forest_tile.png)
 
 #### Goron Shop Grassland
 
@@ -83,13 +83,13 @@ Note: They cannot show up in the desert or the beach.
 
 ![](/img/mapping/fairy_fountain_cliff_tile.png)
 
-#### GFF Swamp
+#### GFF Forest
 
-![](/img/mapping/fairy_fountain_swamp_invert.png)
+![](/img/mapping/fairy_fountain_forest_invert.png)
 
-![](/img/mapping/fairy_fountain_swamp_invert_tile.png)
+![](/img/mapping/fairy_fountain_forest_invert_tile.png)
 
-![](/img/mapping/fairy_fountain_swamp_example.png)
+![](/img/mapping/fairy_fountain_forest_example.png)
 
 #### GFF Grassland
 
@@ -153,7 +153,7 @@ There’s a keymos that drops a key here! The dirt makes a pattern that looks li
 
 ![](/img/mapping/grass_00_example.png)
 
-### Swamp Key
+### Forest Keys
 
 #### Poison Pond
 

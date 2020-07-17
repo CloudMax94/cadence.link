@@ -82,11 +82,11 @@ You can also learn to recognize the left and top edges of the Lost Swamp. But *N
 
 ![](/img/mapping/ls-edges.png)
 
-This is because swamp trees are lopsided. There's big trees on one side and small trees on the other.
+This is because forest trees are lopsided. There's big trees on one side and small trees on the other.
 
 ![](/img/mapping/ls-trees.png)
 
-Note: This method works best when Swamp is on the right side of the world. You'll find the small trees on the right edges of the map.
+Note: This method works best when Lost Swamp is on the right side of the world. You'll find the small trees on the right edges of the map.
 
 ### Examples
 Here you can find Lost Swamp by looking for the small trees on the edges on the map.
