@@ -40,9 +40,11 @@ Since enemies block their adjacent tiles as well, it is easy to block all tiles 
 {{< tweet 1153746088853028864 >}}
 
 ## Gauntlet 4
+**Added in version 1.1.0.**
 
 {{< poi "Gauntlet/gauntlet04" >}}
 
 ## Gauntlet 5
+**Added in version 1.1.0.**
 
 {{< poi "Gauntlet/gauntlet05" >}}
