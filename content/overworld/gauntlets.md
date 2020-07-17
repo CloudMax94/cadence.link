@@ -33,6 +33,8 @@ Since enemies block their adjacent tiles as well, it is easy to block all tiles 
 
 ## Gauntlet 3
 
+**FIXME:** The blue chest is supposed to be a Flawless chest, the render below is just inaccurate.
+
 {{< poi "Gauntlet/gauntlet03" >}}
 
 ### From Right - Glove and 2 Bombs
