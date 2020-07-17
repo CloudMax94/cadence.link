@@ -212,6 +212,10 @@ body {
 .dropdown-section {
   margin: 16px -14px 0;
 
+  &:first-child {
+    margin-top: 4px;
+  }
+
   &:before,
   &:after {
     content: '';

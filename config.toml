@@ -48,3 +48,15 @@ enableGitInfo = true
     parent = "tech"
     name = "Version 1.0.0 & 1.0.1"
     weight = 99000
+  [[menu.main]]
+    parent = "overworld"
+    name = "POIs"
+    weight = 1
+  [[menu.main]]
+    parent = "overworld"
+    name = "Biomes"
+    weight = 1000
+  [[menu.main]]
+    parent = "overworld"
+    name = "Mapping"
+    weight = 2000

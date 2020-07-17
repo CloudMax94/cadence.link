@@ -2,8 +2,10 @@
 title: "Mapping - POIs"
 menu:
   main:
+    name: "POIs"
+    identifier: "mapping-poits"
     parent: "overworld"
-    weight: 80
+    weight: 2010
 ---
 
 ## VIP POIs

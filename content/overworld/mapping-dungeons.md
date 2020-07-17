@@ -2,8 +2,9 @@
 title: "Mapping - Dungeons"
 menu:
   main:
+    name: "Dungeons"
     parent: "overworld"
-    weight: 80
+    weight: 2020
 ---
 
 [Rat](https://www.twitch.tv/RatRacing) here! Check out this video I made about mapping dungeons. It covers the basics of finding them, tricks to reading the edges, and map generation rules.
