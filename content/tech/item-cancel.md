@@ -3,12 +3,24 @@ title: "Item Cancelling"
 menu:
   main:
     parent: "tech"
-    weight: 97030
+    weight: 100
 ---
 
-**Exclusive to version 1.1 and 1.0.**
+## Pegasus Cancel
+_Alternatively: **Anklet Cancel**_
+
+By unequipping Pegasus Anklet before activating it, it is cancelled.
+
+This allows you to use pegasus anklet for pivoting.
+If timed well in fixed-beat, it's possible to pivot in just 1 beat.
+
+### 1.1 & 1.0 differences
+
+In version 1.1 aad 1.1 you can also re-equip the anklet over itself and unpause while still holding the button.
 
 ## Bow Cancel
+
+**Exclusive to version 1.1 and 1.0.**
 
 By unequipping Bow before activating it, it is cancelled.
 You can also re-equip the bow over itself and unpause while still holding the button.
@@ -28,18 +40,10 @@ It will look for a target at any height, starting at the top and working its way
 The first target that is found is hit, while all the others below are left untouched. This can be seen by stacking slabs, for example.
 It also allows you to hit leevers that are burrowed, zora that are submerged, and wizzrobes that are invisible. And probably more.
 
-## Pegasus Cancel
-_Alternatively: **Anklet Cancel**_
-
-By unequipping Pegasus Anklet before activating it, it is cancelled.
-You can also re-equip the anklet over itself and unpause while still holding the button.
-
-This allows you to use pegasus anklet for pivoting.
-If timed well in fixed-beat, it's possible to pivot in just 1 beat.
-
-
-
 ## Throw Cancel
+
+**Exclusive to version 1.1 and 1.0.**
+
 _Alternatively: **Glove Cancel** or **Bomb Cancel**_
 
 By re-equipping the Power Glove over itself, the game will automatically throw whatever you’re holding, if it can be thrown at your current location.
