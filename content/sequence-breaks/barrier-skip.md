@@ -10,17 +10,8 @@ Allows you to bypass the Hyrule Castle Barrier, skipping the 4 dungeon instrumen
 
 ## Methods
 
-### Bounce Cancel (solo)
-
-This method specifically requires that you have Down Thrust.
-The game won't let you bounce on the bee without it, which is required for the [spawn displacement](/tech/spawn-displacement/).
-
-You have to active [bounce cancel](/tech/bounce-cancel/) first.
-
-{{< yt wMe7FN-WZL8 >}} _See video description for detailed information._
-
 ### Wrong Warp (co-op)
-**Exclusive to version 1.1.**
+**Exclusive to version 1.2 and 1.1.**
 
 Requires that you have access to the Sheikah Stone on Zelda's Balcony.
 Not available in permadeath as it requires getting a game over.
@@ -39,8 +30,17 @@ Then we block off all spawn locations except the one on the other side of the ba
 As an alternative to using hookshot, it's possible to freeze player 1 and move them into position.
 
 {{< yt gkMqf0Vvshs >}} _This specific variation is for version 1.1 as it makes use of the broken fall logic._
-_For earlier versions you'd want to use hookshot displacement to move player 1 into position instead._
+_For other versions the setup has to be altered to get the player into position._
 
+### Bounce Cancel (solo)
+**Exclusive to version 1.1 and 1.0.**
+
+This method specifically requires that you have Down Thrust.
+The game won't let you bounce on the bee without it, which is required for the [spawn displacement](/tech/spawn-displacement/).
+
+You have to active [bounce cancel](/tech/bounce-cancel/) first.
+
+{{< yt wMe7FN-WZL8 >}} _See video description for detailed information._
 ## Lobby version differences
 In version 1.0 the Hyrule Castle lobby has Link and Zelda trap walls, requiring both characters to bring down the walls.
 It is possible to bypass the Zelda trap with the use of hover boots and a diagonal knockback, but there is no known way to bypass the Link trap.
