@@ -6,6 +6,8 @@ menu:
     weight: 30
 ---
 
+Cadence has infinite Shovel durability.
+
 ## Starting Area
 
 Cadence start in front of the Sheikah Stone outside of Links house.
@@ -25,7 +27,6 @@ Cadence unique weapon type is **greatshovel**.
 
 ## Abilities
 
-Altho not specified in the game, Cadence has infinite Shovel durability.
 Cadence receives an upgradable shield instead of an {{< igt "[i:button_r]" >}} ability.
 
 **Location: Starting Area**
