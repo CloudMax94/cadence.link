@@ -43,8 +43,8 @@
   },
   "ability_naginata_charge": {
     "flyaway": "Naginata Charge",
-    "inventory": "[c:s]Naginata Charge[/c] [n]Press [i:button_l] to lunge forward one space, hitting enemies in a straight line up to 3 spaces ahead.",
-    "get": "You got the [c:s]naginata charge[/c] ability!.[n]It's automatically assigned to [i:button_l], and only [i:impa] can use it.[p][c:b]Impa[/c] lunges forward one space, hitting enemies in a straight line up to 3 spaces ahead of her.",
+    "inventory": "[c:s]Naginata Charge[/c] [i:impa][n]Press [i:button_l] to lunge forward one space, hitting enemies in a straight line up to 3 spaces ahead, at the cost of stamina.",
+    "get": "You got the [c:s]Naginata Charge[/c] ability![n]It's automatically assigned to [i:button_l], and only [i:impa] can use it.[p][c:b]Impa[/c] lunges forward one space, hitting enemies in a straight line up to 3 spaces ahead of her.",
     "slot": "special",
     "version": "1.2.0",
     "coinCost": "100"
@@ -57,15 +57,15 @@
   },
   "ability_rupee_toss": {
     "flyaway": "Rupee Toss",
-    "inventory": "[c:s]Rupee Toss[/c] [n]Press [i:button_l] to toss a blue rupee in a straight line, dealing damage and piercing through enemies. Costs [c:s]5 rupees[/c] to use.",
-    "get": "You got the [c:s]rupee toss[/c] ability!.[n]It's automatically assigned to [i:button_l], and only [i:frederick] can use it.[p][c:b]Frederick[/c] can toss a blue rupee in a straight line ahead of him, dealing damage and piercing through enemies. Costs [c:s]5 rupees[/c] to use.",
+    "inventory": "[c:s]Rupee Toss[/c] [i:frederick][n]Press [i:button_l] to toss a blue rupee in a straight line, dealing damage and piercing through enemies. Costs [c:s]5 rupees[/c] to use.",
+    "get": "You got the [c:s]Rupee Toss[/c] ability![n]It's automatically assigned to [i:button_l], and only [i:frederick] can use it.[p][c:b]Frederick[/c] can toss a blue rupee in a straight line ahead of him, dealing damage and piercing through enemies. Costs [c:s]5 rupees[/c] to use.",
     "slot": "special",
     "version": "1.2.0",
     "coinCost": "100"
   },
   "ability_shadow_dins_fire": {
     "flyaway": "Shadow Din's Fire",
-    "inventory": "[c:s]Shadow Din's Fire[/c] [n] [i:shadowzelda][n]Press [i:button_l] to create a fireball. Use it again to detonate the fireball, dealing damage to adjacent squares, at the cost of stamina.",
+    "inventory": "[c:s]Shadow Din's Fire[/c] [i:shadowzelda][n]Press [i:button_l] to create a fireball. Use it again to detonate the fireball, dealing damage to adjacent squares, at the cost of stamina.",
     "get": "You got [c:s]Shadow Din's Fire[/c]![n]It's automatically assigned to [i:button_l], and only [i:shadowzelda] can use this.[p]Press [i:button_l] to create an explosive ball of fire. It will explode if it collides with anything. You can also detonate it by pressing [i:button_l].",
     "slot": "special",
     "version": "1.2.0",
@@ -81,7 +81,7 @@
   "ability_shadow_spin_attack": {
     "flyaway": "Shadow Spin Attack",
     "inventory": "[c:s]Shadow Spin Attack[/c] [i:shadowlink] [n] Hold [i:button_l] to draw enemies closer and then release to deal damage to enemies adjacent to [c:b]Shadow Link[/c], at the cost of stamina.",
-    "get": "You got the [c:s]Shadow Spin Attack[/c] ability![n]It's automatically assigned to [i:button_l], and only [i:shadowlink] can use it.[p][c:b]Shadow Link[/c] can now use stamina to charge a spin attack and unleash it to hit all surrounding enemies![p]While you are holding [i:button_l] to charge a spin attack, some enemies will be drawn towards you on each beat!",
+    "get": "You got the [c:s]Shadow Spin Attack[/c] ability![n]It's automatically assigned to [i:button_l], and only [i:shadowlink] can use it.[p][c:b]Shadow Link[/c] can now use stamina to charge a spin attack and unleash it to hit all surrounding enemies![p]While you are holding [i:button_l] to charge a spin attack, some enemies will be drawn toward you on each beat!",
     "slot": "special",
     "version": "1.2.0",
     "coinCost": "100"
@@ -89,7 +89,7 @@
   "ability_shield_tech": {
     "flyaway": "Shield Technique",
     "inventory": "[c:s]Shield Technique[/c][n]Allows [c:b]Link[/c] or [c:b]Cadence[/c] to attack while holding shield. Allows [c:b]Zelda[/c] to hold [c:s]Nayru's Love[/c] over multiple beats.",
-    "get": "You got the [c:s]Shield Technique[/c]![n]You don't need to assign it to a button.[p][c:b]Link[/c] and [c:b]Cadence[/c] can now attack while holding out the [c:s]Shield[/c], but watch your [c:b]stamina[/c]![p][c:b]Zelda[/c] can now hold [c:s]Nayru's Love[/c] over multiple beats!",
+    "get": "You got the [c:s]Shield Technique[/c]![n]You don't need to assign it to a button.[p][c:b]Link[/c] and [c:b]Cadence[/c] can now attack while holding out the [c:s]shield[/c], but watch your [c:b]stamina[/c]![p][c:b]Zelda[/c] can now hold [c:s]Nayru's Love[/c] over multiple beats!",
     "coinCost": "50"
   },
   "ability_shovel_strike": {
@@ -108,8 +108,8 @@
   },
   "ability_vocal_blast": {
     "flyaway": "Vocal Blast",
-    "inventory": "[c:s]Vocal Blast[/c] [n]Press [i:button_r] to emit a burst of song, knocking back and confusing all adjacent enemies.",
-    "get": "You got the [c:s]vocal blast[/c] ability!.[n]It's automatically assigned to [i:button_r], and only [i:frederick] can use it.[p][c:b]Frederick[/c] emits a quick burst of sound, knocking back and confusing all adjacent enemies.",
+    "inventory": "[c:s]Vocal Blast[/c] [i:frederick][n]Press [i:button_r] to emit a burst of song, knocking back and confusing all adjacent enemies, at the cost of stamina.",
+    "get": "You got the [c:s]Vocal Blast[/c] ability![n]It's automatically assigned to [i:button_r], and only [i:frederick] can use it.[p][c:b]Frederick[/c] emits a quick burst of sound, knocking back and confusing all adjacent enemies.",
     "slot": "shield",
     "version": "1.2.0"
   },
@@ -875,6 +875,10 @@
     "slot": "weapon",
     "coinCost": "120"
   },
+  "weapon_dagger_special": {
+    "slot": "weapon",
+    "version": "1.2.0"
+  },
   "weapon_dagger_titanium": {
     "flyaway": "Titanium Dagger",
     "inventory": "[c:s]Titanium Dagger[/c] [i:zelda][i:cadence][n]Deals [c:r]2 damage[/c] to a single enemy in front of you.",
@@ -1013,7 +1017,8 @@
     "flyaway": "Emerald Long Sword",
     "inventory": "[c:s]Emerald Long Sword[/c] [i:link][n]Deals [c:r]1 damage[/c] and [c:g]poisons[/c] with 2 range, but prevents shield use. Hold out with [i:button_r] and swing with [i:button_left_stick].",
     "hint": "POISON DAMAGE",
-    "slot": "weapon"
+    "slot": "weapon",
+    "coinCost": "180"
   },
   "weapon_longsword_glass": {
     "flyaway": "Glass Long Sword",
