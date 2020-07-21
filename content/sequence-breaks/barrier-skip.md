@@ -21,6 +21,16 @@ Note that the game over shop has to be disabled in settings, as otherwise you'll
 
 {{< yt govP3NY_qmY >}}
 
+### Zelda + Impa (co-op)
+
+Requires that you have access to Zelda's Balcony and Impa.
+The only way to fill both of these requirements is to start Single Character with Zelda as player 1 and Impa as player 2.
+
+By triggering Impas teleport you can get her to teleport diagonally behind the other player.
+This allows you to teleport through diagonal gap, since the teleport ignores fence collision.
+
+{{< yt DPZ9D7lEj4U >}}
+
 ### Spawn Displacement (co-op)
 
 This works by combining [respawn storage](/tech/respawn-storage/) and [spawn displacement](/tech/spawn-displacement/).
