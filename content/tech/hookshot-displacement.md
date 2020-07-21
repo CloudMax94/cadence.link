@@ -7,8 +7,7 @@ menu:
 ---
 
 There are some very specific scenarios which allow you to move between the use & activation of your hookshot without cancelling it.
-This includes teleporting (through [Player 2 Warping](/tech/player-2-warp), teleport traps), deku leaf, yves unburrow, and being frozen and pushing the ice block.
-(See 1.0 differences down below for more info)
+This includes teleporting (through [Player 2 Warping](/tech/player-2-warp), teleport traps), yves unburrow, and being frozen and pushing the ice block.
 
 This allows you to alter your X,Y,Z coordinates before the hookshot starts pulling you in.
 The game adds up the X and Y delta of the player and destination (tile in front of target) coordinates to determine travel distance.
@@ -28,7 +27,9 @@ So if you’ve displaced your hookshot enough for the destination to go over/thr
 This can also be done on the overworld to clip through objects along the edge of the screen.
 In this situation it will always treat it as if there is an available tile behind the object, but since the hookshot can’t send you past the edge of the screen, it will just place you inside the object, which then allows you to transition by simply walking.
 
-## 1.0 differences
+## 1.1 & 1.0 differences
+
+In 1.1 and 1.0 you're able to push the other player with Deku Leaf.
 
 In 1.0 the game does not cancel the hookshot when you take any kind of knockback while hookshotting.
 It also does not get cancelled if an object you’re standing on is pushed.

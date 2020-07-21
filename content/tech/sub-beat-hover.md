@@ -3,7 +3,7 @@ title: "Sub-beat Hovering"
 menu:
   main:
     parent: "tech"
-    weight: 97010
+    weight: 96010
 ---
 
 **Exclusive to version 1.1.**

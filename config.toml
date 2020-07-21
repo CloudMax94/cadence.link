@@ -38,7 +38,15 @@ enableGitInfo = true
     weight = 4
   [[menu.main]]
     parent = "tech"
+    name = "Version 1.2 & 1.1"
+    weight = 95000
+  [[menu.main]]
+    parent = "tech"
     name = "Version 1.1"
+    weight = 96000
+  [[menu.main]]
+    parent = "tech"
+    name = "Version 1.1 & 1.0"
     weight = 97000
   [[menu.main]]
     parent = "tech"

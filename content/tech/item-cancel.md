@@ -3,8 +3,10 @@ title: "Item Cancelling"
 menu:
   main:
     parent: "tech"
-    weight: 100
+    weight: 97030
 ---
+
+**Exclusive to version 1.1 and 1.0.**
 
 ## Bow Cancel
 

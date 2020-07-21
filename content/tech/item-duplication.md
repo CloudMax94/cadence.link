@@ -8,7 +8,13 @@ menu:
 
 ## Throw Duplication
 
-By hitting a thrown object before it breaks it will generate two drops.
+By hitting a thrown object before it breaks using an item or ability (such as bow and boomerang) it will generate two drops.
+
+{{< tweet 1285282351765848064 >}}
+
+### 1.1 & 1.0 differences
+
+In version 1.1 and 1.0 you were able to perform the dupe by simply attacking the pot normally with your weapon.
 
 {{< tweet 1150341610229469184 >}}
 
