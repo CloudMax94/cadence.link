@@ -16,7 +16,7 @@ If timed well in fixed-beat, it's possible to pivot in just 1 beat.
 
 ### 1.1 & 1.0 differences
 
-In version 1.1 aad 1.1 you can also re-equip the anklet over itself and unpause while still holding the button.
+In version 1.1 and 1.0 you can also re-equip the anklet over itself and unpause while still holding the button.
 
 ## Bow Cancel
 
