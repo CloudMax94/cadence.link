@@ -27,12 +27,12 @@ It checks tiles in the following order if the centerpoint is occupied:
 
 A tile is ignored if
 - it is occupied by something
--- Enemies also occupy the 4 tiles adjacent to them, as long as they are at same height
+  - Enemies also occupy the 4 tiles adjacent to them, as long as they are at same height
 - it does not match in height
 - it is blocked by a fence
--- For diagonals it checks the 4 sides that connect to the corner
+  - For diagonals it checks the 4 sides that connect to the corner
 - it is a bridge at the same height as water/lava
--- Lilypads are technically bridges
+  - Lilypads are technically bridges
 
 If it couldn't find a tile to use it checks all the tiles again, but this time without enemies blocking their 4 adjacent tiles.
 If it still does not find a tile it defaults back to the centerpoint, placing you inside whatever entity is there, or on top of it if it is standable.
