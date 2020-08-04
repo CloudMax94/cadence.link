@@ -28,6 +28,14 @@ This also applies to Dungeon Mode.
 
 If two bounce traps are facing each other, attempting to step onto one crashes the game instantly as it moves you back and forth infinitely, trying to figure out where to place you.
 
+### Ganon & Explosives on ice blocks
+
+Blowing up an ice block and dealing fatal damage to it at the same time (ice block having 3 hearts or less, or having shrine of death active) makes it so that the character you break out is hit by the explosion.
+A very important thing to keep in mind is that this means that blowing up an ice block with Shrine of Death active will instantly kill you, since it will deal infinite damage to the character you break out.
+
+Never blow up one of the ice blocks with Shrine of Death active.
+Make sure that the ice block has more than 3 hearts left if you're low on health to prevent the explosion from killing you. Especially important to keep in mind when playing as Yves or Aria.
+
 ## Version 1.1
 
 ### Ganon & Shrine of Peace Softlock
