@@ -12,3 +12,5 @@ The boss of [Future World](/dungeons/future-world/).
 Replaced with [The NecroDancer](/bosses/the-necrodancer) if Octavo is present.
 
 Ganon takes 1 damage from all sources except explosives which deal 2 damage.
+
+Beware of the issue with [explosives on ice blocks](/general/issues/#ganon--explosives-on-ice-blocks) when breaking out characters during the encounter.
