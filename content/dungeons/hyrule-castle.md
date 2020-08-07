@@ -10,6 +10,8 @@ background: "/img/backgrounds/hyrule-castle.png"
 [Octavo](/bosses/octavo) is the boss of Hyrule Castle.
 The encounter is skipped if a player is Octavo.
 
+Hyrule Castle has 4 floors which are done in succession without any checkpoint between them.
+
 You can access Hyrule Castle early through [Barrier Skip](/sequence-breaks/barrier-skip/).
 
 ## Lobby Brazier
