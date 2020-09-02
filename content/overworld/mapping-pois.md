@@ -27,7 +27,7 @@ Note: It *cannot* spawn in the desert or in the beach.
 
 ![](/img/mapping/bomb_shop_cliff_tile.png)
 
-Here, the enterance it on the right side, which means that the sheikah stone is on the right side as well. Keeping this in mind can sometimes help save a few steps when approaching the screen with the Goron Shop. You can also check which side it's on when warping to it, to know whether you should start moving right or left on the 1st beat after teleporting.
+Here, the entrance it on the right side, which means that the sheikah stone is on the right side as well. Keeping this in mind can sometimes help save a few steps when approaching the screen with the Goron Shop. You can also check which side it's on when warping to it, to know whether you should start moving right or left on the 1st beat after teleporting.
 
 #### Goron Shop Forest
 
@@ -153,7 +153,7 @@ These POIs will always have a key. The key will respawn after you clear a dungeo
 
 ![](/img/mapping/grass_09_tile.png)
 
-For this POI, you should sometimes keep in mind which side you approach it from, as the box-like shape with the key chest in it only has 1 enterance! Fortunately, it's possible to tell where it is, as the chest (which is visible on the map) is always on the opposite side.
+For this POI, you should sometimes keep in mind which side you approach it from, as the box-like shape with the key chest in it only has 1 entrance! Fortunately, it's possible to tell where it is, as the chest (which is visible on the map) is always on the opposite side.
 
 ![](/img/mapping/grass_09_example.png)
 
