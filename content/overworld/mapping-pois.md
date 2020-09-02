@@ -18,7 +18,7 @@ Here's where you can purchase the [Goron Locket](/general/items/#passives). The 
 
 ![](/img/mapping/bomb_shop_outside.png)
 
-It looks like a bomb. It can be flipped left or right (so the 'fuse' can go either way).
+It looks like a bomb. It can be flipped left or right (so the 'fuse' can go either way). The sheikah stone is always on the same side of the shop as the entrance.
 Note: It *cannot* spawn in the desert or in the beach.
 
 #### Goron Shop Cliffs
@@ -26,6 +26,8 @@ Note: It *cannot* spawn in the desert or in the beach.
 ![](/img/mapping/bomb_shop_cliff.png)
 
 ![](/img/mapping/bomb_shop_cliff_tile.png)
+
+Here, the enterance it on the right side, which means that the sheikah stone is on the right side as well. Keeping this in mind can sometimes help save a few steps when approaching the screen with the Goron Shop. You can also check which side it's on when warping to it, to know whether you should start moving right or left on the 1st beat after teleporting.
 
 #### Goron Shop Forest
 
@@ -52,6 +54,10 @@ Note: The Wisdom Fountain can only spawn on the grassland.
 ![](/img/mapping/grass_19_tile.png)
 
 ![](/img/mapping/grass_19_example.png)
+
+Sometimes you can save a few steps by knowing that the red chest is actually visible on the map! It helps to determine the most efficient way to approach the screen grab the torch.
+
+![](/img/mapping/grass_19_example2.png)
 
 ### The Bench
 ![](/img/mapping/the_bench.png)
@@ -145,6 +151,11 @@ These POIs will always have a key. The key will respawn after you clear a dungeo
 
 ![](/img/mapping/grass_09.png)
 
+![](/img/mapping/grass_09_tile.png)
+
+For this POI, you should sometimes keep in mind which side you approach it from, as the box-like shape with the key chest in it only has 1 enterance! Fortunately, it's possible to tell where it is, as the chest (which is visible on the map) is always on the opposite side.
+
+![](/img/mapping/grass_09_example.png)
 
 #### Keymos
 There’s a keymos that drops a key here! The dirt makes a pattern that looks like a key. BUT It doesn’t always look like a key. The floor is randomized between dirt and grass. So sometimes you can see it, and other times not so much.
@@ -167,4 +178,26 @@ There’s a keymos that drops a key here! The dirt makes a pattern that looks li
 
 ### Beach Keys
 
-(get pictures of the 2 beach keys)
+The beach keys are usually not that useful, since the beach is out of the way most of the time which makes getting them slow. But they can still help occasionally if they happen to be in a convenient location.  
+Note: both of the beach POIs can be mirrored.
+
+#### Beach key #1
+
+![](/img/mapping/beach_07.png)
+
+![](/img/mapping/beach_07_tile.png)
+
+![](/img/mapping/beach_07_example.png)
+
+
+#### Beach key #2
+
+![](/img/mapping/beach_08.png)
+
+![](/img/mapping/beach_08_tile.png)
+
+![](/img/mapping/beach_08_example.png)
+
+#### Both beach keys on the map
+
+![](/img/mapping/beach_07_08_example.png)
