@@ -9,24 +9,15 @@ menu:
 A list of issues that are good to be aware of as they might result in softlocks, crashes or unexpected behaviour.
 _Issues prior to version 1.1.1 are not listed._
 
-## Version 1.2
+## Version 1.4
 
-Note that some of these might've been fixed in 1.2.0, but we haven't been able to confirm it.
-
-### Fire Keese & Glass Flail Crash
-
-I'm pretty sure this still crashes the game in some situations? Does not always happen, not sure about specifics.
-Does it apply to other keese as well?
+Note that some of these might've been fixed in 1.4.0, but we haven't been able to confirm it.
 
 ### Unreliable Permadeath Leaderboards
 
 There is a glitch which allows one to submit any character (even co-op), to any permadeath leaderboard, making the boards unreliable for now.
 As an example, it's possible to submit a PD co-op barrier skip run to the single player PD story mode board.
-This also applies to Dungeon Mode.
-
-### Infinite Bounce Trap Crash
-
-If two bounce traps are facing each other, attempting to step onto one crashes the game instantly as it moves you back and forth infinitely, trying to figure out where to place you.
+This also applies to Dungeon, Puzzle and Arena Mode.
 
 ### Ganon & Explosives on ice blocks
 
@@ -35,6 +26,15 @@ A very important thing to keep in mind is that this means that blowing up an ice
 
 Never blow up one of the ice blocks with Shrine of Death active.
 Make sure that the ice block has more than 3 hearts left if you're low on health to prevent the explosion from killing you. Especially important to keep in mind when playing as Yves or Aria.
+
+### Fire Keese & Glass Flail Crash
+
+I'm pretty sure this still crashes the game in some situations? Does not always happen, not sure about specifics.
+Does it apply to other keese as well?
+
+### Infinite Bounce Trap Crash
+
+If two bounce traps are facing each other, attempting to step onto one crashes the game instantly as it moves you back and forth infinitely, trying to figure out where to place you.
 
 ## Version 1.1
 

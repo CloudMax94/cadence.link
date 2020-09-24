@@ -37,7 +37,8 @@ In dungeons you'd exit the dungeon and appear at its entrance.
 For zelda's room you get warped to the next room.
 For Link's house you get warped out of the house.
 For Octavo you get warped out of the hut.
-In dungeon mode you're warped to overworld screen 0,0. It has Error's House, allowing you to get a Lute.
+In dungeon mode & puzzle mode you're warped to overworld screen 0,0. It has Error's House, allowing you to get a Lute.
+In arena mode you're warped to the floor entrance tile. (which is where you start anyway)
 
 ## Exit transition
 (Black tiles in indoor areas)
@@ -63,6 +64,9 @@ Will likely crash, just like with other indoor areas.
 
 ## Overworld Screen Transition
 All overworld screen transitions crash from what I've seen.
+
+## Temple of Brainstorms Screen Transition
+Temple of Brainstorms transitions crash from what I've seen.
 
 ## Warp Pad Transition
 (The one that goes between Dark World Lobby & Last Boss)
