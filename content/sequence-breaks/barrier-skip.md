@@ -11,7 +11,7 @@ Allows you to bypass the Hyrule Castle Barrier, skipping the 4 dungeon instrumen
 ## Methods
 
 ### Wrong Warp (co-op)
-**Exclusive to version 1.2 and 1.1.**
+**Exclusive to version 1.4 through 1.1.**
 
 Requires that you have access to the Sheikah Stone on Zelda's Balcony.
 Not available in permadeath as it requires getting a game over.
