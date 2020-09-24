@@ -11,22 +11,6 @@ background: "/img/backgrounds/temple-of-storms.png"
 
 ## 1F Skip
 
-### Glove and 2 Bombs
-
-{{< tweet 1152330611492700160 >}}
-
-### Glove and 1 Bombchu
-
-{{< tweet 1207273997655691266 >}}
-
-### Glove, 1 Bomb and Link
-
-{{< tweet 1140274327977373702 >}}
-
-### Glove, 1 Bomb and Haste
-
-{{< tweet 1207616634459787264 >}}
-
 ### Iron Boots
 
 By using the greaves from the pot together with Hookshot or Boomerang, you're able to bring your Iron Boots up onto the center wall and skip straight to 2F.
@@ -35,12 +19,34 @@ By using the greaves from the pot together with Hookshot or Boomerang, you're ab
 
 ### Cane of Somaria
 
-By throwing a cane block up behind the switch, you're able to throw a pot onto the switch.
-You can also use something to pivot north while standing against the wall below the switch to place and throw a cane block directly onto the switch.
+By pivoting north while standing against the wall below the switch, you're able to place and throw a cane block directly onto the switch.
+
+You can also use hover boots to make your way to the switch using 3 cane blocks. Requires 60% stamina.
+Can use 1 cane block (20% stamina) to reach the pots on the left and refill the stamina.
 
 ### Tower Shield
 
 Tower Shield allows you to block the wind turbines in front of the 2F stairs.
+
+### Pot Throw
+
+**Exclusive to version 1.2 through 1.0.**
+
+**2 Bombs**
+
+{{< tweet 1152330611492700160 >}}
+
+**1 Bombchu**
+
+{{< tweet 1207273997655691266 >}}
+
+**1 Bomb and Link (without shield attack)**
+
+{{< tweet 1140274327977373702 >}}
+
+**1 Bomb and Haste**
+
+{{< tweet 1207616634459787264 >}}
 
 ## 2F Skip
 

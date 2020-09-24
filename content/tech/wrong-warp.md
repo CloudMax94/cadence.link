@@ -6,7 +6,7 @@ menu:
     weight: 95020
 ---
 
-**Exclusive to version 1.2 & 1.1.**
+**Exclusive to version 1.4 - 1.1.**
 
 By doing a transition with player 2 while player 1 is dead and then unassigning player 2 during it to cause a game over, it's possible to Wrong Warp.
 You have to choose "Continue" or "Quick Restart" before the transition completes.
