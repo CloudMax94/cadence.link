@@ -1,5 +1,5 @@
 {
-  "_": "This file was generated from the games localization.xml file and should usually not be edited manually.",
+  "_": "This file was generated from the games necrodancer.xml & localization.xml files and should usually not be edited manually.",
   "ability_burrow": {
     "flyaway": "Burrow",
     "inventory": "[c:s]Burrow[/c] [i:yves][n]Press [i:button_r] to burrow underground, becoming immune to all damage.",
@@ -41,10 +41,15 @@
     "slot": "shield",
     "version": "1.1.0"
   },
+  "ability_mask_swap": {
+    "inventory": "[c:s]Mask Swap[/c] [i:skullkid][n]Press [i:button_r] to cycle through [c:b]Skull Kid[/c]'s masks, changing his weapon and abilities.",
+    "slot": "shield",
+    "version": "1.3.0"
+  },
   "ability_naginata_charge": {
     "flyaway": "Naginata Charge",
-    "inventory": "[c:s]Naginata Charge[/c] [i:impa][n]Press [i:button_l] to lunge forward one space, hitting enemies in a straight line up to 3 spaces ahead, at the cost of stamina.",
-    "get": "You got the [c:s]Naginata Charge[/c] ability![n]It's automatically assigned to [i:button_l], and only [i:impa] can use it.[p][c:b]Impa[/c] lunges forward one space, hitting enemies in a straight line up to 3 spaces ahead of her.",
+    "inventory": "[c:s]Naginata Charge[/c] [i:impa][n]Press [i:button_l] to lunge forward one space, hitting enemies in a straight line up to 3 spaces ahead. Consumes stamina.",
+    "get": "You got the [c:s]Naginata Charge[/c] ability![n]It's automatically assigned to [i:button_l], and only [i:impa] can use it.[p][c:b]Impa[/c] lunges forward one space, hitting enemies in a straight line up to 3 spaces ahead of her. Consumes stamina.",
     "slot": "special",
     "version": "1.2.0",
     "coinCost": "100"
@@ -99,17 +104,23 @@
     "slot": "special",
     "coinCost": "100"
   },
+  "ability_skull_kid_special": {
+    "flyaway": "Mask Magic",
+    "get": "You got the [c:s]Mask Magic[/c] ability![n]It's automatically assigned to [i:button_l], and only [i:skullkid] can use it.[p][c:b]Skull Kid[/c] can now unlock the special power contained in his masks![p]Use [i:button_l] to use a magic attack. The attack changes depending on the currently equipped mask.",
+    "slot": "special",
+    "version": "1.3.0"
+  },
   "ability_spin_attack": {
     "flyaway": "Spin Attack",
     "inventory": "[c:s]Spin Attack[/c] [i:link][n]Hold [i:button_l] and then release to deal damage to enemies adjacent to [c:b]Link[/c], at the cost of stamina.",
-    "get": "You got the [c:s]Spin Attack[/c] ability![n]It's automatically assigned to [i:button_l], and only [i:link] can use it.[p][c:b]Link[/c] can now use stamina to charge a spin attack and unleash it to hit all surrounding enemies!",
+    "get": "You got the [c:s]Spin Attack[/c] ability![n]It's automatically assigned to [i:button_l], and only [i:link] can use it.[p][c:b]Link[/c] can now use stamina to charge a spin attack and unleash it to hit all surrounding enemies![p]It will even fire a beam projectile when [c:b]Link[/c] is at full health.",
     "slot": "special",
     "coinCost": "100"
   },
   "ability_vocal_blast": {
     "flyaway": "Vocal Blast",
-    "inventory": "[c:s]Vocal Blast[/c] [i:frederick][n]Press [i:button_r] to emit a burst of song, knocking back and confusing all adjacent enemies, at the cost of stamina.",
-    "get": "You got the [c:s]Vocal Blast[/c] ability![n]It's automatically assigned to [i:button_r], and only [i:frederick] can use it.[p][c:b]Frederick[/c] emits a quick burst of sound, knocking back and confusing all adjacent enemies.",
+    "inventory": "[c:s]Vocal Blast[/c] [i:frederick][n]Press [i:button_r] to emit a burst of song, knocking back and confusing all adjacent enemies. Consumes stamina.",
+    "get": "You got the [c:s]Vocal Blast[/c] ability![n]It's automatically assigned to [i:button_r], and only [i:frederick] can use it.[p][c:b]Frederick[/c] emits a quick burst of sound, knocking back and confusing all adjacent enemies. Consumes stamina.",
     "slot": "shield",
     "version": "1.2.0"
   },
@@ -186,6 +197,12 @@
     "flyaway": "5 Bombchus",
     "coinCost": "50"
   },
+  "bongo": {
+    "flyaway": "Bongos",
+    "inventory": "[c:b]Bongos[/c] [n]You got these after defeating the King Dobongo in the [c:b]Gerudo Arena[/c]. They resonate with power...",
+    "get": "You got the [c:b]bongos[/c]![n]You can feel a magical aura when you hold them...[p]This may help you stop [c:b]Ganon[/c]!",
+    "version": "1.3.0"
+  },
   "boomerang": {
     "flyaway": "Boomerang",
     "inventory": "[c:s]Boomerang[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Throw this at enemies to stun them. It always finds its way back to you.",
@@ -214,6 +231,14 @@
     "slot": "action",
     "coinCost": "80"
   },
+  "bottle4": {
+    "flyaway": "Bottle",
+    "inventory": "[c:s]Bottle[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Store things in this for later use.",
+    "get": "You got an empty [c:s]bottle[/c]![n]Assign it to [i:button_a], [i:button_b], [i:button_x], or [i:button_y] on the inventory screen.[p]Can be used to store potions, fish, bees, and fairies that you find.",
+    "slot": "action",
+    "version": "1.3.0",
+    "coinCost": "80"
+  },
   "bow": {
     "flyaway": "Bow",
     "inventory": "[c:s]Bow[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Hold the button down and release on the following beat to fire an arrow that can hit enemies from a distance.",
@@ -231,7 +256,7 @@
   "charm_boss": {
     "flyaway": "Skull Charm",
     "inventory": "[c:s]Skull Charm[/c] [n]Reveals which areas in the world contain minibosses you have yet to defeat.",
-    "get": "You got the [c:s]skull charm[/c]![n]Minibosses you haven't beaten yet will now be revealed on the map screen.[p]Open the map screen by pressing [i:button_plus]. (You may then have to press [i:button_l] to see it!)"
+    "get": "You got the [c:s]skull charm[/c]![n]Minibosses you haven't beaten yet will now be revealed on the map screen.[p]Open the map screen by     pressing [i:button_plus]. (You may then have to press [i:button_l] to see it!)"
   },
   "charm_chest": {
     "flyaway": "Treasure Charm",
@@ -375,6 +400,13 @@
   "heart": {
     "coinCost": "5"
   },
+  "hero_medal": {
+    "flyaway": "Hero's Medallion",
+    "inventory": "[c:s]Hero's Medallion[/c] [n]Gives immunity to poison. A symbol of courage, this medallion was bestowed upon you for surviving the [c:b]Gerudo Arena[/c].",
+    "get": "You got the [c:s]hero's medallion[/c]![n]A symbol of courage, this passive item grants immunity from poison.",
+    "version": "1.3.0",
+    "coinCost": "50"
+  },
   "hookshot": {
     "flyaway": "Hookshot",
     "inventory": "[c:s]Hookshot[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Use it to pull yourself to certain objects or stun and knock back enemies.",
@@ -433,6 +465,7 @@
     "inventory": "[c:s]Boots of Leaping[/c] [n]These boots let you jump 2 full spaces with every move. Press [i:button_left_stick_press] to toggle them on and off.",
     "hint": "LONG JUMP",
     "slot": "feet",
+    "version": "1.3.0",
     "coinCost": "100"
   },
   "longshot": {
@@ -456,6 +489,14 @@
     "slot": "action",
     "coinCost": "80"
   },
+  "magic_cape": {
+    "flyaway": "Magic Cape",
+    "inventory": "[c:s]Magic Cape[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Using this will allow you to become invisible, consuming stamina and avoiding enemy attacks. Use it again to cancel the effect.",
+    "get": "You got the [c:s]magic cape[/c]![n]Assign it to [i:button_a], [i:button_b], [i:button_x], or [i:button_y] on the inventory screen.[p]Using this will allow you to become invisible, avoiding enemy attacks at the cost of stamina.[p]If you use it a second time or run out of stamina, your invisibility will end.",
+    "slot": "action",
+    "version": "1.3.0",
+    "coinCost": "120"
+  },
   "map": {
     "flyaway": "Map",
     "coinCost": "150"
@@ -464,6 +505,53 @@
     "flyaway": "Maracas",
     "inventory": "[c:b]Maracas[/c] [n]You got these after defeating the Gohmaracas, deep in the [c:b]Lost Swamp[/c]. They resonate with power...",
     "get": "You got the [c:b]maracas[/c]![n]You can feel a magical aura when you hold them...[p]This may help you stop [c:b]Octavo[/c]!"
+  },
+  "mask_darknut": {
+    "flyaway": "Darknut Mask",
+    "inventory": "[c:s]Darknut Mask[/c] [i:skullkid][n]This mask gives Skull Kid the ability to block damage from the front while standing still. Attacks with a broadsword. Consumes stamina.",
+    "get": "You got the [c:s]Darknut Mask[/c]![n]This mask can be worn by [i:skullkid]. It resembles the face of a Darknut.[p]Press [i:button_r] to cycle through [c:b]Skull Kid[/c]'s masks, changing his weapon and abilities.",
+    "version": "1.3.0",
+    "coinCost": "120"
+  },
+  "mask_deku": {
+    "flyaway": "Deku Mask",
+    "inventory": "[c:s]Deku Mask[/c] [i:skullkid][n]This mask gives Skull Kid the power of a Deku Scrub. Attacks with a head-bonk.",
+    "version": "1.3.0"
+  },
+  "mask_goron": {
+    "flyaway": "Goron Mask",
+    "inventory": "[c:s]Goron Mask[/c] [i:skullkid][n]This mask gives Skull Kid immunity from lava, hot coals, and bombs. Attacks with a flail.",
+    "get": "You got the [c:s]Goron Mask[/c]![n]This mask can be worn by [i:skullkid]. It resembles the face of a Goron.[p]Press [i:button_r] to cycle through [c:b]Skull Kid[/c]'s masks, changing his weapon and abilities.",
+    "version": "1.3.0",
+    "coinCost": "120"
+  },
+  "mask_skull": {
+    "flyaway": "Skull Mask",
+    "inventory": "[c:s]Skull Mask[/c] [i:skullkid][n]A mysterious mask found in Deku Hollow. Can cause attacks to defeat enemies instantly. Attacks with a spear.",
+    "get": "You got the [c:s]Skull Mask[/c]![n]This mask can be worn by [i:skullkid]. A mysterious aura emanates from it.[p]Press [i:button_r] to cycle through [c:b]Skull Kid[/c]'s masks, changing his weapon and abilities.",
+    "version": "1.3.0"
+  },
+  "mask_truth": {
+    "flyaway": "Mask of Truth",
+    "inventory": "[c:s]Mask of Truth[/c] [i:skullkid][n]A mask that can see the truth, revealing all items, even ones inside chests and other objects. Attacks with a titanium dagger.",
+    "get": "You got the [c:s]Mask of Truth[/c]![n]This mask can be worn by [i:skullkid]. It has the power to see through certain objects.[p]Press [i:button_r] to cycle through [c:b]Skull Kid[/c]'s masks, changing his weapon and abilities.",
+    "version": "1.3.0",
+    "coinCost": "120"
+  },
+  "mask_zora": {
+    "flyaway": "Zora Mask",
+    "inventory": "[c:s]Zora Mask[/c] [i:skullkid][n]This mask gives Skull Kid the ability to move freely through water. Attacks with a rapier.",
+    "get": "You got the [c:s]Zora Mask[/c]![n]This mask can be worn by [i:skullkid]. It resembles the face of a Zora.[p]Press [i:button_r] to cycle through [c:b]Skull Kid[/c]'s masks, changing his weapon and abilities.",
+    "version": "1.3.0",
+    "coinCost": "120"
+  },
+  "megaton_hammer": {
+    "flyaway": "Megaton Hammer",
+    "inventory": "[c:s]Megaton Hammer[/c] -- Assign to [i:button_a] [i:button_b] [i:button_x] [i:button_y][n]Performs a powerful hammer attack directly in front of you, dealing [c:r]3 damage[/c] and smashing some objects, at the cost of stamina.",
+    "get": "You got the [c:s]megaton hammer[/c]![n]Assign it to [i:button_a], [i:button_b], [i:button_x], or [i:button_y] on the inventory screen.[p]This will perform a powerful hammer attack directly in front of you, dealing [c:r]3 damage[/c] and smashing some objects.",
+    "slot": "action",
+    "version": "1.3.0",
+    "coinCost": "150"
   },
   "misc_boss_key": {
     "flyaway": "Boss Key"
@@ -503,6 +591,13 @@
     "get": "You got the [c:s]Pegasus Anklet[/c]![n]Assign it to [i:button_a], [i:button_b], [i:button_x], or [i:button_y] on the inventory screen.[p]Hold for one or two beats, then release on the following beat to perform a dash attack!",
     "slot": "action",
     "coinCost": "160"
+  },
+  "petal_trimmer": {
+    "flyaway": "Petal Trimmer",
+    "inventory": "[c:s]Petal Trimmer[/c] [n]It looks like you can use it to style and care for Deku petals.",
+    "get": "You got the [c:s]petal trimmer[/c]![n]It looks like it can be used to style and care for Deku petals.[p]Perhaps someone nearby lost this.",
+    "version": "1.3.0",
+    "coinCost": "10"
   },
   "potion_health": {
     "flyaway": "Health Potion",
@@ -598,6 +693,14 @@
     "hint": "REFLECTS 1 HIT",
     "slot": "ring",
     "coinCost": "40"
+  },
+  "ring_stealth": {
+    "flyaway": "Ring of Stealth",
+    "inventory": "[c:s]Ring of Stealth[/c] [n]Decreases the distance at which enemies can detect the player.",
+    "hint": "STEALTHY",
+    "slot": "ring",
+    "version": "1.3.0",
+    "coinCost": "100"
   },
   "scroll_confuse": {
     "flyaway": "Scroll of Confusion",
@@ -709,6 +812,14 @@
     "slot": "shovel",
     "coinCost": "75"
   },
+  "shovel_golden": {
+    "flyaway": "Golden Shovel",
+    "inventory": "[c:s]Golden Shovel[/c] [n]Allows you to dig through walls, occasionally spawning rupees.",
+    "hint": "DIG, GET RUPEES",
+    "slot": "shovel",
+    "version": "1.3.0",
+    "coinCost": "100"
+  },
   "shovel_stamina": {
     "flyaway": "Shovel of Stamina",
     "inventory": "[c:s]Shovel of Stamina[/c] [n]Allows you to dig through walls, regaining stamina as you dig.",
@@ -730,6 +841,17 @@
     "hint": "+1 DAMAGE",
     "slot": "feet",
     "coinCost": "120"
+  },
+  "synth": {
+    "flyaway": "Synth",
+    "inventory": "[c:b]Synth[/c] [n]You got this after defeating Synthrova, within the [c:b]Temple of Brainstorms[/c]. It resonates with power...",
+    "get": "You got the [c:b]synth[/c]![n]You can feel magical aura when you hold it...[p]This may help you stop [c:b]Ganon[/c]!",
+    "version": "1.3.0"
+  },
+  "synth_unpowered": {
+    "flyaway": "Synth (Unpowered)",
+    "get": "You got the [c:b]synth[/c]...but it doesn't look like it's working right now. It looks like you need to [c:s]plug it in[/c] somewhere first...",
+    "version": "1.3.0"
   },
   "telescope": {
     "flyaway": "Telescope",
@@ -763,6 +885,14 @@
     "hint": "+3 VISION, BRITTLE",
     "slot": "torch",
     "coinCost": "40"
+  },
+  "torch_magic": {
+    "flyaway": "Magic Torch",
+    "inventory": "[c:s]Magic Torch[/c] [n]Provides amazing light and reveals the location of enemies, NPCs, and items. Slowly consumes stamina. Can burn stumps and light up braziers.",
+    "hint": "MAX VISION, COSTS STAMINA",
+    "slot": "torch",
+    "version": "1.3.0",
+    "coinCost": "75"
   },
   "torch_obsidian": {
     "flyaway": "Obsidian Torch",
@@ -1144,6 +1274,10 @@
     "get": "You got the [c:s]Kokiri sword[/c]! [n]Used by [i:link] only. Deals [c:r]4 damage[/c] to the enemy directly in front of you.[p]Said to be intended for a future hero, this weapon was meant to banish anything in [c:b]Link[/c]'s path.",
     "slot": "weapon",
     "coinCost": "200"
+  },
+  "weapon_skull_kid_mask": {
+    "slot": "weapon",
+    "version": "1.3.0"
   },
   "weapon_spear": {
     "flyaway": "Spear",
