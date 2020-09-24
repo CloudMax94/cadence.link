@@ -8,7 +8,8 @@ background: "/img/backgrounds/future-world.png"
 ---
 
 [Ganon](/bosses/ganon) is the boss of Future World.
-Replaced with [The NecroDancer](/bosses/the-necrodancer) if Octavo is present.
+Replaced with [The NecroDancer](/bosses/the-necrodancer) if [Octavo](/characters/octavo) is present.
+Replaced with [Skull Ganon](/bosses/skull-ganon) if [Skull Kid](/characters/skull-kid) is present.
 
 Future World has 4 floors which are done in succession without any checkpoint between them.
 

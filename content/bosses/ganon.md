@@ -9,7 +9,8 @@ menu:
 ![](/img/bosses/ganon.png)
 
 The boss of [Future World](/dungeons/future-world/).
-Replaced with [The NecroDancer](/bosses/the-necrodancer) if Octavo is present.
+Replaced with [The NecroDancer](/bosses/the-necrodancer) if [Octavo](/characters/octavo) is present.
+Replaced with [Skull Ganon](/bosses/skull-ganon) if [Skull Kid](/characters/skull-kid) is present.
 
 Ganon takes 1 damage from all sources except explosives which deal 2 damage.
 

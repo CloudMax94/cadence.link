@@ -9,7 +9,7 @@ menu:
 ![](/img/bosses/the-necrodancer.png)
 
 Alternate boss of [Future World](/dungeons/future-world/).
-Replaces [Ganon](/bosses/ganon) if Octavo is present.
+Replaces [Ganon](/bosses/ganon) if [Octavo](/characters/octavo) is present.
 
 ## Quick Kills
 

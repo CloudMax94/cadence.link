@@ -10,6 +10,10 @@ menu:
 
 Shadow Link start in front of the Sheikah Stone outside of Links house.
 
+## Unlock condition
+
+Purchase the Cadence of Hyrule Character Pack.
+
 ## Weapons
 
 Shadow Links unique weapon type is **long sword**.
