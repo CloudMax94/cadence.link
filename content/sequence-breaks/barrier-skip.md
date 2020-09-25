@@ -21,16 +21,6 @@ Note that the game over shop has to be disabled in settings, as otherwise you'll
 
 {{< yt govP3NY_qmY >}}
 
-### Zelda + Impa (co-op)
-
-Requires that you have access to Zelda's Balcony and Impa.
-The only way to fill both of these requirements is to start Single Character with Zelda as player 1 and Impa as player 2.
-
-By triggering Impas teleport you can get her to teleport diagonally behind the other player.
-This allows you to teleport through diagonal gap, since the teleport ignores fence collision.
-
-{{< yt DPZ9D7lEj4U >}}
-
 ### Spawn Displacement (co-op)
 
 This works by combining [respawn storage](/tech/respawn-storage/) and [spawn displacement](/tech/spawn-displacement/).
@@ -41,6 +31,17 @@ As an alternative to using hookshot, it's possible to freeze player 1 and move t
 
 {{< yt gkMqf0Vvshs >}} _This specific variation is for version 1.1 as it makes use of the broken fall logic._
 _For other versions the setup has to be altered to get the player into position._
+
+### Zelda + Impa (co-op)
+**Exclusive to version 1.2.**
+
+Requires that you have access to Zelda's Balcony and Impa.
+The only way to fill both of these requirements is to start Single Character with Zelda as player 1 and Impa as player 2.
+
+By triggering Impa's vanish ability you can get her to teleport diagonally behind the other player.
+This allows you to teleport through the diagonal gap, since vanish ignores fence collision in version 1.2.
+
+{{< yt DPZ9D7lEj4U >}}
 
 ### Bounce Cancel (solo)
 **Exclusive to version 1.1 and 1.0.**
