@@ -7,7 +7,7 @@ menu:
 ---
 
 There are some very specific scenarios which allow you to move between the use & activation of your hookshot without cancelling it.
-This includes teleporting (through [Player 2 Warping](/tech/player-2-warp), teleport traps), yves unburrow, and being frozen and pushing the ice block.
+This includes teleporting (through [Player 2 Warping](/tech/player-2-warp), teleport traps), getting pushed by burrow, and being frozen and pushing the ice block.
 
 This allows you to alter your X,Y,Z coordinates before the hookshot starts pulling you in.
 The game adds up the X and Y delta of the player and destination (tile in front of target) coordinates to determine travel distance.

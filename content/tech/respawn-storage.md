@@ -18,7 +18,7 @@ The respawn location does not update when doing the following:
 - Moving while frozen
 - Feathering onto an enemy & landing afterwards
 - Moving onto a trap. (altho if it's a bounce trap, and it pushes you onto a valid tile, it will update)
-- Getting pushed by Yves unburrow so that you land on a tile that does not update respawn location. (like ice or water)
+- Getting pushed by Burrow so that you land on a tile that does not update respawn location. (like ice or water)
 - When a standable entity below you is removed; The Z coordinate is kept
 - Teleporting with Impas decoy ability
 
