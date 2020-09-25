@@ -13,11 +13,10 @@ _Issues prior to version 1.1.1 are not listed._
 
 Note that some of these might've been fixed in 1.4.0, but we haven't been able to confirm it.
 
-### Unreliable Permadeath Leaderboards
+### Unreliable Leaderboards
 
-There is a glitch which allows one to submit any character (even co-op), to any permadeath leaderboard, making the boards unreliable for now.
-As an example, it's possible to submit a PD co-op barrier skip run to the single player PD story mode board.
-This also applies to Dungeon, Puzzle and Arena Mode.
+There is a glitch which allows one to submit co-op runs as if they single player, as long as you're able to Quick Restart.
+So you could for example start a run as Yves + Zelda, then trick the game into thinking it's a single player Yves run. Meanwhile you're playing as Zelda the entire time.
 
 ### Ganon & Explosives on ice blocks
 
