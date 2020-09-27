@@ -6,6 +6,6 @@ menu:
     weight: 90
 ---
 
-A lost of all achievements in the game.
+A list of all achievements in the game.
 
 {{< achievements >}}
