@@ -1,0 +1,15 @@
+<table class="achievement-table">
+{{ range $id, $achievement := .Site.Data.achievements }}
+  {{ if eq $id 0 }}
+    {{/* We skip the first index comment at the start of the data file. */}}
+  {{ else }}
+    <tr>
+      <td>
+        <div class="achievement-icon" style="background-position: {{ (mul (sub $id 1) -40) }}px"></div>
+        <div class="achievement-name">{{ $achievement.name | safeHTML }}</div>
+        {{ $achievement.desc | safeHTML }}
+      </td>
+    </tr>
+  {{ end }}
+{{ end }}
+</table>

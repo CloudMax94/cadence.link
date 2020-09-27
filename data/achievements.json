@@ -1,0 +1,195 @@
+[
+  "This file was generated from the games localization.xml file and should usually not be edited manually.",
+  {
+    "name": "Warm-Up Act",
+    "desc": "Defeat one of Octavo's champions"
+  },
+  {
+    "name": "Someone's Awakening",
+    "desc": "Awaken a sleeping companion"
+  },
+  {
+    "name": "Sharpshooter",
+    "desc": "Defeat 4 enemies with a single arrow"
+  },
+  {
+    "name": "Shocking Developments",
+    "desc": "Defeat 5 enemies at once with electricity"
+  },
+  {
+    "name": "Hale and Hearty",
+    "desc": "Have 16 heart containers"
+  },
+  {
+    "name": "Expansive Repertoire",
+    "desc": "Collect all A/B/X/Y items and permanent upgrades"
+  },
+  {
+    "name": "Eight Sharps",
+    "desc": "Find all 8 unique weapons in a single playthrough"
+  },
+  {
+    "name": "Downbeat",
+    "desc": "Use Down Thrust on 3 consecutive enemies"
+  },
+  {
+    "name": "Master Angler",
+    "desc": "Catch a golden fish"
+  },
+  {
+    "name": "Hot Feet",
+    "desc": "Swim in lava"
+  },
+  {
+    "name": "Fortissimo!",
+    "desc": "Deal 6 damage to an enemy with a single hit"
+  },
+  {
+    "name": "THIEF",
+    "desc": "Defeat the shopkeeper"
+  },
+  {
+    "name": "Bee Bop",
+    "desc": "Defeat any boss with a bee getting the final hit"
+  },
+  {
+    "name": "Flawless Performance",
+    "desc": "Defeat any boss without getting hit or missing a beat"
+  },
+  {
+    "name": "The Eye of Gohma",
+    "desc": "Defeat Gohmaracas using only a bow and arrows"
+  },
+  {
+    "name": "Hot Beats",
+    "desc": "Defeat Wizzroboe using only the Fire Rod"
+  },
+  {
+    "name": "Cool Riffs",
+    "desc": "Defeat Bass Guitarmos Knights using only the Ice Rod"
+  },
+  {
+    "name": "'Splodenspiel",
+    "desc": "Defeat Gleeokenspiel using only bombs and bombchus"
+  },
+  {
+    "name": "The King of Evil",
+    "desc": "Defeat Ganon"
+  },
+  {
+    "name": "Virtuoso",
+    "desc": "Complete the game in Permadeath Mode"
+  },
+  {
+    "name": "Allegro",
+    "desc": "Complete the game in Permadeath Mode in under 1 hour without using Fixed-Beat Mode or Dungeon Mode"
+  },
+  {
+    "name": "No Steps Wasted",
+    "desc": "Complete the game in less than 5,000 steps without using Dungeon Mode"
+  },
+  {
+    "name": "Unarmed and Dangerous",
+    "desc": "Complete the game in Permadeath Mode using only Yves"
+  },
+  {
+    "name": "Minimalism",
+    "desc": "Complete the game without picking up any permanent items except a base dagger or short sword"
+  },
+  {
+    "name": "Sight Reading",
+    "desc": "Complete a daily challenge"
+  },
+  {
+    "name": "Turn It Down",
+    "desc": "Complete the game with the music volume set to 0 without using Fixed-Beat Mode"
+  },
+  {
+    "name": "7/4 Time",
+    "desc": "Defeat 7 enemies within 4 beats"
+  },
+  {
+    "name": "Major Key",
+    "desc": "Have 9 keys at once"
+  },
+  {
+    "name": "Lonely Digging",
+    "desc": "Dig out every diggable tile on a dungeon floor"
+  },
+  {
+    "name": "Falling Down",
+    "desc": "Defeat a miniboss by pushing it into a hole"
+  },
+  {
+    "name": "Freeform Jazz",
+    "desc": "Complete the game in Fixed-Beat Mode in under 30 minutes without using Dungeon Mode"
+  },
+  {
+    "name": "Prestissimo",
+    "desc": "Complete the game in Double-Time Mode"
+  },
+  {
+    "name": "Hasters Gonna Haste",
+    "desc": "As Octavo, defeat 10 enemies during a single cast of Haste"
+  },
+  {
+    "name": "What Doesn't Kill You Makes You Conga",
+    "desc": "Defeat any boss while the Shrine of Conga is active"
+  },
+  {
+    "name": "Classic Mode",
+    "desc": "Complete the game in Dungeon Mode"
+  },
+  {
+    "name": "Come Reign or Shrine",
+    "desc": "Complete the game in Permadeath Dungeon Mode, activating at least 5 shrines along the way"
+  },
+  {
+    "name": "Spearmaster",
+    "desc": "As Impa, complete the game without performing any regular weapon attacks"
+  },
+  {
+    "name": "Capital Gains",
+    "desc": "As Frederick, collect 500 rupees"
+  },
+  {
+    "name": "The Lowest of the Low%",
+    "desc": "As Aria, complete the game in Permadeath Dungeon Mode without using any A/B/X/Y items"
+  },
+  {
+    "name": "16-Bit Party People",
+    "desc": "Complete All-Characters Mode"
+  },
+  {
+    "name": "Flam",
+    "desc": "Deal damage to two Dobongo enemies on the same beat"
+  },
+  {
+    "name": "Friendly Fire",
+    "desc": "Defeat King Dobongo without dropping any of your own bombs or bombchus."
+  },
+  {
+    "name": "Lightning Strikes Twice",
+    "desc": "Defeat Synthrova using only lightning arrows"
+  },
+  {
+    "name": "Shortcutter",
+    "desc": "Complete the game without fighting any of the four champions.[n](Not including Symphony of the Mask.)"
+  },
+  {
+    "name": "Masquerade",
+    "desc": "As Skull Kid, defeat an enemy using each of the 6 mask abilities within 50 beats"
+  },
+  {
+    "name": "Gladiator",
+    "desc": "Reach floor 25 in Arena Mode"
+  },
+  {
+    "name": "Brainiac",
+    "desc": "Complete the game in Puzzle Mode in under 4000 steps"
+  },
+  {
+    "name": "Necro-Mastery",
+    "desc": "Complete the game in Permadeath Story Mode in under 90 minutes, while collecting all 6 instruments, without using Fixed-Beat Mode"
+  }
+]

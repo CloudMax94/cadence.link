@@ -1,0 +1,28 @@
+.achievement-table {
+  width: 100%;
+  max-width: 550px;
+  border-collapse: collapse;
+
+  &, tr, td {
+    border: 0;
+  }
+
+  td {
+    padding: 6px 12px;
+    background: rgba(0,0,0,0.25);
+    box-shadow: inset 0 0 0 1px #ffff;
+    @extend .description-box;
+  }
+}
+
+.achievement-icon {
+  width: 40px;
+  height: 40px;
+  background: url(/img/achievement-icons.png);
+  float: left;
+  margin-right: 4px;
+}
+
+.achievement-name {
+  color: #00b0ff;
+}
