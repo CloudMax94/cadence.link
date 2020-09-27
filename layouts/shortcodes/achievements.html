@@ -7,7 +7,7 @@
       <td>
         <div class="achievement-icon" style="background-position: {{ (mul (sub $id 1) -40) }}px"></div>
         <div class="achievement-name">{{ $achievement.name | safeHTML }}</div>
-        {{ $achievement.desc | safeHTML }}
+        {{ partial "ingame-text.html" $achievement.desc | safeHTML }}
       </td>
     </tr>
   {{ end }}
