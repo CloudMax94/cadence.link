@@ -6,6 +6,12 @@
 * abstract things into their own files.                          *
 *****************************************************************/
 
+:root {
+  // Assumed scrollbar width, before it is calculated by javascript.
+  // Only guaranteed to match webkit which uses our styled scrollbar.
+  --scrollbar-width: 10px;
+}
+
 * {
   box-sizing: border-box;
   image-rendering: pixelated;
@@ -182,6 +188,8 @@ body {
   overflow-y: scroll;
 
   padding: 16px;
+  padding-right: 0px; // Fallback for when scrollbar is too big so value below becomes invalid (negative)
+  padding-right: calc(16px - var(--scrollbar-width)); // Subtract scrollbar width
   text-align: center;
 }
 
