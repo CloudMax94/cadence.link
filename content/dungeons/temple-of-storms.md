@@ -11,6 +11,23 @@ background: "/img/backgrounds/temple-of-storms.png"
 
 ## 1F Skip
 
+### Turbine Skip
+
+It is possible to get past the wind turbines instead of deactivaing them.
+Below are setups that use items commonly
+
+**Bomb & Anklet**
+{{< yt Uv0jekL8q_Y >}}
+
+**Bomb & Hookshot**
+{{< tweet 1327180951386873858 >}}
+
+**Bombchu & Anklet**
+{{< tweet 1327213057504813056 >}}
+
+**Bombchu & Strafe**
+{{< tweet 1334466273095286784 >}}
+
 ### Iron Boots
 
 By using the greaves from the pot together with Hookshot or Boomerang, you're able to bring your Iron Boots up onto the center wall and skip straight to 2F.
