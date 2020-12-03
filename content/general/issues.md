@@ -31,10 +31,6 @@ Make sure that the ice block has more than 3 hearts left if you're low on health
 I'm pretty sure this still crashes the game in some situations? Does not always happen, not sure about specifics.
 Does it apply to other keese as well?
 
-### Infinite Bounce Trap Crash
-
-If two bounce traps are facing each other, attempting to step onto one crashes the game instantly as it moves you back and forth infinitely, trying to figure out where to place you.
-
 ## Version 1.1
 
 ### Ganon & Shrine of Peace Softlock
@@ -44,3 +40,7 @@ This is caused by the Shrine of Peace incorrectly downgrading the hitbox entity 
 If this glitch is in effect when you start the fight you'll see spiderweb graphics by the characters feet inside the ice blocks.
 
 To fix this you will have to deactivate the shrine. This can be done by saving and quitting, luting, or dying.
+
+### Infinite Bounce Trap Crash
+
+If two bounce traps are facing each other, attempting to step onto one crashes the game instantly as it moves you back and forth infinitely, trying to figure out where to place you.
