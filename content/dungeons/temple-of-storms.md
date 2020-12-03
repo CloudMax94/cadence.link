@@ -15,17 +15,23 @@ background: "/img/backgrounds/temple-of-storms.png"
 
 It is possible to get past the wind turbines with explosives, instead of deactivating them.
 
-**Bomb & Anklet**
+#### Bomb & Anklet
 {{< yt Uv0jekL8q_Y >}}
 
-**Bomb & Hookshot**
+#### Bomb & Hookshot
 {{< tweet 1327180951386873858 >}}
 
-**Bombchu & Anklet**
-{{< tweet 1327213057504813056 >}}
+#### Bombchu & Leaping
+{{< tweet 1311334459812192257 >}}
 
-**Bombchu & Strafe**
-{{< tweet 1334466273095286784 >}}
+#### Bombchu & Anklet
+{{< tweet 1327213057504813056 >}} _Note: you can do this faster by following the Leaping setup to get knocked diagonally instead._
+
+#### Bombchu & Cane
+{{< tweet 1334484046257090560 >}}
+
+#### Bombchu & Strafe
+{{< tweet 1334466273095286784 >}} _Note: you can do this faster by following the Leaping setup to get knocked diagonally instead._
 
 ### Iron Boots
 
