@@ -11,10 +11,9 @@ background: "/img/backgrounds/temple-of-storms.png"
 
 ## 1F Skip
 
-### Turbine Skip
+### Explosives
 
-It is possible to get past the wind turbines instead of deactivaing them.
-Below are setups that use items commonly
+It is possible to get past the wind turbines with explosives, instead of deactivating them.
 
 **Bomb & Anklet**
 {{< yt Uv0jekL8q_Y >}}
