@@ -3,6 +3,8 @@ main {
   text-shadow: none;
   font-size: 15px;
 
+  margin-top: 1em; // match <p> margin so it's applied at the top even if page doesn't start with a <p> tag
+
   position: relative;
   z-index: 0;
 
@@ -16,7 +18,6 @@ main {
     text-shadow: 1px 1px 0 #000,
                  2px 2px 0 #000;
   }
-
 }
 
 // The class is a wrapper so that we can wrap markdown tables in
