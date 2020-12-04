@@ -1,0 +1,32 @@
+{{ $title := .Title }}
+
+{{/* Just show "404" on 404 page, instead of the full title */}}
+{{ if eq .URL "/404.html" }}
+  {{ $title = "404" }}
+{{ end }}
+<header class="leaderboard-title">
+  {{ if .IsHome }}
+    <h1>{{ .Site.Title }}</h1>
+  {{ else }}
+    {{ if .Parent }}
+      {{ partial "title/parent" .Parent }}
+    {{ end }}
+    <div class="leaderboard-title-part">
+      {{ $currentPage := . }}
+      {{ if .Site.Menus.main }}
+        {{ $menu := partial "title/current-menu" (dict "menu" .Site.Menus.main "page" .) }}
+        {{ if $menu }}
+          {{ partial "dropdown/open" (dict "label" (print "<h1>" $title "</h1>")) }}
+            {{ range $menu.Children }}
+              {{ partial "dropdown/item" (dict "url" .URL "label" .Name "selected" ($currentPage.IsMenuCurrent "main" .)) }}
+            {{ end }}
+          {{ partial "dropdown/close" }}
+        {{ else }}
+          <h1>{{ $title }}</h1>
+        {{ end }}
+      {{ else }}
+        <h1>{{ $title }}</h1>
+      {{ end }}
+    </div>
+  {{ end }}
+</header>

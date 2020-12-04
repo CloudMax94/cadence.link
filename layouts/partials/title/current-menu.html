@@ -1,0 +1,14 @@
+{{ $currentPage := .page }}
+{{ $ret := false }}
+{{ range $item := .menu }}
+  {{ if $currentPage.HasMenuCurrent "main" $item }}
+    {{ $ret = $item }}
+    {{ if $item.Children }}
+      {{ $nested := partial "title/current-menu" (dict "menu" $item.Children "page" $currentPage) }}
+      {{ if $nested }}
+        {{ $ret = $nested }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return $ret }}

@@ -1,0 +1,8 @@
+{{ if not .IsHome }}
+  {{ if .Parent }}
+    {{ partial "title/parent" .Parent }}
+  {{ end }}
+  <div class="leaderboard-title-part">
+    {{ .Title }}
+  </div>
+{{ end }}

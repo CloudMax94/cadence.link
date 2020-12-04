@@ -439,7 +439,6 @@ body {
 
   h1 {
     display: inline-block;
-    cursor: pointer;
     margin: 0;
   }
 
@@ -449,6 +448,10 @@ body {
 
   .dropdown {
     display: inline-block;
+
+    h1 {
+      cursor: pointer;
+    }
   }
 
   .dropdown-content {

@@ -1,27 +1,5 @@
 {{ partial "header" . }}
 
-<header class="leaderboard-title">
-  {{ if .Parent }}
-  <div class="leaderboard-title-part">
-    {{ .Parent.Title }}
-  </div>
-  {{ end }}
-  <div class="leaderboard-title-part">
-    {{ if .Site.Menus.main }}
-      {{ $currentPage := . }}
-      {{ range sort .Site.Menus.main }}
-        {{ if $currentPage.HasMenuCurrent "main" . }}
-          {{ partial "dropdown/open" (dict "label" (print "<h1>" $currentPage.Title "</h1>")) }}
-            {{ range .Children }}
-              {{ partial "dropdown/item" (dict "url" .URL "label" .Name "selected" ($currentPage.IsMenuCurrent "main" .)) }}
-            {{ end }}
-          {{ partial "dropdown/close" }}
-        {{ end }}
-      {{ end }}
-    {{ end }}
-  </div>
-</header>
-
 {{ partial "toc" . }}
 
 <main>

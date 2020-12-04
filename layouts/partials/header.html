@@ -23,3 +23,4 @@
     <div class="leaderboard">
       <div class="leaderboard-top global-box" style="{{ if isset .Params "background" }}background-image: url({{ .Params.background }}){{ end }}">
         <div class="leaderboard-container">
+          {{ partial "title/title" . }}
