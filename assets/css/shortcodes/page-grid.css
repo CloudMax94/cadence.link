@@ -1,0 +1,34 @@
+.page-grid {
+  display: inline-block;
+  border: 1px solid;
+  border-color: #7c655f #000 #000 #7c655f;
+  overflow: hidden;
+}
+
+.page-grid-items {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: calc((var(--w) + 2px * 2) * var(--c));
+  background: #000;
+}
+
+.page-grid-item {
+  flex: 1 0 calc(var(--w) + 2px * 2);
+  border: 1px solid #f0f8f0;
+  a {
+    display: flex; // Allow alt text to centered
+    height: 100%;
+    border: 1px solid;
+    border-color: #000 #7c655f #7c655f #000;
+  }
+  img {
+    display: block;
+    image-rendering: auto;
+    margin: auto; // Center alt text
+  }
+}
+
+.page-grid-placeholder {
+  flex: 1 0 calc(var(--w) + 2px * 2);
+  box-shadow: inset 0 0 0 1px #f0f8f0;
+}

@@ -1,0 +1,21 @@
+{{- $dir := .Get 0 -}}
+{{- $w := .Get 1 -}}
+{{- $h := .Get 2 -}}
+{{- $c := 6 -}}
+<div class="page-grid" style="--w:{{ $w }}px;--h:{{ $h }}px;--c:{{ $c }};">
+  <div class="page-grid-items">
+    {{ range .Page.Pages }}
+      {{ $title := .Title }}
+      <div class="page-grid-item">
+        {{ $img := print "/img/" $dir "/" .File.BaseFileName ".png" }}
+        <a href="{{ .Permalink }}">
+          <img src="{{ $img }}" alt="{{ $title }}">
+        </a>
+      </div>
+    {{ end }}
+    {{/* Add placeholders equal to columns minus 1 so they can fill out empty space. */}}
+    {{ range $i, $sequence := (seq (sub $c 1)) }}
+      <div class="page-grid-placeholder"></div>
+    {{ end }}
+  </div>
+</div>
