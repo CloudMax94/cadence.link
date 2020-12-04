@@ -6,7 +6,9 @@
 
 <main>
   {{ .Content }}
-  {{ range .Pages }} {{ partial "list-item" . }} {{ end }}
+  {{ if ne .Params.list false }}
+    {{ range .Pages }} {{ partial "list-item" . }} {{ end }}
+  {{ end }}
 </main>
 
 {{ partial "footer" . }}
