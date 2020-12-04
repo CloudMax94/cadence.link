@@ -1,22 +1,24 @@
 (function () {
-  function getScrollbarWidth() {
-    // Creating invisible container
-    const outer = document.createElement('div')
+  var scrollbarWidth = null
+  function getScrollbarWidth (recalculate = false) {
+    if ((scrollbarWidth != null) && !recalculate) {
+      return scrollbarWidth
+    }
+    var outer = document.createElement('div')
     outer.style.visibility = 'hidden'
-    outer.style.overflow = 'scroll' // forcing scrollbar to appear
-    outer.style.msOverflowStyle = 'scrollbar' // needed for WinJS apps
+    outer.style.width = '100px'
     document.body.appendChild(outer)
-
-    // Creating inner element and placing it in the container
-    const inner = document.createElement('div')
+    var widthNoScroll = outer.offsetWidth
+    // force scrollbars
+    outer.style.overflow = 'scroll'
+    // add inner div
+    var inner = document.createElement('div')
+    inner.style.width = '100%'
     outer.appendChild(inner)
-
-    // Calculating difference between container's full width and the child width
-    const scrollbarWidth = (outer.offsetWidth - inner.offsetWidth)
-
-    // Removing temporary elements from the DOM
+    var widthWithScroll = inner.offsetWidth
+    // remove divs
     outer.parentNode.removeChild(outer)
-
+    scrollbarWidth = widthNoScroll - widthWithScroll
     return scrollbarWidth
   }
 
