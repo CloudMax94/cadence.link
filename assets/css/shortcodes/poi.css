@@ -3,6 +3,9 @@
     display: block;
     max-width: none;
   }
+  input {
+    display: none;
+  }
 }
 .poi-container {
   max-width: 100%;
@@ -15,7 +18,110 @@
   border-image: url(/img/layout/descriptionbox.png) 8/8px;
 }
 .poi-scroll {
+  position: relative;
   overflow: auto;
   max-height: 80vh;
   user-select: none;
+}
+
+.poi-toolbar {
+  background: #292829;
+  padding: 2px 4px calc(2px + 2px); // Accounts for the box-shadow at the bottom
+  border-bottom: 1px solid #000000;
+  box-shadow: inset 0 -1px 0 0 #7c655f, inset 0 -2px 0 0 #f0f8f0;
+
+  font-size: 14px;
+
+  label {
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    &:before {
+      content: '';
+
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      line-height: 16px;
+      margin-right: 4px;
+
+      background: #3b3b3b;
+      border: 1px solid #f0f8f0;
+
+      color: #fff;
+      font-size: 18px;
+      vertical-align: text-bottom;
+    }
+
+    &:focus {
+      outline: none;
+      &:after {
+        content: '';
+        position: absolute;
+        z-index: 20;
+        top: -5px;
+        left: -5px;
+        width: calc(16px + 5px * 2);
+        height: calc(16px + 5px * 2);
+
+        border: 8px solid transparent;
+        border-image: url('/img/layout/selector.png') 8 / 8px;
+
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.puzzle-info-checkbox:checked ~ .poi-scroll .poi-overlay {
+  display: block;
+}
+.puzzle-info-checkbox:checked ~ .poi-toolbar .puzzle-info-label:before {
+  content: '✓';
+}
+
+.poi-overlay {
+  display: none;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  user-select: none;
+  pointer-events: none;
+}
+
+.poi-overlay-item {
+  position: absolute;
+  left: calc(32px * var(--x));
+  top: calc(32px * var(--y) - 24px * var(--z) + 24px * var(--mx));
+
+  width: calc(32px * var(--w));
+  height: calc(32px * var(--h) + 24px * var(--d));
+
+  line-height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #0ff;
+  background: rgba(0, 255, 255, 0.5);
+
+  font-size: 13px;
+  font-family: sans-serif;
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-align: center;
+  white-space: pre;
+
+  &[data-node]:before {
+    content: 'N' attr(data-node)
+  }
+
+  &[data-type="chest"] {
+    border: 1px solid #340863;
+    background: rgba(133, 11, 182, 0.5);
+  }
 }

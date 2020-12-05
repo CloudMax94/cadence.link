@@ -1,0 +1,67 @@
+{
+  "height": 2,
+  "items": [
+    {
+      "type": "chest",
+      "node": 0,
+      "x": 9,
+      "y": 7,
+      "z": 1
+    },
+    {
+      "type": "entrance",
+      "node": 0,
+      "x": 0,
+      "y": 5,
+      "z": 2,
+      "h": 2
+    },
+    {
+      "type": "entrance",
+      "node": 0,
+      "x": 11,
+      "y": 5,
+      "z": 2,
+      "h": 2
+    },
+    {
+      "type": "entrance",
+      "node": 0,
+      "x": 5,
+      "y": 11,
+      "z": 2,
+      "w": 2,
+      "d": 1
+    },
+    {
+      "type": "stairs",
+      "node": 0,
+      "x": 9,
+      "y": 9,
+      "z": 1
+    },
+    {
+      "type": "chest",
+      "node": 1,
+      "x": 5,
+      "y": 2,
+      "z": 1
+    },
+    {
+      "type": "entrance",
+      "node": 1,
+      "x": 5,
+      "y": 0,
+      "z": 2,
+      "w": 2,
+      "d": 1
+    },
+    {
+      "type": "stairs",
+      "node": 1,
+      "x": 6,
+      "y": 2,
+      "z": 1
+    }
+  ]
+}

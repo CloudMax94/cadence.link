@@ -1,0 +1,43 @@
+{
+  "height": 2,
+  "items": [
+    {
+      "type": "entrance",
+      "node": 0,
+      "x": 5,
+      "y": 11,
+      "z": 2,
+      "w": 2,
+      "d": 1
+    },
+    {
+      "type": "stairs",
+      "node": 0,
+      "x": 4,
+      "y": 9,
+      "z": 1
+    },
+    {
+      "type": "chest",
+      "node": 1,
+      "x": 8,
+      "y": 5,
+      "z": 1
+    },
+    {
+      "type": "entrance",
+      "node": 1,
+      "x": 11,
+      "y": 5,
+      "z": 2,
+      "h": 2
+    },
+    {
+      "type": "stairs",
+      "node": 1,
+      "x": 8,
+      "y": 6,
+      "z": 1
+    }
+  ]
+}

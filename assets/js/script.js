@@ -24,6 +24,34 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
+    // For keyboard accessibility, we allow focusable <label>s to toggle
+    // the checkbox/radio they point to with space
+    var toggleTypes = ['checkbox', 'radio']
+    document.addEventListener('keypress', function (event) {
+      if (event.code !== 'Space') {
+        return
+      }
+      var activeElement = document.activeElement
+      if (activeElement.tagName.toLowerCase() !== 'label') {
+        return
+      }
+      if (activeElement.htmlFor.length) {
+        // If for attribute is specified, we make sure it's an input, and
+        // that it is one of the supported types.
+        var input = document.getElementById(activeElement.htmlFor)
+        if (input && input.type && toggleTypes.indexOf(input.type.toLowerCase()) !== -1) {
+          input.click()
+        }
+      } else {
+        // If for attribute isn't specified, we instead usde the first
+        // element we find within the label, if there is one.
+        var inputWithin = activeElement.querySelector(toggleTypes.join(','))
+        if (inputWithin) {
+          inputWithin.click()
+        }
+      }
+    })
+
     // Find and initialize all POIs
     var pois = document.querySelectorAll('.poi')
     for (var poi of pois) {

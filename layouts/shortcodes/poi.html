@@ -1,9 +1,44 @@
 {{- $poi := .Get "poi" | default (.Get 0) -}}
 {{ $img := print "/img/pois/" $poi ".png" }}
+
+{{ $hasPuzzleInfo := false }}
+{{ $data := index .Site.Data.pois }}
+{{ range (split $poi "/") }}
+  {{ if $data }}
+    {{ $data = index $data . }}
+  {{ end }}
+{{ end }}
+{{ if $data }}
+  {{ if $data.items }}
+    {{ $hasPuzzleInfo = true }}
+  {{ end }}
+{{ end }}
+{{ $uid := print (replace $poi "/" "-") "-" (delimit (shuffle (seq 1 9)) "")}}
+
 <div class="poi">
   <div class="poi-container">
+    {{ if $hasPuzzleInfo }}
+    <input type="checkbox" id="pzli-{{ $uid }}" class="puzzle-info-checkbox">
+    <div class="poi-toolbar">
+      <label for="pzli-{{ $uid }}" class="puzzle-info-label" tabindex="0">Puzzle Nodes</label>
+    </div>
+    {{ end }}
     <div class="poi-scroll">
       <img draggable="false" src="{{ $img }}" alt="Render of {{ $poi }}">
+      {{ if $hasPuzzleInfo }}
+      <div class="poi-overlay" style="--mx:{{ $data.height }}">
+        {{ range $item := $data.items }}
+          {{ $node := $item.node | default 0 }}
+          {{ $x := $item.x | default 0 }}
+          {{ $y := $item.y | default 0 }}
+          {{ $z := $item.z | default 0 }}
+          {{ $w := $item.w | default 1 }}
+          {{ $h := $item.h | default 1 }}
+          {{ $d := $item.d | default 0 }}
+          <div class="poi-overlay-item" data-type="{{ $item.type }}" data-node="{{ $node }}" style="--x:{{ $x }};--y:{{ $y }};--z:{{ $z }};--w:{{ $w }};--h:{{ $h }};--d:{{ $d }};"></div>
+        {{ end }}
+      </div>
+      {{ end }}
     </div>
   </div>
 </div>
