@@ -9,8 +9,12 @@ menu:
 
 ## Puzzle Solver
 
-This tool finds a solution with the fewest pushes possible.
-If the solution takes more than 10 pushes, the solver won't find it.
+This tool finds a solution with the fewest moves possible.
+
+If the solution takes more than 8 moves, the solver won't find it.
+In this situation you can choose to try and brute-force it by checking up to 15 moves instead.
+Doing so will freeze the site for a few seconds if it has trouble finding the solution.
+
 The solver does not make use of any items.
 
 {{< boulder-puzzle-solver >}}

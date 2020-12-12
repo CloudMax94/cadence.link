@@ -1,16 +1,16 @@
 (function () {
   function debounce (func, wait, immediate) {
     var timeout
-    return () => {
+    return (...args) => {
       var later = () => {
         timeout = null
-        if (!immediate) func.apply(this, arguments)
+        if (!immediate) func.apply(this, args)
       }
       var callNow = immediate && !timeout
       clearTimeout(timeout)
       timeout = setTimeout(later, wait)
       if (callNow) {
-        func.apply(this, arguments)
+        func.apply(this, args)
       }
     }
   }
@@ -39,7 +39,6 @@
     })
   }
 
-  const DEPTH_LIMIT = 10
   const SOLUTION_DEBOUNCE_MS = 100
   class BoulderPuzzleSolver {
     constructor (container) {
@@ -74,6 +73,7 @@
       this.toolbarContainer.addEventListener('mousemove', this.onMouseMove.bind(this))
 
       this.indicator = container.querySelector('.boulder-solver-indicator')
+      this.bruteButton = container.querySelector('.boulder-solver-brute')
       this.prevButton = container.querySelector('.boulder-solver-prev')
       this.nextButton = container.querySelector('.boulder-solver-next')
       this.prevButton.addEventListener('click', (event) => {
@@ -85,6 +85,10 @@
         this.solutionStep++
         this.renderSolutionNavigation()
         this.renderPuzzle()
+      })
+      this.bruteButton.addEventListener('click', (event) => {
+        this.bruteButton.innerHTML = 'Brute-forcing... Please wait.'
+        this.findSolution(15)
       })
 
       this.drawElements = []
@@ -142,14 +146,22 @@
       let boulderIndex = this.getBoulderOnTile(x, y)
       if (boulderIndex >= 0) {
         this.dragging = ['boulder', boulderIndex]
-        this.clearSolution() // We clear solution since an object is being dragged
+        if (this.solutionStep > 0) {
+          // Since we start dragging an object while viewing a solution step, we clear the solution & find a new solution
+          this.clearSolution()
+          this.findSolution()
+        }
         return
       }
 
       let goalIndex = this.getGoalOnTile(x, y)
       if (goalIndex >= 0) {
         this.dragging = ['goal', goalIndex]
-        this.clearSolution() // We clear solution since an object is being dragged
+        if (this.solutionStep > 0) {
+          // Since we start dragging an object while viewing a solution step, we clear the solution & find a new solution
+          this.clearSolution()
+          this.findSolution()
+        }
         return
       }
 
@@ -318,6 +330,7 @@
       }
       this.solution = []
       this.solutionStep = 0
+      this.bruteButton.style.visibility = 'hidden'
       this.renderSolutionNavigation()
     }
 
@@ -431,9 +444,9 @@
       return solution
     }
 
-    findSolution () {
+    findSolution (depthLimit = 8) {
       this._testedPositions = {}
-      this._depthLimit =  DEPTH_LIMIT
+      this._depthLimit = depthLimit
       let goals = this.goals.filter(([gx, gy]) => gy !== -1)
       let state = this.boulders.filter(([bx, by]) => by !== -1)
       const solution = this._findSolution(this.layout, goals, {
@@ -443,6 +456,14 @@
       this.solution = solution && solution.length > 1 ? solution : []
       this.solutionStep = 0
       this.renderSolutionNavigation()
+      if (depthLimit === 8 && !this.solution.length) {
+        // default depth was used and no solution was found, show brute-force button
+        this.bruteButton.style.visibility = 'visible'
+        this.bruteButton.innerHTML = 'Brute-force (check 15 moves)'
+      } else {
+        // default depth wasn't used, or a solution was found, so we hite the brute-force button
+        this.bruteButton.style.visibility = 'hidden'
+      }
     }
   }
 

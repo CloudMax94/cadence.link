@@ -19,6 +19,7 @@
   user-select: none;
 }
 
+.boulder-solver-brute,
 .boulder-solver-nav {
   position: absolute;
   bottom: 0;
@@ -57,6 +58,9 @@
       pointer-events: none;
     }
   }
+}
+.boulder-solver-brute {
+  width: 100%;
 }
 
 .boulder-solver-next {
