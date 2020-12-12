@@ -424,7 +424,7 @@
           const newSolution = [state, ...resp]
           if (!solution || newSolution.length < solution.length) {
             solution = newSolution // first or lower depth than previous solution
-            this._depthLimit = solution.length
+            this._depthLimit = solution.length + 1
           }
         }
       }
