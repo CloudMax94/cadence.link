@@ -4,6 +4,7 @@ list: false
 menu:
   main:
     parent: "puzzle"
+    weight: 10
     identifier: "puzzle-pois"
 ---
 

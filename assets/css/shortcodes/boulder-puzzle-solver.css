@@ -1,0 +1,189 @@
+.boulder-solver {
+  max-width: 100%;
+  display: inline-block;
+  padding: 1px;
+  background: #000;
+
+  border: 8px double #fff;
+  border-width: calc(3px - 1px) calc(8px - 1px); // Negate padding
+  border-image: url(/img/layout/descriptionbox.png) 8/8px;
+}
+
+.boulder-solver-body {
+  position: relative;
+}
+
+.boulder-solver-scroll {
+  position: relative;
+  overflow: auto;
+  user-select: none;
+}
+
+.boulder-solver-nav {
+  position: absolute;
+  bottom: 0;
+  height: calc(32px * 1);
+  width: calc(32px * 5);
+
+  padding: 0;
+  box-shadow: none;
+  border: 8px solid transparent;
+  border-image: url('/img/layout/textbox.png') 8 / 8px;
+  background: #3b3b3b;
+
+  font-size: 13px;
+  font-family: 'Love Bug';
+  color: #fff;
+  text-shadow: 1px 1px 0 #000,
+               2px 2px 0 #000;
+
+  cursor: pointer;
+  visibility: hidden;
+
+  &:focus {
+    outline: none;
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 20;
+      top: -8px;
+      left: -8px;
+      bottom: -8px;
+      right: -8px;
+
+      border: 8px solid transparent;
+      border-image: url('/img/layout/selector.png') 8 / 8px;
+
+      pointer-events: none;
+    }
+  }
+}
+
+.boulder-solver-next {
+  right: 0;
+}
+
+.boulder-solver-grid {
+  position: relative;
+  display: block;
+  width: calc(32px * 10);
+  height: calc(32px * 10);
+  background: url(/img/boulder-puzzle-solver/tile.png) top left repeat;
+}
+
+.boulder-solver-toolbar {
+  padding: 0 0 2px; // Accounts for the box-shadow at the bottom
+  border-bottom: 1px solid #000000;
+  box-shadow: inset 0 -1px 0 0 #7c655f, inset 0 -2px 0 0 #f0f8f0;
+}
+
+.boulder-solver-toolbar-area {
+  position: relative;
+  height: 32px;
+
+  // No zOff for entities in the bar
+  .boulder-solver-tile:before,
+  .boulder-solver-tile:after {
+    bottom: 0 !important;
+  }
+}
+
+.boulder-solver-info {
+  background: #292829;
+  padding: calc(2px + 2px) 4px 2px; // Accounts for the box-shadow at the top
+  border-top: 1px solid #000000;
+  box-shadow: inset 0 1px 0 0 #f0f8f0, inset 0 2px 0 0 #7c655f;
+
+  font-size: 14px;
+}
+
+.boulder-solver-tile {
+  position: absolute;
+  left: calc(var(--x) * 32px);
+  top: calc(var(--y) * 32px);
+  width: 32px;
+  height: 32px;
+  background: bottom no-repeat;
+  pointer-events: none;
+  &[data-tile="1"] {
+    background-image: url(/img/boulder-puzzle-solver/block.png);
+    height: 39px;
+    margin-top: -7px;
+    &:before,
+    &:after {
+      margin-bottom: 12px;
+    }
+  }
+  &[data-tile="2"] {
+    background-image: url(/img/boulder-puzzle-solver/fence.png);
+    height: 42px;
+    margin-top: -10px;
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 32px;
+  }
+  &[data-has-goal="true"]:before {
+    content: '';
+    background: url(/img/boulder-puzzle-solver/circle.png);
+  }
+  &[data-has-boulder="true"]:after {
+    content: '';
+    bottom: 5px;
+    background: url(/img/boulder-puzzle-solver/boulder.png);
+  }
+}
+
+.boulder-solver-indicator {
+  position: absolute;
+  --x: 0;
+  --y: 0;
+  left: calc(var(--x) * 32px);
+  top: calc(var(--y) * 32px);
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+  visibility: hidden;
+  background: center no-repeat;
+
+  &[data-move="up"] {
+    background: url(/img/boulder-puzzle-solver/move/up.png);
+    margin-top: calc(-16px - 5px);
+  }
+  &[data-move="down"] {
+    background: url(/img/boulder-puzzle-solver/move/down.png);
+    margin-top: calc(16px - 5px);
+  }
+  &[data-move="left"] {
+    background: url(/img/boulder-puzzle-solver/move/left.png);
+    margin-left: -16px;
+    margin-top: -5px;
+  }
+  &[data-move="right"] {
+    background: url(/img/boulder-puzzle-solver/move/right.png);
+    margin-left: 16px;
+    margin-top: -5px;
+  }
+}
+
+.boulder-solver-toolbar,
+.boulder-solver-body,
+.boulder-solver-info {
+  .no-js & {
+    display: none;
+  }
+}
+
+.boulder-solver-javascript {
+  background: #300;
+  padding: 8px 8px 5px;
+  font-size: 13px;
+  font-family: 'Love Bug';
+  color: #f44;
+  text-shadow: 1px 1px 0 #000,
+               2px 2px 0 #000;
+}
