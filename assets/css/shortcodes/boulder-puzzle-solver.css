@@ -19,27 +19,33 @@
   user-select: none;
 }
 
-.boulder-solver-brute,
+.boulder-solver-buttons {
+  position: relative;
+  height: calc(32px + 2px + 1px); // include border & box-shadow
+  background: #292829;
+  border-top: 1px solid #000000;
+  box-shadow: inset 0 1px 0 0 #f0f8f0, inset 0 2px 0 0 #7c655f;
+}
+
 .boulder-solver-nav {
   position: absolute;
   bottom: 0;
   height: calc(32px * 1);
-  width: calc(32px * 5);
+  width: 33.33%;
 
   padding: 0;
   box-shadow: none;
-  border: 8px solid transparent;
+  border: 4px solid transparent;
   border-image: url('/img/layout/textbox.png') 8 / 8px;
   background: #3b3b3b;
 
-  font-size: 13px;
+  font-size: 11px;
   font-family: 'Love Bug';
   color: #fff;
   text-shadow: 1px 1px 0 #000,
                2px 2px 0 #000;
 
   cursor: pointer;
-  visibility: hidden;
 
   &:focus {
     outline: none;
@@ -58,9 +64,15 @@
       pointer-events: none;
     }
   }
+
+  &:disabled {
+    color: #999;
+    cursor: default;
+  }
 }
+
 .boulder-solver-brute {
-  width: 100%;
+  left: 33.33%;
 }
 
 .boulder-solver-next {
@@ -170,6 +182,10 @@
   &[data-move="right"] {
     background: url(/img/boulder-puzzle-solver/move/right.png);
     margin-left: 16px;
+    margin-top: -5px;
+  }
+  &[data-move="bomb"] {
+    background: url(/img/boulder-puzzle-solver/move/bomb.png);
     margin-top: -5px;
   }
 }

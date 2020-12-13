@@ -39,7 +39,256 @@
     })
   }
 
-  const SOLUTION_DEBOUNCE_MS = 100
+  class BoulderPuzzleSolverEngine {
+    constructor () {
+      this.boulders = []
+      this.goals = []
+      this.layout = [
+        [1,1,1],
+        [1,0,1],
+        [1,1,1]
+      ]
+    }
+
+    prepare (layout, boulders, goals) {
+      this.layout = layout
+      this.boulders = boulders.filter(([bx, by]) => by !== -1)
+      this.goals = goals.filter(([gx, gy]) => gy !== -1)
+    }
+
+    run (timeLimit, depthLimit, explosiveLimit) {
+      this._testedPositions = {}
+      this._depthLimit = depthLimit
+      this._explosiveLimit = explosiveLimit
+      this._forceStop = Date.now() + timeLimit * 1000 // We force stop the search at this point
+      const solution = this._findSolution({
+        explosives: 0,
+        move: 'start',
+        boulders: this.boulders
+      })
+      return solution ? solution : []
+    }
+
+    pushBoulder (boulders, index, delta) {
+      const layout = this.layout
+
+      const cX = boulders[index][0] - delta[0]
+      const cY = boulders[index][1] - delta[1]
+      if (layout[cY][cX] === 2) {
+        return // Fence is blocking the boulder from behind, so we can't push it
+      }
+      if (boulders.findIndex(([bX,bY]) => bX === cX && bY === cY) >= 0) {
+        return // A boulder is blocking the boulder from behind, so we can't push it
+      }
+
+      // And then we push the boulder!
+      const newState = [...boulders]
+      let didMove = true
+      while (true) {
+        const boulder = newState[index]
+        const x = boulder[0] + delta[0]
+        const y = boulder[1] + delta[1]
+        const hitBoulder = newState.findIndex(([bX,bY]) => bX === x && bY === y)
+        if (hitBoulder !== -1) {
+          index = hitBoulder // We're hitting a boulder, start rolling that one instead
+          continue
+        }
+        if (layout[y][x] !== 0) {
+          break // We're hitting something, so we gotta stop
+        }
+        newState[index] = [x, y]
+        didMove = true
+      }
+      if (!didMove) {
+        return
+      }
+      return newState
+    }
+
+    bombBoulders (boulders, [x,y]) {
+      const layout = this.layout
+
+      if (layout[y][x] === 2) {
+        return // Fence is blocking the tile, so we can't place a bomb there
+      }
+      if (boulders.findIndex(([bX,bY]) => bX === x && bY === y) >= 0) {
+        return // A boulder is on this tile, solver does not account for placing bombs on boulders!
+      }
+
+      // Get all boulders in a 3x3 grid around the explosive
+      const bombedBoulders = boulders.filter(([bX,bY]) => (
+        bX >= x - 1 && bX <= x + 1 &&
+        bY >= y - 1 && bY <= y + 1 &&
+        !(bX === x && bY === y)
+      ))
+      const newState = [...boulders]
+      let didMove = false
+      for (const bombedBoulder of bombedBoulders) {
+        let index = boulders.indexOf(bombedBoulder)
+        const delta = [bombedBoulder[0] - x, bombedBoulder[1] - y]
+        while (true) {
+          const boulder = newState[index]
+          const nX = boulder[0] + delta[0]
+          const nY = boulder[1] + delta[1]
+          const hitBoulder = newState.findIndex(([bX,bY]) => bX === nX && bY === nY)
+          if (hitBoulder >= 0) {
+            index = hitBoulder // We're hitting a boulder, start rolling that one instead
+            continue
+          }
+          if (
+            layout[nY][nX] !== 0 ||
+            layout[nY][boulder[0]] === 2 ||
+            layout[boulder[1]][nX] === 2
+          ) {
+            break // We're hitting something, so we gotta stop
+          }
+          newState[index] = [nX, nY]
+          didMove = true
+        }
+      }
+      if (!didMove) {
+        return
+      }
+      return newState
+    }
+
+    getPossibleMoves (state) {
+      const boulders = state.boulders
+      const explosives = state.explosives
+
+      const possibleMoves = []
+      const checkedBombLocations = []
+      const allowBombs = explosives < this._explosiveLimit
+      for (let index = 0; index < boulders.length; index++) {
+        const boulder = boulders[index]
+        const checks = [
+          ['left', -1, 0],
+          ['right', 1, 0],
+          ['up', 0, -1],
+          ['down', 0, 1]
+        ]
+        for (const [move, dx, dy] of checks) {
+          const newBoulders = this.pushBoulder(boulders, index, [dx, dy])
+          if (newBoulders) {
+            possibleMoves.push({
+              pos: boulder,
+              move,
+              explosives,
+              boulders: newBoulders
+            })
+          }
+        }
+        if (allowBombs) {
+          const bombChecks = [
+            ['upleft', -1, -1],
+            ['upright', 1, -1],
+            ['downleft', -1, 1],
+            ['downright', 1, 1]
+          ]
+          for (const [move, dx, dy] of bombChecks) {
+            const pos = [boulder[0] + dx, boulder[1] + dy]
+            const hash = pos[0] + ',' + pos[1]
+            if (checkedBombLocations.indexOf(hash) >= 0) {
+              continue // we've already tried bombing at this coordinate
+            }
+            checkedBombLocations.push(hash)
+            const newBoulders = this.bombBoulders(boulders, pos)
+            if (newBoulders) {
+              possibleMoves.push({
+                pos,
+                move: 'bomb',
+                explosives: explosives + 1,
+                boulders: newBoulders
+              })
+            }
+          }
+        }
+      }
+      return possibleMoves
+    }
+
+    _findSolution (state, depth = 0) {
+      const boulders = state.boulders
+
+      // Generate a hash for the boulder configuration, which does not care about boulder order
+      // Since boulders only can be within a 8x8 grid, we make use of that to get a bit representation of the boulders
+      let hash = 0
+      for (let b of boulders) {
+        hash += Math.pow(2, b[0] - 1 + (b[1] - 1) * 8)
+      }
+      // Alternate hashing that is also pretty fast:
+      // let hash = ''
+      // for (let b of boulders.map(b => b[0] + ',' + b[1]).sort()) {
+      //   hash += b + ','
+      // }
+
+      if (hash in this._testedPositions) {
+        let tested = this._testedPositions[hash]
+        if (
+          // if already reached this point using fewer explosives
+          tested.explosives < state.explosives ||
+          // or already reached this point with the same numer of explosives in an equal amount of or fewer steps
+          (tested.explosives === state.explosives && tested.depth <= depth)
+        ) {
+          return
+        }
+      }
+      this._testedPositions[hash] = {depth, explosives: state.explosives}
+
+      let solved = true
+      for (const [x, y] of this.goals) {
+        if (!boulders.find(b => b[0] === x && b[1] === y)) {
+          solved = false
+          break
+        }
+      }
+      if (solved) {
+        return [state]
+      }
+      if (Date.now() >= this._forceStop) {
+        return // We force stop the search, too much time has passed
+      }
+      if (depth >= this._depthLimit) {
+        return
+      }
+
+      const possibleMoves = this.getPossibleMoves(state)
+      let solution = null
+      for (const possibleMove of possibleMoves) {
+        const resp = this._findSolution(
+          possibleMove,
+          depth + 1
+        )
+        if (resp) {
+          const newSolution = [state, ...resp]
+          let explosivesUsed = newSolution[newSolution.length - 1].explosives
+          if (
+            // if this is the first solution
+            !solution ||
+            // or this solution uses fewer explosives
+            explosivesUsed < solution[solution.length - 1].explosives ||
+            // or this solution uses the same number of explosives, but fewer steps
+            (explosivesUsed === solution[solution.length - 1].explosives && newSolution.length < solution.length)
+          ) {
+            solution = newSolution
+            this._explosiveLimit = explosivesUsed // stop looking for solutions that use more bombs than we did for this one
+            if (this._explosiveLimit === 0) {
+              // If 0 bombs are used we can safely lower depth limit without losing any improved solutions
+              let solutionDepth = depth + solution.length - 2
+              this._depthLimit = solutionDepth
+              if (solution.length === 2) {
+                // The solution that was found at the next depth, so there can't be a more efficient move
+                break
+              }
+            }
+          }
+        }
+      }
+      return solution
+    }
+  }
+
+  const SOLUTION_DEBOUNCE_MS = 200
   class BoulderPuzzleSolver {
     constructor (container) {
       this.layout = [
@@ -57,6 +306,7 @@
       this.goals = [[4,-1], [5,-1]]
       this.boulders = [[0,-1], [1,-1], [2,-1], [3,-1]]
 
+      this.engine = new BoulderPuzzleSolverEngine()
       this.solutionStep = 0
       this.solution = []
 
@@ -87,9 +337,12 @@
         this.renderPuzzle()
       })
       this.bruteButton.addEventListener('click', (event) => {
-        this.bruteButton.innerHTML = 'Brute-forcing... Please wait.'
-        this.findSolution(15)
+        // When brute-forcing a solution, we return to first step and clear out solution while waiting for new one
+        this.bruteButton.innerHTML = 'Searching...'
+        this.clearSolution(true)
+        this.findSolution(10, 15) // up to 10 seconds & 15 moves
       })
+      this.bruteButton.defaultText = this.bruteButton.innerHTML
 
       this.drawElements = []
       this.barElements = []
@@ -128,7 +381,7 @@
       if (this.solution.length && this.solutionStep > 0) {
         state = [
           // When viewing solution, we use its current state & add in toolbar boulders so that they're seen
-          ...this.solution[this.solutionStep].state,
+          ...this.solution[this.solutionStep].boulders,
           ...this.boulders.filter(([bx, by]) => by === -1)
         ]
       }
@@ -283,7 +536,7 @@
       if (this.solution.length && this.solutionStep > 0) {
         state = [
           // When viewing solution, we use its current state & add in toolbar boulders so that they're seen
-          ...this.solution[this.solutionStep].state,
+          ...this.solution[this.solutionStep].boulders,
           ...this.boulders.filter(([bx, by]) => by === -1)
         ]
       }
@@ -305,13 +558,13 @@
     }
 
     renderSolutionNavigation () {
-      this.prevButton.style.visibility = this.solutionStep > 0 ? 'visible' : 'hidden'
-      this.nextButton.style.visibility = this.solutionStep < this.solution.length - 1 ? 'visible' : 'hidden'
+      this.prevButton.disabled = this.solutionStep === 0
+      this.nextButton.disabled = this.solutionStep >= this.solution.length - 1
 
-      let nextStep = this.solution[this.solutionStep + 1]
+      const nextStep = this.solution[this.solutionStep + 1]
       if (nextStep) {
         this.indicator.style.visibility = 'visible'
-        let [x, y] = this.solution[this.solutionStep].state[nextStep.boulder]
+        const [x, y] = nextStep.pos
         this.indicator.style.setProperty('--x', x)
         this.indicator.style.setProperty('--y', y)
         this.indicator.dataset.move = nextStep.move
@@ -320,18 +573,23 @@
       }
     }
 
-    clearSolution () {
-      if (this.solution.length && this.solutionStep > 0) {
-        this.boulders = [
-          // When solution is cleared, we transfer the current solution state & add the toolbar boulders
-          ...this.solution[this.solutionStep].state,
-          ...this.boulders.filter(([bx, by]) => by === -1)
-        ]
+    clearSolution (resetToFirstStep = false) {
+      if (!resetToFirstStep) {
+        if (this.solution.length && this.solutionStep > 0) {
+          this.boulders = [
+            // When solution is cleared, we transfer the current solution state & add the toolbar boulders
+            ...this.solution[this.solutionStep].boulders,
+            ...this.boulders.filter(([bx, by]) => by === -1)
+          ]
+        }
       }
       this.solution = []
       this.solutionStep = 0
-      this.bruteButton.style.visibility = 'hidden'
+      this.bruteButton.disabled = true
       this.renderSolutionNavigation()
+      if (resetToFirstStep) {
+          this.renderPuzzle()
+      }
     }
 
     updatePuzzle () {
@@ -339,131 +597,16 @@
       this.findSolution()
     }
 
-    // TODO: If boulders on top of half-block aren't pushed by boulders rolling into them,
-    // the blocking/hit boulder checks should be AFTER the wall checks!
-    pushBoulder (layout, boulders, index, delta) {
-      const newState = [...boulders]
+    findSolution (timeLimit = 1, depthLimit = 10, explosiveLimit = 2) {
+      this.engine.prepare(this.layout, this.boulders, this.goals)
+      let solution = this.engine.run(timeLimit, depthLimit, explosiveLimit)
 
-      let checkIndex = index
-      while (true) {
-        const boulder = newState[checkIndex]
-        const x = boulder[0] - delta[0]
-        const y = boulder[1] - delta[1]
-
-        // Check if there's a boulder bind the boulder.
-        // If there is, we gotta check if that one can be pushed to cause a chain reaction.
-        const blockingBoulder = boulders.findIndex(([bX,bY]) => bX === x && bY === y)
-        if (blockingBoulder >= 0) {
-          checkIndex = blockingBoulder
-          continue
-        }
-
-        // Check if there's a wall behind the boulder.
-        // If there is, we can't push the boulder.
-        if ([0, 1].indexOf(layout[y][x]) === -1) {
-          return newState // Something is blocking the boulder from behind, so we can't push it
-        }
-
-        // Nothing is blocking, so we end the loop
-        break
-      }
-
-      while (true) {
-        const boulder = newState[index]
-        const x = boulder[0] + delta[0]
-        const y = boulder[1] + delta[1]
-        const hitBoulder = boulders.findIndex(([bX,bY]) => bX === x && bY === y)
-        if (hitBoulder >= 0) {
-          index = hitBoulder // We're hitting a boulder, start rolling that one instead
-          continue
-        }
-        if (layout[y][x] !== 0) {
-          break // We're hitting something, so we gotta stop
-        }
-        newState[index] = [x, y]
-      }
-      return newState
-    }
-
-    getPossibleMoves (layout, boulders) {
-      const possibleMoves = []
-      for (let i = 0; i < boulders.length; i++) {
-        const boulder = boulders[i]
-        const checks = [
-          ['left', -1, 0],
-          ['right', 1, 0],
-          ['up', 0, -1],
-          ['down', 0, 1]
-        ]
-        for (const [move, dx, dy] of checks) {
-          possibleMoves.push({
-            boulder: i,
-            move,
-            state: this.pushBoulder(layout, boulders, i, [dx, dy])
-          })
-        }
-      }
-      return possibleMoves
-    }
-
-    _findSolution (layout, goal, state, depth = 0) {
-      const boulders = state.state
-      let solved = true
-      for (let [x, y] of goal) {
-        if (!boulders.find(b => b[0] === x && b[1] === y)) {
-          solved = false
-          break
-        }
-      }
-      if (solved) {
-        return [state]
-      }
-      if (depth >= this._depthLimit) {
-        return
-      }
-      const sortedBoulders = [...boulders].sort((a, b) => a[0] == b[0] ? a[1] - b[1] : a[0] - b[0]).toString()
-      if (sortedBoulders in this._testedPositions) {
-        if (depth >= this._testedPositions[sortedBoulders]) {
-          return // Already tried position at a lower or equal depth
-        }
-      }
-      this._testedPositions[sortedBoulders] = depth
-
-      const possibleMoves = this.getPossibleMoves(layout, boulders)
-      let solution = null
-      for (let possibleMove of possibleMoves) {
-        const resp = this._findSolution(layout, goal, possibleMove, depth + 1)
-        if (resp) {
-          const newSolution = [state, ...resp]
-          if (!solution || newSolution.length < solution.length) {
-            solution = newSolution // first or lower depth than previous solution
-            this._depthLimit = solution.length + 1
-          }
-        }
-      }
-      return solution
-    }
-
-    findSolution (depthLimit = 8) {
-      this._testedPositions = {}
-      this._depthLimit = depthLimit
-      let goals = this.goals.filter(([gx, gy]) => gy !== -1)
-      let state = this.boulders.filter(([bx, by]) => by !== -1)
-      const solution = this._findSolution(this.layout, goals, {
-        move: 'start',
-        state
-      })
-      this.solution = solution && solution.length > 1 ? solution : []
+      this.solution = solution
       this.solutionStep = 0
       this.renderSolutionNavigation()
-      if (depthLimit === 8 && !this.solution.length) {
-        // default depth was used and no solution was found, show brute-force button
-        this.bruteButton.style.visibility = 'visible'
-        this.bruteButton.innerHTML = 'Brute-force (check 15 moves)'
-      } else {
-        // default depth wasn't used, or a solution was found, so we hite the brute-force button
-        this.bruteButton.style.visibility = 'hidden'
-      }
+      // Disable button if it wasn't default time limit, or the solution didn't use any bombs
+      this.bruteButton.disabled = timeLimit !== 1 || (this.solution.length && solution[solution.length - 1].explosives === 0)
+      this.bruteButton.innerHTML = this.bruteButton.defaultText
     }
   }
 

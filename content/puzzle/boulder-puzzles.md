@@ -9,12 +9,12 @@ menu:
 
 ## Puzzle Solver
 
-This tool finds a solution with the fewest moves possible.
+This tool finds a solution using as few bombs and moves as possible.
+It will only look for solutions that take up to 10 moves and 2 bombs.
+If the search is still ongoing after 1 second it will stop and show the best solution it could find, if any.
 
-If the solution takes more than 8 moves, the solver won't find it.
-In this situation you can choose to try and brute-force it by checking up to 15 moves instead.
-Doing so will freeze the site for a few seconds if it has trouble finding the solution.
-
-The solver does not make use of any items.
+If it can't find a solution, or if the solution requires explosives, you can do a brute-force search.
+This search will look for solution that take up to 15 moves instead, and goes on for up to 10 seconds instead of just 1.
+This allows you to search for longer solutions that use fewer explosives, or solve puzzles that simply were not puzzle in 10 moves.
 
 {{< boulder-puzzle-solver >}}
