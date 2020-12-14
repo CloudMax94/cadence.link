@@ -48,25 +48,46 @@
         [1,0,1],
         [1,1,1]
       ]
+      this.PUSH_CHECKS = [
+        ['left', [-1, 0]],
+        ['right', [1, 0]],
+        ['up', [0, -1]],
+        ['down', [0, 1]]
+      ]
+      this.BOMB_CHECKS = [
+        ['upleft', -1, -1],
+        ['upright', 1, -1],
+        ['downleft', -1, 1],
+        ['downright', 1, 1]
+      ]
     }
 
     prepare (layout, boulders, goals) {
       this.layout = layout
-      this.boulders = boulders.filter(([bx, by]) => by !== -1)
-      this.goals = goals.filter(([gx, gy]) => gy !== -1)
+      // Deep copy & filter away objects with -1 Y
+      this.boulders = boulders.filter(([bx, by]) => by !== -1).map(o => [o[0],o[1]])
+      this.goals = goals.filter(([gx, gy]) => gy !== -1).map(o => [o[0],o[1]])
     }
 
     run (timeLimit, depthLimit, explosiveLimit) {
       this._testedPositions = {}
+      this.hasTestedPosition(this.boulders, 0, 0) // We do this so the start position is added to tested positions
       this._depthLimit = depthLimit
       this._explosiveLimit = explosiveLimit
-      this._forceStop = Date.now() + timeLimit * 1000 // We force stop the search at this point
-      const solution = this._findSolution({
+      let start = Date.now()
+      this._forceStop = start + timeLimit * 1000 - 1 // We force stop the search after this point
+      const solution = this.search({
         explosives: 0,
         move: 'start',
         boulders: this.boulders
-      })
-      return solution ? solution : []
+      }, 0)
+      return {
+        solution: solution || [],
+        stats: {
+          duration: Date.now() - start,
+          positions: Object.values((this._testedPositions)).length
+        }
+      }
     }
 
     pushBoulder (boulders, index, delta) {
@@ -77,7 +98,7 @@
       if (layout[cY][cX] === 2) {
         return // Fence is blocking the boulder from behind, so we can't push it
       }
-      if (boulders.findIndex(([bX,bY]) => bX === cX && bY === cY) >= 0) {
+      if (boulders.findIndex(b => b[0] === cX && b[1] === cY) !== -1) {
         return // A boulder is blocking the boulder from behind, so we can't push it
       }
 
@@ -86,17 +107,17 @@
       let didMove = false
       while (true) {
         const boulder = newState[index]
-        const x = boulder[0] + delta[0]
-        const y = boulder[1] + delta[1]
-        const hitBoulder = newState.findIndex(([bX,bY]) => bX === x && bY === y)
+        const nX = boulder[0] + delta[0]
+        const nY = boulder[1] + delta[1]
+        const hitBoulder = newState.findIndex(b => b[0] === nX && b[1] === nY)
         if (hitBoulder !== -1) {
           index = hitBoulder // We're hitting a boulder, start rolling that one instead
           continue
         }
-        if (layout[y][x] !== 0) {
+        if (layout[nY][nX] !== 0) {
           break // We're hitting something, so we gotta stop
         }
-        newState[index] = [x, y]
+        newState[index] = [nX, nY]
         didMove = true
       }
       if (!didMove) {
@@ -105,33 +126,33 @@
       return newState
     }
 
-    bombBoulders (boulders, [x,y]) {
+    bombBoulders (boulders, pos) {
       const layout = this.layout
 
-      if (layout[y][x] === 2) {
+      if (layout[pos[1]][pos[0]] === 2) {
         return // Fence is blocking the tile, so we can't place a bomb there
       }
-      if (boulders.findIndex(([bX,bY]) => bX === x && bY === y) >= 0) {
+      if (boulders.findIndex(b => b[0] === pos[0] && b[1] === pos[1]) !== -1) {
         return // A boulder is on this tile, solver does not account for placing bombs on boulders!
       }
 
       // Get all boulders in a 3x3 grid around the explosive
-      const bombedBoulders = boulders.filter(([bX,bY]) => (
-        bX >= x - 1 && bX <= x + 1 &&
-        bY >= y - 1 && bY <= y + 1 &&
-        !(bX === x && bY === y)
+      const bombedBoulders = boulders.filter(b => (
+        b[0] >= pos[0] - 1 && b[0] <= pos[0] + 1 &&
+        b[1] >= pos[1] - 1 && b[1] <= pos[1] + 1 &&
+        !(b[0] === pos[0] && b[1] === pos[1])
       ))
       const newState = [...boulders]
       let didMove = false
       for (const bombedBoulder of bombedBoulders) {
         let index = boulders.indexOf(bombedBoulder)
-        const delta = [bombedBoulder[0] - x, bombedBoulder[1] - y]
+        const delta = [bombedBoulder[0] - pos[0], bombedBoulder[1] - pos[1]]
         while (true) {
           const boulder = newState[index]
           const nX = boulder[0] + delta[0]
           const nY = boulder[1] + delta[1]
-          const hitBoulder = newState.findIndex(([bX,bY]) => bX === nX && bY === nY)
-          if (hitBoulder >= 0) {
+          const hitBoulder = newState.findIndex(b => b[0] === nX && b[1] === nY)
+          if (hitBoulder !== -1) {
             index = hitBoulder // We're hitting a boulder, start rolling that one instead
             continue
           }
@@ -152,7 +173,41 @@
       return newState
     }
 
-    getPossibleMoves (state) {
+    hasTestedPosition (boulders, depth, explosives) {
+      // Generate a hash for the boulder configuration, which does not care about boulder order
+      let hash = ''
+      let b
+      for (b of boulders.map(b => '' + b[0] + b[1]).sort()) {
+        hash += b
+      }
+
+      let tested = this._testedPositions[hash]
+      if (tested) {
+        // FIXME:
+        // The explosive count conditional is not working as intended since
+        // it prevents certain solutions from being found with explosives, when they are required
+        // Example:
+        // A branch might've reached this position with fewer explosives,
+        // but because of depth limit it could not find the solution.
+        // Now that we reach this position in fewer steps,
+        // we might be able to find the solution within the depth limit.
+        if (
+          // if already reached this position using fewer explosives
+          tested.explosives < explosives ||
+          // or already reached this position with an equal number of explosives, at an equal or lower depth
+          (tested.explosives === explosives && tested.depth <= depth)
+        ) {
+          return true
+        }
+        tested.depth = depth
+        tested.explosives = explosives
+      } else {
+        this._testedPositions[hash] = {depth, explosives}
+      }
+      return false
+    }
+
+    getPossibleMoves (state, depth) {
       const boulders = state.boulders
       const explosives = state.explosives
 
@@ -161,15 +216,9 @@
       const allowBombs = explosives < this._explosiveLimit
       for (let index = 0; index < boulders.length; index++) {
         const boulder = boulders[index]
-        const checks = [
-          ['left', -1, 0],
-          ['right', 1, 0],
-          ['up', 0, -1],
-          ['down', 0, 1]
-        ]
-        for (const [move, dx, dy] of checks) {
-          const newBoulders = this.pushBoulder(boulders, index, [dx, dy])
-          if (newBoulders) {
+        for (const [move, delta] of this.PUSH_CHECKS) {
+          const newBoulders = this.pushBoulder(boulders, index, delta)
+          if (newBoulders && !this.hasTestedPosition(newBoulders, depth + 1, explosives)) {
             possibleMoves.push({
               pos: boulder,
               move,
@@ -179,21 +228,15 @@
           }
         }
         if (allowBombs) {
-          const bombChecks = [
-            ['upleft', -1, -1],
-            ['upright', 1, -1],
-            ['downleft', -1, 1],
-            ['downright', 1, 1]
-          ]
-          for (const [move, dx, dy] of bombChecks) {
+          for (const [move, dx, dy] of this.BOMB_CHECKS) {
             const pos = [boulder[0] + dx, boulder[1] + dy]
             const hash = pos[0] + ',' + pos[1]
-            if (checkedBombLocations.indexOf(hash) >= 0) {
+            if (checkedBombLocations.indexOf(hash) !== -1) {
               continue // we've already tried bombing at this coordinate
             }
             checkedBombLocations.push(hash)
             const newBoulders = this.bombBoulders(boulders, pos)
-            if (newBoulders) {
+            if (newBoulders && !this.hasTestedPosition(newBoulders, depth + 1, explosives + 1)) {
               possibleMoves.push({
                 pos,
                 move: 'bomb',
@@ -207,37 +250,10 @@
       return possibleMoves
     }
 
-    _findSolution (state, depth = 0) {
-      const boulders = state.boulders
-
-      // Generate a hash for the boulder configuration, which does not care about boulder order
-      // Since boulders only can be within a 8x8 grid, we make use of that to get a bit representation of the boulders
-      let hash = 0
-      for (let b of boulders) {
-        hash += Math.pow(2, b[0] - 1 + (b[1] - 1) * 8)
-      }
-      // Alternate hashing that is also pretty fast:
-      // let hash = ''
-      // for (let b of boulders.map(b => b[0] + ',' + b[1]).sort()) {
-      //   hash += b + ','
-      // }
-
-      if (hash in this._testedPositions) {
-        let tested = this._testedPositions[hash]
-        if (
-          // if already reached this point using fewer explosives
-          tested.explosives < state.explosives ||
-          // or already reached this point with the same numer of explosives in an equal amount of or fewer steps
-          (tested.explosives === state.explosives && tested.depth <= depth)
-        ) {
-          return
-        }
-      }
-      this._testedPositions[hash] = {depth, explosives: state.explosives}
-
+    search (state, depth) {
       let solved = true
       for (const [x, y] of this.goals) {
-        if (!boulders.find(b => b[0] === x && b[1] === y)) {
+        if (!state.boulders.find(b => b[0] === x && b[1] === y)) {
           solved = false
           break
         }
@@ -245,17 +261,17 @@
       if (solved) {
         return [state]
       }
-      if (Date.now() >= this._forceStop) {
+      if (depth >= this._depthLimit) {
+        return // We're at the depth limit and there was no solution, so we exit out
+      }
+      if (Date.now() > this._forceStop) {
         return // We force stop the search, too much time has passed
       }
-      if (depth >= this._depthLimit) {
-        return
-      }
 
-      const possibleMoves = this.getPossibleMoves(state)
+      const possibleMoves = this.getPossibleMoves(state, depth)
       let solution = null
       for (const possibleMove of possibleMoves) {
-        const resp = this._findSolution(
+        const resp = this.search(
           possibleMove,
           depth + 1
         )
@@ -599,8 +615,9 @@
 
     findSolution (timeLimit = 1, depthLimit = 10, explosiveLimit = 2) {
       this.engine.prepare(this.layout, this.boulders, this.goals)
-      let solution = this.engine.run(timeLimit, depthLimit, explosiveLimit)
+      let {solution, stats} = this.engine.run(timeLimit, depthLimit, explosiveLimit)
 
+      console.log(`Tried ${stats.positions} unique positions in ${stats.duration}ms`)
       this.solution = solution
       this.solutionStep = 0
       this.renderSolutionNavigation()
