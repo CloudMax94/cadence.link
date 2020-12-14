@@ -192,6 +192,7 @@
 
 .boulder-solver-toolbar,
 .boulder-solver-body,
+.boulder-solver-buttons,
 .boulder-solver-info {
   .no-js & {
     display: none;

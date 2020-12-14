@@ -83,7 +83,7 @@
 
       // And then we push the boulder!
       const newState = [...boulders]
-      let didMove = true
+      let didMove = false
       while (true) {
         const boulder = newState[index]
         const x = boulder[0] + delta[0]
