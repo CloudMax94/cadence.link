@@ -9,7 +9,6 @@ menu:
 **This page is a work in progress, bear with me!**
 
 By luting away from Ganon through various means, you keep the characters that are added for the fight.
-With the release of
 
 ## Effects
 
