@@ -29,4 +29,4 @@ While the Lute is disabled during the boss encounter, you're still able to warp 
 
 ### Pre-luting
 
-By luting before or as you trigger the boss fight, you're able to trigger the fight after/while luting away from the room.
+By luting before or as you trigger the boss fight, you're able to trigger the fight while/before luting away from the room.
