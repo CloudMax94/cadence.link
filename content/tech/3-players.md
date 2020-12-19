@@ -17,6 +17,24 @@ By luting away from Ganon through various means, you keep the characters that ar
 The extra characters retain their screen coordinates when doing any kind of transition.
 This allows you to traverse maps very quickly, and reach places which are otherwise unreachable.
 
+### Disabled Lute
+
+After luting away from Ganon, the lute remains disabled. You can however still warp around using the map screen.
+By starting co-op (or exiting and re-entering co-op), player 2 will be able to use their lute as normal.
+
+### Boss Music
+
+...This is where we'd explain how things differ because the music/beat is in the boss encounter state...
+
+### Entrance Climbing
+
+...
+
+### Timestop
+**Exclusive to version 1.0.**
+
+By starting a dialogue with an extra character, you will activate [time stop](/tech/time-stop/).
+
 ## Activation Methods
 
 ### Map Screen
