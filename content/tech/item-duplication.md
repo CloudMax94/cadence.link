@@ -8,7 +8,7 @@ menu:
 
 ## Throw Duplication
 
-By hitting a thrown object before it breaks using an item or ability (such as bow and boomerang) it will generate two drops.
+By hitting a thrown object before it breaks using an item or ability that can break it, it will break twice, generating two drops.
 
 {{< tweet 1285282351765848064 >}}
 
