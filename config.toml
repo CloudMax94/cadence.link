@@ -30,7 +30,7 @@ enableGitInfo = true
     weight = 2
   [[menu.other]]
     name = "SRC Leaderboards"
-    url = "https://coh-boards.deku.link/"
+    url = "https://boards.cadence.link"
     weight = 3
   [[menu.other]]
     name = "Skips and Strats Sheet"
