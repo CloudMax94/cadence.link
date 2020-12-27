@@ -78,6 +78,11 @@
   width: 14px; height: 14px;
 }
 
+.ingame-text-image-skullkid {
+  background: url(/img/text/UI_TextHead_Skullkid.png);
+  width: 16px; height: 16px;
+}
+
 $button_list: (
   button_a,
   button_b,
