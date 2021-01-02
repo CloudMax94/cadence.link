@@ -22,16 +22,19 @@ It is possible to get past the wind turbines with explosives, instead of deactiv
 {{< tweet 1327180951386873858 >}}
 
 #### Bombchu & Leaping
-{{< tweet 1311334459812192257 >}}
+{{< tweet 1345373903179272193 >}}
 
 #### Bombchu & Anklet
-{{< tweet 1327213057504813056 >}} _Note: you can do this faster by following the Leaping setup to get knocked diagonally instead._
+{{< tweet 1327213057504813056 >}} _Note: you can do this faster by getting knocked diagonally like the Bombchu & Leaping/Hookshot/Cane setups._
+
+#### Bombchu & Hookshot
+{{< tweet 1345369914706690054 >}}
 
 #### Bombchu & Cane
 {{< tweet 1334484046257090560 >}}
 
 #### Bombchu & Strafe
-{{< tweet 1334466273095286784 >}} _Note: you can do this faster by following the Leaping setup to get knocked diagonally instead._
+{{< tweet 1334466273095286784 >}} _Note: you can do this faster by getting knocked diagonally like the Bombchu & Leaping/Hookshot/Cane setups._
 
 ### Iron Boots
 
