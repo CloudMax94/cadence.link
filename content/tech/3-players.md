@@ -42,7 +42,7 @@ By starting a dialogue with an extra character, you will activate [time stop](/t
 
 ### Map Screen
 
-**Exclusive to version 1.4.**
+**Exclusive to version 1.4 and 1.5.**
 
 Files made **with** the Symphony of the Mask DLC use the overworld map screen instead of the dungeon map screen while in Ganon's room.
 While the Lute is disabled during the boss encounter, you're still able to warp using the map screen.

@@ -3,7 +3,7 @@ title: "World Shuffling"
 menu:
   main:
     parent: "tech"
-    weight: 94010
+    weight: 95510
 ---
 
 **Exclusive to version 1.4.**

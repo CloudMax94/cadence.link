@@ -6,7 +6,7 @@ menu:
     weight: 95010
 ---
 
-**Exclusive to version 1.4 - 1.1.**
+**Exclusive to version 1.1 through 1.5.**
 
 This allows you to start a co-op file without player 2 present, which also results in you not having the character they chose unlocked.
 It is important to note that the save file still is flagged as having played co-op, meaning that the file will use the co-op leaderboards.
