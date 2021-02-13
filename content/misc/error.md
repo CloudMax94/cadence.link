@@ -10,18 +10,19 @@ A hidden location which can be accessed by going out of bounds in the overworld.
 There is a lute outside of the house if you don't already have one.
 
 Error sells Boots of Speed for 500 rupees.
-Boots of Speed allows you to move independent of the beat, without any speed limit, making it faster than fixed beat mode.
+Boots of Speed allows you to move as if you were playinged in fixed-beat mode.
+Prior to version 1.2 Boots of Speed weren't limited to the fixed-beat speed, instead allowing you to move as fast as you wanted.
 
 After purchasing the boots, they will never re-appear on the save file again.
 However, each out of bounds screen on the overworld has its own instance of Error's House.
 Meaning that if you can get out of bounds at multiple locations, you're able to purchase multiple Boots of Speed.
 
-## Dungeon Mode
+## Dungeon, Puzzle & Arena Mode
 
-It is possible to reach Error's House in Dungeon Mode by [wrong warping](/tech/wrong-warp/).
+It is possible to reach Error's House in these modes by [wrong warping](/tech/wrong-warp/).
 Wrong warping inside of a dungeon tries to place you outside at its entrance.
-In dungeon mode there is no entrance, so you're sent to overworld screen 0,0, which is Error's House.
-Presumably because Dungeon Mode does not generate an overworld at all, so all screens would be Error's House.
+These modes do not have an entrance, so you're sent to overworld screen 0,0, which is Error's House.
+Presumably because the modes do not generate an overworld at all, so all screens would be Error's House.
 
 As it requires you to get a game over you won't ever have enough rupees to purchase the Boots of Speed.
 This does however allow you to obtain the Lute in Dungeon Mode.
