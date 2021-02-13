@@ -44,7 +44,7 @@ This allows you to teleport through the diagonal gap, since vanish ignores fence
 {{< yt DPZ9D7lEj4U >}}
 
 ### Bounce Cancel (solo)
-**Exclusive to version 1.1 and 1.0.**
+**Exclusive to version 1.0 and 1.1.**
 
 This method specifically requires that you have Down Thrust.
 The game won't let you bounce on the bee without it, which is required for the [spawn displacement](/tech/spawn-displacement/).

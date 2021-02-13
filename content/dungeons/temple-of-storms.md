@@ -55,7 +55,7 @@ Tower Shield allows you to block the wind turbines in front of the 2F stairs.
 
 ### Pot Throw
 
-**Exclusive to version 1.2 through 1.0.**
+**Exclusive to version 1.0 through 1.2.**
 
 **2 Bombs**
 
@@ -83,7 +83,7 @@ With the use of Deku Leaf it is possible to push a pot onto the switch that you'
 
 ### Deku Leaf and Bounce Cancel
 
-**Exclusive to version 1.1 and 1.0.**
+**Exclusive to version 1.0 and 1.1.**
 
 Read the [Bounce Cancel](/tech/bounce-cancel/) page for more information on how to activate it.
 {{< tweet 1208122611256848384 >}}

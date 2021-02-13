@@ -6,7 +6,7 @@ menu:
     weight: 97010
 ---
 
-**Exclusive to version 1.1 and 1.0.**
+**Exclusive to version 1.0 and 1.1.**
 
 After throwing a bombable rock you’re able to climb up on it as it is breaking.
 

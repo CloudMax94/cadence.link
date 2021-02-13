@@ -6,7 +6,7 @@ menu:
     weight: 97020
 ---
 
-**Exclusive to version 1.1 and 1.0.**
+**Exclusive to version 1.0 and 1.1.**
 
 **TODO: Write more details**
 Stay in the bounce/down thrust state by cancelling out of it through various methods.

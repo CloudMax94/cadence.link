@@ -20,7 +20,7 @@ In version 1.1 and 1.0 you can also re-equip the anklet over itself and unpause 
 
 ## Bow Cancel
 
-**Exclusive to version 1.1 and 1.0.**
+**Exclusive to version 1.0 and 1.1.**
 
 By unequipping Bow before activating it, it is cancelled.
 You can also re-equip the bow over itself and unpause while still holding the button.
@@ -42,7 +42,7 @@ It also allows you to hit leevers that are burrowed, zora that are submerged, an
 
 ## Throw Cancel
 
-**Exclusive to version 1.1 and 1.0.**
+**Exclusive to version 1.0 and 1.1.**
 
 _Alternatively: **Glove Cancel** or **Bomb Cancel**_
 
