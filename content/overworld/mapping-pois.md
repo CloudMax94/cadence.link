@@ -201,3 +201,14 @@ Note: both of the beach POIs can be mirrored.
 #### Both beach keys on the map
 
 ![](/img/mapping/beach_07_08_example.png)
+
+## Guaranteed Enemy Drops
+
+**TODO: Screenshots, better descriptions**
+
+An Iron Knuckle Captain in the Desert is guaranteed to drop a Ring of Piercing. <!-- desert_3 -->
+
+A Red Chest Mimic in the Desert is guaranteed to drop a Freeze Scroll. <!-- desert_10 -->
+
+A Red Chest Mimic on the Beach (in a poison tile) is guaranteed to drop a Need Scroll. <!-- beach_14 -->
+
