@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "autoprefixer": "^9.8.4",
-    "cssnano": "^4.1.10",
+    "cssnano": "^5.1.14",
     "postcss-import": "^12.0.1",
     "postcss-scss": "^2.1.1",
     "precss": "^4.0.0"
