@@ -1,11 +1,35 @@
-{{/* We modify the tweet shortcode to hide thread and use dark theme */}}
 {{- $pc := .Page.Site.Config.Privacy.Twitter -}}
 {{- if not $pc.Disable -}}
-{{- if $pc.Simple -}}
-{{ template "_internal/shortcodes/twitter_simple.html" . }}
-{{- else -}}
-{{- $url := printf "https://api.twitter.com/1/statuses/oembed.json?id=%v&dnt=%t&hide_thread=1&theme=dark" (index .Params 0) $pc.EnableDNT -}}
-{{- $json := getJSON $url -}}
-{{ $json.html | safeHTML }}
+  {{- if $pc.Simple -}}
+    {{- template "_internal/shortcodes/twitter_simple.html" . -}}
+  {{- else -}}
+    {{- $id := or (.Get "id") "" -}}
+    {{- $user := or (.Get "user") "" -}}
+    {{- if and $id $user -}}
+      {{- template "coh-render-tweet" (dict
+        "id" $id
+        "user" $user
+        "dnt" $pc.EnableDNT
+        "name" .Name
+        "position" .Position
+      ) -}}
+    {{- else -}}
+      {{- errorf "The %q shortcode requires two named parameters: user and id. See %s" .Name .Position -}}
+    {{- end -}}
+  {{- end -}}
 {{- end -}}
+
+{{- define "coh-render-tweet" -}}
+  {{- $url := printf "https://twitter.com/%v/status/%v" .user .id -}}
+  {{- $query := querify "url" $url "dnt" .dnt "theme" "dark" "chrome" "nofooter" -}}
+  {{- $request := printf "https://publish.twitter.com/oembed?%s" $query -}}
+  {{- with resources.GetRemote $request -}}
+    {{- with .Err -}}
+      {{- errorf "%s" . -}}
+    {{- else -}}
+      {{- (. | transform.Unmarshal).html | safeHTML -}}
+    {{- end -}}
+  {{- else -}}
+    {{- warnidf "shortcode-twitter-getremote" "The %q shortcode was unable to retrieve the remote data. See %s" .name .position -}}
+  {{- end -}}
 {{- end -}}

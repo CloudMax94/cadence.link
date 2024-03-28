@@ -19,7 +19,7 @@ You can skip the gears and 1F by swimming through the lava with Goron Locket and
 
 By combining Hover Boots with knockback, Pegasus Anklet or Cane of Somaria you're able to skip the gears.
 
-{{< tweet 1140618071821783042 >}}
+{{< tweet user="Dryvnt" id="1140618071821783042" >}}
 
 ### Ghost Freddy
 

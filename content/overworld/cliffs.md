@@ -38,4 +38,5 @@ Down Thrust location is randomized in Permadeath mode.
 **TODO: Add a clean clip of doing the maze without any items**
 
 **With Power Glove**
-{{< tweet 1156872951666360320 >}}
+
+**TODO: Add a clean clip of doing the maze with power gloves**

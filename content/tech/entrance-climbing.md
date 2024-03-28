@@ -15,4 +15,4 @@ You can prevent the transition by triggering a tutorial or catching a fish with 
 
 You can also use spells and items that cause _immediate_ knockback on use, such as Deku Leaf, Din's Fire and throwing a standable entity. (Does not work with pots, bushes, etc.)
 This does _not_ with knockback from bombs, enemies, boomerang, etc. since they're processed after both players turns. Player 1 must be moved before their turns end and everything else is processed.
-{{< tweet 1154403586492604416 >}}
+{{< tweet user="CloudMax94" id="1154403586492604416" >}}

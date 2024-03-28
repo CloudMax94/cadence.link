@@ -17,15 +17,15 @@ Gauntlets can be mirrored. When left or right is specified, it refers to their d
 
 Requires that you do not have flippers.
 Since enemies block their adjacent tiles as well, it is easy to block all tiles except one twice to the right.
-{{< tweet 1279746978566438913 >}}
+{{< tweet user="CloudMax94" id="1279746978566438913" >}}
 
 ### From Left  - Din's Fire
 
-{{< tweet 1155125646357454848 >}}
+{{< tweet user="CloudMax94" id="1155125646357454848" >}}
 
 ### From Right - Glove and Bomb
 
-{{< tweet 1153743706630938624 >}}
+{{< tweet user="CloudMax94" id="1153743706630938624" >}}
 
 ## Gauntlet 2
 
@@ -39,7 +39,7 @@ Since enemies block their adjacent tiles as well, it is easy to block all tiles 
 
 ### From Right - Glove and 2 Bombs
 
-{{< tweet 1153746088853028864 >}}
+{{< tweet user="CloudMax94" id="1153746088853028864" >}}
 
 ## Gauntlet 4
 **Added in version 1.1.0.**

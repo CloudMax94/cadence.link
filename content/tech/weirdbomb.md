@@ -12,4 +12,4 @@ By picking up a bomb while it is exploding, the bomb won't despawn, staying inde
 Weirdbombs can not be kicked, allowing you to walk over them, making placement easy to deal with.
 This is especially useful in combination with [spawn displacement](/tech/spawn-displacement/).
 
-{{< tweet 1141691876694605824 >}}
+{{< tweet user="CloudMax94" id="1141691876694605824" >}}

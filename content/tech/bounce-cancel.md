@@ -19,25 +19,25 @@ Below are various consistent ways of activating Bounce Cancel.
 
 ### Front of Hyrule Castle Setup
 
-{{< tweet 1220754324508135424 >}}
+{{< tweet user="CloudMax94" id="1220754324508135424" >}}
 
 ### Gerudo Desert Setup
 
-{{< tweet 1209138338495467521 >}}
+{{< tweet user="CloudMax94" id="1209138338495467521" >}}
 
 ### Lake Hylia Setup
 
-{{< tweet 1220748136479522822 >}}
+{{< tweet user="CloudMax94" id="1220748136479522822" >}}
 
 ### Freeze Setup
 
-{{< tweet 1212355880747819008 >}}
+{{< tweet user="CloudMax94" id="1212355880747819008" >}}
 
 ### Item Collection
 
-{{< tweet 1208327984446238720 >}}
+{{< tweet user="CloudMax94" id="1208327984446238720" >}}
 
 ### Co-op
 
 This does not require a warp specifically, just a transition. Overworld transitions work as well.
-{{< tweet 1208105669292724224 >}}
+{{< tweet user="CloudMax94" id="1208105669292724224" >}}

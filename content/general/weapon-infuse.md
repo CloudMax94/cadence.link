@@ -34,6 +34,6 @@ Poisons enemies.
 
 You can receive a free weapon infuse by swimming behind Hyrule Castle or walking along the cliff and hovering.
 
-{{< tweet 1139911056254361601 >}}
+{{< tweet user="Dryvnt" id="1139911056254361601" >}}
 
-{{< tweet 1141307613268738049 >}}
+{{< tweet user="Zinpars" id="1141307613268738049" >}}

@@ -11,7 +11,7 @@ menu:
 By getting knocked into the other player in co-op, you will automatically pivot to face that direction.
 
 This also works with diagonals, allowing you to use items diagonally.
-{{< tweet 1148250687668490242 >}}
+{{< tweet user="CloudMax94" id="1148250687668490242" >}}
 
 Combine this with Hookshot and you're able to [hookshot pivot](/tech/hookshot-displacement/#hookshot-pivoting).
-{{< tweet 1148244057275060224 >}}
+{{< tweet user="CloudMax94" id="1148244057275060224" >}}

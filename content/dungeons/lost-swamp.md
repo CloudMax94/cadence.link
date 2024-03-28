@@ -15,11 +15,11 @@ background: "/img/backgrounds/lost-swamp.png"
 
 If you have Cane of Somaria, it's faster to use that instead of the crate, and it also removes the need for fire/explosives.
 
-{{< tweet 1153989156608937984 >}}
+{{< tweet user="CloudMax94" id="1153989156608937984" >}}
 
 If you want to collect the Purple Chest as well:
 
-{{< tweet 1141129450400075776 >}}
+{{< tweet user="Dryvnt" id="1141129450400075776" >}}
 
 ### Slab
 
@@ -38,7 +38,7 @@ The ones listed were important for their respective versions.
 
 See [Slab 1F Skip](#slab) for various methods of getting the slab into position.
 
-{{< tweet 1140957961725988865 >}}
+{{< tweet user="CloudMax94" id="1140957961725988865" >}}
 
 ### Hookshot Displacement
 
@@ -46,4 +46,4 @@ See [Slab 1F Skip](#slab) for various methods of getting the slab into position.
 
 See [Slab 1F Skip](#slab) for various methods of getting the slab into position.
 
-{{< tweet 1156911677222166528 >}}
+{{< tweet user="CloudMax94" id="1156911677222166528" >}}

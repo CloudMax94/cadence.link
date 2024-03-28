@@ -15,4 +15,4 @@ Since this seemingly requires a bridge on a tile around the edge of the screen, 
 It can however by done south of hyrule castle along the water, allowing you to quick travel from the left/right sides of the screen directly onto the bridge.
 It can also be done from the Hyrule Castle vault. For example, you can enter vault with hover boots, then exit it, use ice rod in any direction, hover, pivot, place cane on vault entrance. You'll respawn on the ice. drown again and you'll get teleported down to the bridge in front of the castle.
 
-{{< tweet 1277482852825706496 >}}
+{{< tweet user="CloudMax94" id="1277482852825706496" >}}

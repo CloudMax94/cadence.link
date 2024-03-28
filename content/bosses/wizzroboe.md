@@ -15,8 +15,8 @@ Has 10 hearts, 12 on increased difficulty.
 
 ### Bomb Fairy, Bombchu, Haste
 
-{{< tweet 1208028555159859201 >}}
+{{< tweet user="CloudMax94" id="1208028555159859201" >}}
 
 ### Bomb Fairy, Bombchu, not Octavo
 
-{{< tweet 1208049971326439425 >}}
+{{< tweet user="CloudMax94" id="1208049971326439425" >}}

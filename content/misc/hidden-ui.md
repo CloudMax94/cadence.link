@@ -12,4 +12,4 @@ This does not hide the beat bar, which can be hidden separately in options.
 This also does not hide the dungeon minimap.
 This persists through save files and you exit out of it by talking to a fortune teller again.
 
-{{< tweet 1153619239070097408 >}}
+{{< tweet user="CloudMax94" id="1153619239070097408" >}}

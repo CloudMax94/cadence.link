@@ -24,11 +24,6 @@ Next you need to install the local JavaScript packages:
 npm install
 ```
 
-Hugo also requires the ``postcss-cli`` JavaScript package to be installed in the environment:
-```bash
-npm install -g postcss-cli
-```
-
 Then to view the site in your browser, run Hugo and open up the link:
 
 ```bash

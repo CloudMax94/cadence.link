@@ -61,6 +61,6 @@ Requires that you have 3 characters unlocked so that one player can swap away fr
 
 Thanks to [hookshot pivoting](/tech/hookshot-displacement/#hookshot-pivoting) we're able to hookshot past the boss door.
 
-{{< tweet 1148244057275060224 >}}
+{{< tweet user="CloudMax94" id="1148244057275060224" >}}
 
 It is possible to do this without pivoting, but it requires additional items and setup.

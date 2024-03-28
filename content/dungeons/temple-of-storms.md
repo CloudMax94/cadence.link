@@ -19,28 +19,28 @@ It is possible to get past the wind turbines with explosives, instead of deactiv
 {{< yt Uv0jekL8q_Y >}}
 
 #### Bomb & Hookshot
-{{< tweet 1327180951386873858 >}}
+{{< tweet user="Priweejt" id="1327180951386873858" >}}
 
 #### Bombchu & Leaping
-{{< tweet 1345373903179272193 >}}
+{{< tweet user="CloudMax94" id="1345373903179272193" >}}
 
 #### Bombchu & Anklet
-{{< tweet 1327213057504813056 >}} _Note: you can do this faster by getting knocked diagonally like the Bombchu & Leaping/Hookshot/Cane setups._
+{{< tweet user="CloudMax94" id="1327213057504813056" >}} _Note: you can do this faster by getting knocked diagonally like the Bombchu & Leaping/Hookshot/Cane setups._
 
 #### Bombchu & Hookshot
-{{< tweet 1345369914706690054 >}}
+{{< tweet user="CloudMax94" id="1345369914706690054" >}}
 
 #### Bombchu & Cane
-{{< tweet 1334484046257090560 >}}
+{{< tweet user="CloudMax94" id="1334484046257090560" >}}
 
 #### Bombchu & Strafe
-{{< tweet 1334466273095286784 >}} _Note: you can do this faster by getting knocked diagonally like the Bombchu & Leaping/Hookshot/Cane setups._
+{{< tweet user="CloudMax94" id="1334466273095286784" >}} _Note: you can do this faster by getting knocked diagonally like the Bombchu & Leaping/Hookshot/Cane setups._
 
 ### Iron Boots
 
 By using the greaves from the pot together with Hookshot or Boomerang, you're able to bring your Iron Boots up onto the center wall and skip straight to 2F.
 
-{{< tweet 1186241880238854144 >}}
+{{< tweet user="CloudMax94" id="1186241880238854144" >}}
 
 ### Cane of Somaria
 
@@ -59,19 +59,19 @@ Tower Shield allows you to block the wind turbines in front of the 2F stairs.
 
 **2 Bombs**
 
-{{< tweet 1152330611492700160 >}}
+{{< tweet user="CloudMax94" id="1152330611492700160" >}}
 
 **1 Bombchu**
 
-{{< tweet 1207273997655691266 >}}
+{{< tweet user="CloudMax94" id="1207273997655691266" >}}
 
 **1 Bomb and Link (without shield attack)**
 
-{{< tweet 1140274327977373702 >}}
+{{< tweet user="Dryvnt" id="1140274327977373702" >}}
 
 **1 Bomb and Haste**
 
-{{< tweet 1207616634459787264 >}}
+{{< tweet user="CloudMax94" id="1207616634459787264" >}}
 
 ## 2F Skip
 
@@ -86,4 +86,4 @@ With the use of Deku Leaf it is possible to push a pot onto the switch that you'
 **Exclusive to version 1.0 and 1.1.**
 
 Read the [Bounce Cancel](/tech/bounce-cancel/) page for more information on how to activate it.
-{{< tweet 1208122611256848384 >}}
+{{< tweet user="CloudMax94" id="1208122611256848384" >}}

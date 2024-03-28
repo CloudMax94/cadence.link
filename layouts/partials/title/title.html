@@ -1,8 +1,6 @@
 {{ $title := .Title }}
-
-{{/* Just show "404" on 404 page, instead of the full title */}}
-{{ if eq .URL "/404.html" }}
-  {{ $title = "404" }}
+{{ if eq .RelPermalink "/404.html" }}
+  {{ $title = "404 - Cadence not Found" }}
 {{ end }}
 <header class="leaderboard-title">
   {{ if .IsHome }}
