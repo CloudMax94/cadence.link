@@ -1,5 +1,5 @@
 <table class="achievement-table">
-{{ range $id, $achievement := .Site.Data.achievements }}
+{{ range $id, $achievement := hugo.Data.achievements }}
   {{ if eq $id 0 }}
     {{/* We skip the first index comment at the start of the data file. */}}
   {{ else }}

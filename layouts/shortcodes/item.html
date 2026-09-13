@@ -1,5 +1,5 @@
 {{ $id := (index .Params 0) }}
-{{ $item := index .Site.Data.items $id }}
+{{ $item := index hugo.Data.items $id }}
 <div class="item-box">
   {{ partial "ingame-text.html" $item.inventory | safeHTML }}
 </div>

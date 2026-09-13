@@ -21,6 +21,7 @@ git clone https://github.com/CloudMax94/cadence.link.git
 
 Next you need to install the local JavaScript packages:
 ```bash
+# NOTE: preferably use regular npm instead of tools like pnpm. They can and did cause issues in the past.
 npm install
 ```
 

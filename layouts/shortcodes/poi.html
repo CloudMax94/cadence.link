@@ -2,7 +2,7 @@
 {{ $img := print "/img/pois/" $poi ".png" }}
 
 {{ $hasPuzzleInfo := false }}
-{{ $data := index .Site.Data.pois }}
+{{ $data := index hugo.Data.pois }}
 {{ range (split $poi "/") }}
   {{ if $data }}
     {{ $data = index $data . }}

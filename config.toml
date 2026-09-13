@@ -1,8 +1,11 @@
 baseURL = "https://cadence.link/"
-languageCode = "en-us"
+locale = "en-us"
 title = "cadence.link"
 disableKinds = ["taxonomy", "term", "RSS"]
 enableGitInfo = true
+
+[security]
+  node.permissions.allowRead = "*"
 
 [params]
   author = "CloudMax"

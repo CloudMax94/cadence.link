@@ -1,4 +1,4 @@
-{{- $pc := .Page.Site.Config.Privacy.Twitter -}}
+{{- $pc := .Page.Site.Config.Privacy.X -}}
 {{- if not $pc.Disable -}}
   {{- if $pc.Simple -}}
     {{- template "_internal/shortcodes/twitter_simple.html" . -}}
@@ -23,10 +23,10 @@
   {{- $url := printf "https://twitter.com/%v/status/%v" .user .id -}}
   {{- $query := querify "url" $url "dnt" .dnt "theme" "dark" "chrome" "nofooter" -}}
   {{- $request := printf "https://publish.twitter.com/oembed?%s" $query -}}
-  {{- with resources.GetRemote $request -}}
+  {{- with try (resources.GetRemote $request) -}}
     {{- with .Err -}}
       {{- errorf "%s" . -}}
-    {{- else -}}
+    {{- else with .Value -}}
       {{- (. | transform.Unmarshal).html | safeHTML -}}
     {{- end -}}
   {{- else -}}
